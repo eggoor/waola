@@ -1,0 +1,149 @@
+﻿<Window WindowStartupLocation="Manual"
+        x:Class="WaolaWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WaolaWPF"
+        xmlns:vm="clr-namespace:WaolaWPF.ViewModels"
+        xmlns:v="clr-namespace:WaolaWPF.Views"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:prop="clr-namespace:WaolaWPF.Properties"
+        d:DataContext="{d:DesignInstance Type=vm:MasterVm}"
+        mc:Ignorable="d"
+        Title="Waola"
+        Left="{Binding Source={x:Static prop:Settings.Default}, Path=MainWindowPosX, Mode=TwoWay}"
+        Top="{Binding Source={x:Static prop:Settings.Default}, Path=MainWindowPosY, Mode=TwoWay}"
+        Width="{Binding Source={x:Static prop:Settings.Default}, Path=MainWindowSizeWidth, Mode=TwoWay}"
+        Height="{Binding Source={x:Static prop:Settings.Default}, Path=MainWindowSizeHeight, Mode=TwoWay}"
+        d:DesignWidth="640"
+        d:DesignHeight="462"
+        MinWidth="640"
+        MinHeight="484"
+        Closed="OnClosed">
+    <Window.Resources>
+        <ResourceDictionary>
+            <DataTemplate DataType="{x:Type vm:DefaultVm}">
+                <v:DefaultView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:HostDataVm}">
+                <v:HostDataView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:AboutVm}">
+                <v:AboutView/>
+            </DataTemplate>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionaries/DictMainWindowStrings.xaml" />
+                <ResourceDictionary Source="Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="24"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="52" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="StackPanelLeft" Grid.Row="0" Grid.Column="0">
+            <Button x:Name="ButtonWakeUp" Style="{StaticResource StyleButtonToolbar}"
+                    ToolTip="{StaticResource ToolTipWakeUp}"
+                    Command="{Binding CommandWakeUp}">
+                <Viewbox>
+                    <ContentControl Content="{StaticResource CanvasWakeUp}"/>
+                </Viewbox>
+            </Button>
+            <Separator />
+            <Button x:Name="ButtonRescan" Style="{StaticResource StyleButtonToolbar}"
+                    ToolTip="{StaticResource ToolTipRescan}"
+                    Command="{Binding CommandRescanNetwork}">
+                <Viewbox>
+                    <ContentControl>
+                        <ContentControl.Style>
+                            <Style TargetType="{x:Type ContentControl}">
+                                <Setter Property="Content" Value="{DynamicResource CanvasScan}" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsScanning}" Value="True">
+                                        <Setter Property="Content" Value="{DynamicResource CanvasScanCancel}" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </ContentControl.Style>
+                    </ContentControl>
+                </Viewbox>
+            </Button>
+            <Button x:Name="ButtonRefresh" Style="{StaticResource StyleButtonToolbar}"
+                    ToolTip="{StaticResource ToolTipRefresh}"
+                    Command="{Binding CommandRefresh}">
+                <Viewbox>
+                    <ContentControl>
+                        <ContentControl.Style>
+                            <Style TargetType="{x:Type ContentControl}">
+                                <Setter Property="Content" Value="{DynamicResource CanvasRefresh}" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsRefreshing}" Value="True">
+                                        <Setter Property="Content" Value="{DynamicResource CanvasRefreshCancel}" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </ContentControl.Style>
+                    </ContentControl>
+                </Viewbox>
+            </Button>
+            <Separator />
+            <Button x:Name="ButtonCopy" Style="{StaticResource StyleButtonToolbar}"
+                    ToolTip="{StaticResource ToolTipCopy}"
+                    Command="{Binding CommandCopy}">
+                <Viewbox>
+                    <ContentControl Content="{StaticResource CanvasCopy}"/>
+                </Viewbox>
+            </Button>
+            <Separator />
+            <Button x:Name="ButtonAdd" Style="{StaticResource StyleButtonToolbar}"
+                    ToolTip="{StaticResource ToolTipAdd}"
+                    Command="{Binding CommandAdd}">
+                <Viewbox>
+                    <ContentControl Content="{StaticResource CanvasAdd}"/>
+                </Viewbox>
+            </Button>
+            <Button x:Name="ButtonEdit" Style="{StaticResource StyleButtonToolbar}"
+                    ToolTip="{StaticResource ToolTipEdit}"
+                    Command="{Binding CommandEdit}">
+                <Viewbox>
+                    <ContentControl Content="{StaticResource CanvasEdit}"/>
+                </Viewbox>
+            </Button>
+            <Button x:Name="ButtonDelete" Style="{StaticResource StyleButtonToolbar}"
+                    ToolTip="{StaticResource ToolTipDelete}"
+                    Command="{Binding CommandDelete}">
+                <Viewbox>
+                    <ContentControl Content="{StaticResource CanvasDelete}"/>
+                </Viewbox>
+            </Button>
+            <Button x:Name="ButtonAbout" Style="{StaticResource StyleButtonToolbar}"
+                    ToolTip="{StaticResource ToolTipAbout}"
+                    Command="{Binding CommandAbout}">
+                <Viewbox>
+                    <ContentControl Content="{StaticResource CanvasAbout}"/>
+                </Viewbox>
+            </Button>
+        </StackPanel>
+        <ContentControl x:Name="ContentControl" Grid.Row="0" Grid.Column="1"
+                        Content="{Binding CurrentPage}">
+        </ContentControl>
+        <StatusBar x:Name="StatusBar" Grid.Row="1" Grid.ColumnSpan="2"
+                   Margin="2, 0, 0, 2">
+            <TextBlock x:Name="StatusBarStatus" Text="{Binding Status}"/>
+        </StatusBar>
+    </Grid>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="ContentRendered">
+            <i:InvokeCommandAction Command="{Binding CommandInit}" />
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Closed">
+            <i:InvokeCommandAction Command="{Binding CommandSave}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+</Window>

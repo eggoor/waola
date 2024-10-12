@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="SeenOnlineNever">Never</system:String>
+    <system:String x:Key="SeenOnlineJustNow">Just now</system:String>
+    <system:String x:Key="SeenOnlineLessThanMinute">Less a minute ago</system:String>
+    <system:String x:Key="SeenOnlineOverMinute">About a minute ago</system:String>
+    <system:String x:Key="FormatSeenOnlineMinute">{0} minutes ago</system:String>
+    <system:String x:Key="FormatSeenOnlineMinuteDual">{0} minutes ago</system:String>
+    <system:String x:Key="FormatSeenOnlineMinutes">{0} minutes ago</system:String>
+    <system:String x:Key="SeenOnlineLessThanHour">Less a hour ago</system:String>
+    <system:String x:Key="SeenOnlineOverHour">More than a hour ago</system:String>
+    <system:String x:Key="FormatSeenOnlineHour">{0} hours ago</system:String>
+    <system:String x:Key="FormatSeenOnlineHourDual">{0} hours ago</system:String>
+    <system:String x:Key="FormatSeenOnlineHours">{0} hours ago</system:String>
+    <system:String x:Key="SeenOnlineLessThanDay">Today</system:String>
+    <system:String x:Key="SeenOnlineYesterday">Yesterday</system:String>
+    <system:String x:Key="FormatSeenOnlineDay">{0} days ago</system:String>
+    <system:String x:Key="FormatSeenOnlineDayDual">{0} days ago</system:String>
+    <system:String x:Key="FormatSeenOnlineDays">{0} days ago</system:String>
+    <system:String x:Key="SeenOnlineLessThanWeek">This week</system:String>
+    <system:String x:Key="SeenOnlineOverWeek">More than a week ago</system:String>
+    <system:String x:Key="FormatSeenOnlineWeek">{0} weeks ago</system:String>
+    <system:String x:Key="FormatSeenOnlineWeekDual">{0} weeks ago</system:String>
+    <system:String x:Key="FormatSeenOnlineWeeks">{0} weeks ago</system:String>
+    <system:String x:Key="SeenOnlineLessThanMonth">This month</system:String>
+    <system:String x:Key="SeenOnlineOverMonth">More than a month ago</system:String>
+    <system:String x:Key="FormatSeenOnlineMonth">{0} months ago</system:String>
+    <system:String x:Key="FormatSeenOnlineMonthDual">{0} months ago</system:String>
+    <system:String x:Key="FormatSeenOnlineMonths">{0} months ago</system:String>
+    <system:String x:Key="SeenOnlineLessThanYear">This year</system:String>
+    <system:String x:Key="SeenOnlineOverYear">More than a year ago</system:String>
+    <system:String x:Key="FormatSeenOnlineYear">{0} years ago</system:String>
+    <system:String x:Key="FormatSeenOnlineYearDual">{0} years ago</system:String>
+    <system:String x:Key="FormatSeenOnlineYears">{0} years ago</system:String>
+</ResourceDictionary>

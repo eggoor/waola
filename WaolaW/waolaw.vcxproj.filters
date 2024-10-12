@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\StatusMonitor">
+      <UniqueIdentifier>{522b189d-9b41-4470-86d2-b073ce9b312e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\StatusMonitor">
+      <UniqueIdentifier>{430d7eaf-21cf-4a2d-b0f7-1adea9d39af4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WndMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HostView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageHandlers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandHandlers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAbout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WaolaW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBarButtons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgHostEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HostViewData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WmCommandRedirectWndProc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sysexits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PermanentStorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PermanentStorageCbd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WaolawTaskData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowPos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusMonitor.h">
+      <Filter>Header Files\StatusMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusMonitorResolver.h">
+      <Filter>Header Files\StatusMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusMonitorDiscoverer.h">
+      <Filter>Header Files\StatusMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusMonitorScanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RichEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Clipboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListViewPrivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListView.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WndMain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HostView.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WndProcMain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageHandlers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandHandlers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAbout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WaolaW.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgHostEdit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HostViewData.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WmCommandRedirectWndProc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PermanentStorage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowPos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusBar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusMonitor.c">
+      <Filter>Source Files\StatusMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusMonitorResolver.c">
+      <Filter>Source Files\StatusMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusMonitorDiscoverer.c">
+      <Filter>Source Files\StatusMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusMonitorScanner.c">
+      <Filter>Source Files\StatusMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="RichEdit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Clipboard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WaolaW.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\TB024.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\ArrowUp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\ArrowDown.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Hand.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Graphics\Waola.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\APPEAL.rtf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Credits.rtf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\lgpl-3.0.rtf">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

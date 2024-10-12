@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA01EC4A2CA1BF0E007EDE26 /* wdiscoverer_iface_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = CA01EC492CA1BF0E007EDE26 /* wdiscoverer_iface_platform.h */; };
+		CA0853712CB810F10080EBD9 /* wdiscoverer_iface_priv_u.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0853702CB810F10080EBD9 /* wdiscoverer_iface_priv_u.h */; };
+		CA0853722CB810F10080EBD9 /* wdiscoverer_host_u.c in Sources */ = {isa = PBXBuildFile; fileRef = CA08536F2CB810F10080EBD9 /* wdiscoverer_host_u.c */; };
+		CA3140902C91CBD000AF535C /* wdiscoverer_net_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = CA31408B2C91CBD000AF535C /* wdiscoverer_net_priv.h */; };
+		CA3140922C91CBD000AF535C /* wdiscoverer_iface_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = CA31408D2C91CBD000AF535C /* wdiscoverer_iface_priv.h */; };
+		CA3140932C91CBD000AF535C /* wdiscoverer_host_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = CA31408E2C91CBD000AF535C /* wdiscoverer_host_priv.h */; };
+		CA4441952C417C0100B31661 /* waoladi.h in Headers */ = {isa = PBXBuildFile; fileRef = CA44418E2C417C0100B31661 /* waoladi.h */; };
+		CA4441B02C417C2700B31661 /* wdiscoverer_iface.h in Headers */ = {isa = PBXBuildFile; fileRef = CA44419C2C417C2600B31661 /* wdiscoverer_iface.h */; };
+		CA4441B12C417C2700B31661 /* waoladi.c in Sources */ = {isa = PBXBuildFile; fileRef = CA44419D2C417C2600B31661 /* waoladi.c */; };
+		CA4441B22C417C2700B31661 /* wdiscoverer_host.h in Headers */ = {isa = PBXBuildFile; fileRef = CA44419E2C417C2600B31661 /* wdiscoverer_host.h */; };
+		CA4441B32C417C2700B31661 /* pch.c in Sources */ = {isa = PBXBuildFile; fileRef = CA44419F2C417C2600B31661 /* pch.c */; };
+		CA4441B52C417C2700B31661 /* wdiscoverer_iface_monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = CA4441A12C417C2600B31661 /* wdiscoverer_iface_monitor.c */; };
+		CA4441B72C417C2700B31661 /* wdiscoverer_iface_monitor.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4441A32C417C2600B31661 /* wdiscoverer_iface_monitor.h */; };
+		CA4441B82C417C2700B31661 /* pch.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4441A42C417C2600B31661 /* pch.h */; };
+		CA4441BA2C417C2700B31661 /* wdiscoverer_iface.c in Sources */ = {isa = PBXBuildFile; fileRef = CA4441A62C417C2700B31661 /* wdiscoverer_iface.c */; };
+		CA4441BE2C417C2700B31661 /* waoladi.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4441AA2C417C2700B31661 /* waoladi.h */; };
+		CA4441BF2C417C2700B31661 /* wdiscoverer_net.c in Sources */ = {isa = PBXBuildFile; fileRef = CA4441AB2C417C2700B31661 /* wdiscoverer_net.c */; };
+		CA4441C22C417C2700B31661 /* wdiscoverer_host.c in Sources */ = {isa = PBXBuildFile; fileRef = CA4441AE2C417C2700B31661 /* wdiscoverer_host.c */; };
+		CA4441C32C417C2700B31661 /* wdiscoverer_net.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4441AF2C417C2700B31661 /* wdiscoverer_net.h */; };
+		CAE950FC2C47C25700767DCC /* pch_u.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE950FA2C47C25700767DCC /* pch_u.h */; };
+		CAE950FD2C47C25700767DCC /* wdiscoverer_iface_u.c in Sources */ = {isa = PBXBuildFile; fileRef = CAE950FB2C47C25700767DCC /* wdiscoverer_iface_u.c */; };
+		CAEC6A282C7E09FD00547BC9 /* wdiscoverer_net_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A222C7E09FC00547BC9 /* wdiscoverer_net_factory.c */; };
+		CAEC6A292C7E09FD00547BC9 /* wdiscoverer_iface_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A232C7E09FC00547BC9 /* wdiscoverer_iface_factory.c */; };
+		CAEC6A2A2C7E09FD00547BC9 /* waoladi_fact4s.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A242C7E09FC00547BC9 /* waoladi_fact4s.c */; };
+		CAEC6A2B2C7E09FD00547BC9 /* waoladi_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A252C7E09FC00547BC9 /* waoladi_factory.c */; };
+		CAEC6A2C2C7E09FD00547BC9 /* waoladi_fact4s.h in Headers */ = {isa = PBXBuildFile; fileRef = CAEC6A262C7E09FC00547BC9 /* waoladi_fact4s.h */; };
+		CAEC6A2D2C7E09FD00547BC9 /* wdiscoverer_iface_monitor_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A272C7E09FC00547BC9 /* wdiscoverer_iface_monitor_factory.c */; };
+		CAEC6A8E2C7E0E1D00547BC9 /* wdiscoverer_host_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A8D2C7E0E1C00547BC9 /* wdiscoverer_host_factory.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA01EC492CA1BF0E007EDE26 /* wdiscoverer_iface_platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wdiscoverer_iface_platform.h; sourceTree = "<group>"; };
+		CA08536F2CB810F10080EBD9 /* wdiscoverer_host_u.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wdiscoverer_host_u.c; sourceTree = "<group>"; };
+		CA0853702CB810F10080EBD9 /* wdiscoverer_iface_priv_u.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wdiscoverer_iface_priv_u.h; sourceTree = "<group>"; };
+		CA31408B2C91CBD000AF535C /* wdiscoverer_net_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wdiscoverer_net_priv.h; sourceTree = "<group>"; };
+		CA31408D2C91CBD000AF535C /* wdiscoverer_iface_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wdiscoverer_iface_priv.h; sourceTree = "<group>"; };
+		CA31408E2C91CBD000AF535C /* wdiscoverer_host_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wdiscoverer_host_priv.h; sourceTree = "<group>"; };
+		CA4440552C4164CE00B31661 /* liblibwaoladi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibwaoladi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA44418E2C417C0100B31661 /* waoladi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = waoladi.h; sourceTree = "<group>"; };
+		CA44419C2C417C2600B31661 /* wdiscoverer_iface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wdiscoverer_iface.h; sourceTree = "<group>"; };
+		CA44419D2C417C2600B31661 /* waoladi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = waoladi.c; sourceTree = "<group>"; };
+		CA44419E2C417C2600B31661 /* wdiscoverer_host.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wdiscoverer_host.h; sourceTree = "<group>"; };
+		CA44419F2C417C2600B31661 /* pch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pch.c; sourceTree = "<group>"; };
+		CA4441A12C417C2600B31661 /* wdiscoverer_iface_monitor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wdiscoverer_iface_monitor.c; sourceTree = "<group>"; };
+		CA4441A32C417C2600B31661 /* wdiscoverer_iface_monitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wdiscoverer_iface_monitor.h; sourceTree = "<group>"; };
+		CA4441A42C417C2600B31661 /* pch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pch.h; sourceTree = "<group>"; };
+		CA4441A62C417C2700B31661 /* wdiscoverer_iface.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wdiscoverer_iface.c; sourceTree = "<group>"; };
+		CA4441AA2C417C2700B31661 /* waoladi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = waoladi.h; sourceTree = "<group>"; };
+		CA4441AB2C417C2700B31661 /* wdiscoverer_net.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wdiscoverer_net.c; sourceTree = "<group>"; };
+		CA4441AE2C417C2700B31661 /* wdiscoverer_host.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wdiscoverer_host.c; sourceTree = "<group>"; };
+		CA4441AF2C417C2700B31661 /* wdiscoverer_net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wdiscoverer_net.h; sourceTree = "<group>"; };
+		CAE950FA2C47C25700767DCC /* pch_u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pch_u.h; sourceTree = "<group>"; };
+		CAE950FB2C47C25700767DCC /* wdiscoverer_iface_u.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wdiscoverer_iface_u.c; sourceTree = "<group>"; };
+		CAEC6A222C7E09FC00547BC9 /* wdiscoverer_net_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wdiscoverer_net_factory.c; sourceTree = "<group>"; };
+		CAEC6A232C7E09FC00547BC9 /* wdiscoverer_iface_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wdiscoverer_iface_factory.c; sourceTree = "<group>"; };
+		CAEC6A242C7E09FC00547BC9 /* waoladi_fact4s.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = waoladi_fact4s.c; sourceTree = "<group>"; };
+		CAEC6A252C7E09FC00547BC9 /* waoladi_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = waoladi_factory.c; sourceTree = "<group>"; };
+		CAEC6A262C7E09FC00547BC9 /* waoladi_fact4s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = waoladi_fact4s.h; sourceTree = "<group>"; };
+		CAEC6A272C7E09FC00547BC9 /* wdiscoverer_iface_monitor_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wdiscoverer_iface_monitor_factory.c; sourceTree = "<group>"; };
+		CAEC6A8D2C7E0E1C00547BC9 /* wdiscoverer_host_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wdiscoverer_host_factory.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA4440532C4164CE00B31661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA44404C2C4164CE00B31661 = {
+			isa = PBXGroup;
+			children = (
+				CA44405C2C4164DB00B31661 /* include */,
+				CAEC6A242C7E09FC00547BC9 /* waoladi_fact4s.c */,
+				CAEC6A262C7E09FC00547BC9 /* waoladi_fact4s.h */,
+				CAEC6A252C7E09FC00547BC9 /* waoladi_factory.c */,
+				CA08536F2CB810F10080EBD9 /* wdiscoverer_host_u.c */,
+				CA0853702CB810F10080EBD9 /* wdiscoverer_iface_priv_u.h */,
+				CAEC6A8D2C7E0E1C00547BC9 /* wdiscoverer_host_factory.c */,
+				CAEC6A232C7E09FC00547BC9 /* wdiscoverer_iface_factory.c */,
+				CAEC6A272C7E09FC00547BC9 /* wdiscoverer_iface_monitor_factory.c */,
+				CAEC6A222C7E09FC00547BC9 /* wdiscoverer_net_factory.c */,
+				CA44419F2C417C2600B31661 /* pch.c */,
+				CA4441A42C417C2600B31661 /* pch.h */,
+				CAE950FA2C47C25700767DCC /* pch_u.h */,
+				CA44419D2C417C2600B31661 /* waoladi.c */,
+				CA4441AA2C417C2700B31661 /* waoladi.h */,
+				CA4441AE2C417C2700B31661 /* wdiscoverer_host.c */,
+				CA44419E2C417C2600B31661 /* wdiscoverer_host.h */,
+				CA31408E2C91CBD000AF535C /* wdiscoverer_host_priv.h */,
+				CA4441A12C417C2600B31661 /* wdiscoverer_iface_monitor.c */,
+				CA4441A32C417C2600B31661 /* wdiscoverer_iface_monitor.h */,
+				CA4441A62C417C2700B31661 /* wdiscoverer_iface.c */,
+				CA44419C2C417C2600B31661 /* wdiscoverer_iface.h */,
+				CAE950FB2C47C25700767DCC /* wdiscoverer_iface_u.c */,
+				CA31408D2C91CBD000AF535C /* wdiscoverer_iface_priv.h */,
+				CA01EC492CA1BF0E007EDE26 /* wdiscoverer_iface_platform.h */,
+				CA4441AB2C417C2700B31661 /* wdiscoverer_net.c */,
+				CA4441AF2C417C2700B31661 /* wdiscoverer_net.h */,
+				CA31408B2C91CBD000AF535C /* wdiscoverer_net_priv.h */,
+				CA4440562C4164CE00B31661 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA4440562C4164CE00B31661 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA4440552C4164CE00B31661 /* liblibwaoladi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA44405C2C4164DB00B31661 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CA44418E2C417C0100B31661 /* waoladi.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CA4440512C4164CE00B31661 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4441BE2C417C2700B31661 /* waoladi.h in Headers */,
+				CA4441C32C417C2700B31661 /* wdiscoverer_net.h in Headers */,
+				CA3140932C91CBD000AF535C /* wdiscoverer_host_priv.h in Headers */,
+				CA4441B22C417C2700B31661 /* wdiscoverer_host.h in Headers */,
+				CA3140902C91CBD000AF535C /* wdiscoverer_net_priv.h in Headers */,
+				CAE950FC2C47C25700767DCC /* pch_u.h in Headers */,
+				CA4441952C417C0100B31661 /* waoladi.h in Headers */,
+				CA3140922C91CBD000AF535C /* wdiscoverer_iface_priv.h in Headers */,
+				CA4441B82C417C2700B31661 /* pch.h in Headers */,
+				CA4441B02C417C2700B31661 /* wdiscoverer_iface.h in Headers */,
+				CA4441B72C417C2700B31661 /* wdiscoverer_iface_monitor.h in Headers */,
+				CA01EC4A2CA1BF0E007EDE26 /* wdiscoverer_iface_platform.h in Headers */,
+				CA0853712CB810F10080EBD9 /* wdiscoverer_iface_priv_u.h in Headers */,
+				CAEC6A2C2C7E09FD00547BC9 /* waoladi_fact4s.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CA4440542C4164CE00B31661 /* libwaoladi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA4440592C4164CE00B31661 /* Build configuration list for PBXNativeTarget "libwaoladi" */;
+			buildPhases = (
+				CA4440512C4164CE00B31661 /* Headers */,
+				CA4440522C4164CE00B31661 /* Sources */,
+				CA4440532C4164CE00B31661 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libwaoladi;
+			productName = waoladi;
+			productReference = CA4440552C4164CE00B31661 /* liblibwaoladi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA44404D2C4164CE00B31661 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CA4440542C4164CE00B31661 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = CA4440502C4164CE00B31661 /* Build configuration list for PBXProject "libwaoladi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA44404C2C4164CE00B31661;
+			productRefGroup = CA4440562C4164CE00B31661 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA4440542C4164CE00B31661 /* libwaoladi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA4440522C4164CE00B31661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4441B12C417C2700B31661 /* waoladi.c in Sources */,
+				CA4441BF2C417C2700B31661 /* wdiscoverer_net.c in Sources */,
+				CAE950FD2C47C25700767DCC /* wdiscoverer_iface_u.c in Sources */,
+				CA4441B32C417C2700B31661 /* pch.c in Sources */,
+				CAEC6A292C7E09FD00547BC9 /* wdiscoverer_iface_factory.c in Sources */,
+				CA0853722CB810F10080EBD9 /* wdiscoverer_host_u.c in Sources */,
+				CAEC6A8E2C7E0E1D00547BC9 /* wdiscoverer_host_factory.c in Sources */,
+				CAEC6A2B2C7E09FD00547BC9 /* waoladi_factory.c in Sources */,
+				CAEC6A282C7E09FD00547BC9 /* wdiscoverer_net_factory.c in Sources */,
+				CA4441BA2C417C2700B31661 /* wdiscoverer_iface.c in Sources */,
+				CA4441C22C417C2700B31661 /* wdiscoverer_host.c in Sources */,
+				CAEC6A2A2C7E09FD00547BC9 /* waoladi_fact4s.c in Sources */,
+				CAEC6A2D2C7E09FD00547BC9 /* wdiscoverer_iface_monitor_factory.c in Sources */,
+				CA4441B52C417C2700B31661 /* wdiscoverer_iface_monitor.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA4440572C4164CE00B31661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CA4440582C4164CE00B31661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch.h;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CA44405A2C4164CE00B31661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../libwlog/include,
+					../libwaolash/include,
+					../waolash/include,
+					../libwaolath/include,
+					../libwaolast/include,
+					../libwaolava/include,
+					../libwaolare/include,
+					../libwaolane/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CA44405B2C4164CE00B31661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../libwlog/include,
+					../libwaolash/include,
+					../waolash/include,
+					../libwaolath/include,
+					../libwaolast/include,
+					../libwaolava/include,
+					../libwaolare/include,
+					../libwaolane/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA4440502C4164CE00B31661 /* Build configuration list for PBXProject "libwaoladi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4440572C4164CE00B31661 /* Debug */,
+				CA4440582C4164CE00B31661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA4440592C4164CE00B31661 /* Build configuration list for PBXNativeTarget "libwaoladi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA44405A2C4164CE00B31661 /* Debug */,
+				CA44405B2C4164CE00B31661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA44404D2C4164CE00B31661 /* Project object */;
+}

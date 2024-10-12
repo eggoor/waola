@@ -1,0 +1,108 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+        {
+            "name": "Debug WaolaG with gdbserver",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/WaolaG/waolag",
+            "miDebuggerServerAddress": "localhost:1234",
+            "cwd": "${workspaceFolder}/debug/WaolaG",
+            "externalConsole": false,
+            "linux": {
+                "MIMode": "gdb"
+            },
+            "preLaunchTask": "Start gdbserver@WaolaG"
+        },
+        {
+            "name": "Debug waolac with gdbserver",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/waolac/waolac",
+            "miDebuggerServerAddress": "localhost:1235",
+            "cwd": "${workspaceFolder}/debug/WaolaG",
+            "externalConsole": false,
+            "linux": {
+                "MIMode": "gdb"
+            },
+            "preLaunchTask": "Start gdbserver@waolac"
+        },
+        {
+            "name": "Debug WaolaG",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/WaolaG/waolag",
+            "cwd": "${workspaceFolder}/debug/WaolaG",
+            "externalConsole": false,
+            "linux": {
+                "MIMode": "gdb",
+                "environment": [{
+                    "name": "GSETTINGS_SCHEMA_DIR",
+                    "value": "/var/tmp/dbg/share/glib-2.0/schemas"
+                }]
+            },
+            "preLaunchTask": "${defaultBuildTask}",
+        },
+        {
+            "name": "Debug waolac",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/waolac/waolac",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/debug/waolac",
+            "environment": [],
+            "externalConsole": false,
+            "linux": {
+                "MIMode": "gdb"
+            },
+            "preLaunchTask": "${defaultBuildTask}",
+            "args": [ "qwe", "0123456789AB" ]
+        },
+        {
+            "name": "Debug waolasht",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/waolasht/waolasht",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/debug/waolasht",
+            "environment": [],
+            "externalConsole": false,
+            "linux": {
+                "MIMode": "gdb"
+            },
+            "preLaunchTask": "${defaultBuildTask}"
+        },
+        {
+            "name": "Debug waolanet",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/waolanet/waolanet",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/debug/waolanet",
+            "environment": [],
+            "externalConsole": false,
+            "linux": {
+                "MIMode": "gdb"
+            },
+            "preLaunchTask": "${defaultBuildTask}"
+        },
+        {
+            "name": "Debug waoladit with gdbserver",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/waoladit/waoladit",
+            "miDebuggerServerAddress": "localhost:1235",
+            "cwd": "${workspaceFolder}/debug/waoladit",
+            "externalConsole": false,
+            "linux": {
+                "MIMode": "gdb"
+            },
+            "preLaunchTask": "Start gdbserver@waolac"
+        },
+    ]
+}

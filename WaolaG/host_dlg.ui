@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="WaolaG">
+  <requires lib="gtk" version="4.0"/>
+  <template class="WaolagHostDlg" parent="GtkWindow">
+    <property name="resizable">0</property>
+    <property name="default-width">320</property>
+    <property name="default-height">240</property>
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkBox">
+        <property name="margin-top">8</property>
+        <property name="margin-bottom">16</property>
+        <property name="margin-start">8</property>
+        <property name="margin-end">8</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">8</property>
+        <child>
+          <object class="GtkBox">
+            <property name="homogeneous">1</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="halign">end</property>
+                <property name="margin-end">16</property>
+                <property name="label">Friendly name</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkEntry" id="displayName">
+                <property name="text"
+                  bind-source="WaolagHostDlg"
+                  bind-property="DisplayName"
+                  bind-flags="bidirectional"/>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="homogeneous">1</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">Hostname</property>
+                <property name="halign">end</property>
+                <property name="margin-end">16</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkEntry" id="hostname">
+                <property name="text"
+                  bind-source="WaolagHostDlg"
+                  bind-property="Hostname"
+                  bind-flags="bidirectional"/>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="homogeneous">1</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">IP address</property>
+                <property name="halign">end</property>
+                <property name="margin-end">16</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkEntry" id="ipAddr">
+                <property name="text"
+                  bind-source="WaolagHostDlg"
+                  bind-property="IpAddress"
+                  bind-flags="bidirectional"/>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="homogeneous">1</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">MAC address</property>
+                <property name="halign">end</property>
+                <property name="margin-end">16</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkEntry" id="macAddr">
+                <property name="text"
+                  bind-source="WaolagHostDlg"
+                  bind-property="MacAddress"
+                  bind-flags="bidirectional"/>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="valign">end</property>
+            <property name="vexpand">true</property>
+            <property name="homogeneous">1</property>
+            <child>
+              <object class="GtkButton">
+                <property name="margin-start">32</property>
+                <property name="margin-end">8</property>
+                <property name="hexpand">true</property>
+                <property name="label">Cancel</property>
+                <property name="action-name">dlg.cancel</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="margin-start">8</property>
+                <property name="margin-end">32</property>
+                <property name="hexpand">true</property>
+                <property name="label">OK</property>
+                <property name="action-name">dlg.save</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA08536E2CB810CC0080EBD9 /* wnet_iface_u.c in Sources */ = {isa = PBXBuildFile; fileRef = CA08536D2CB810CC0080EBD9 /* wnet_iface_u.c */; };
+		CA1E77C12CB19569009D93ED /* pch.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E77BF2CB19569009D93ED /* pch.h */; };
+		CA1E77C22CB19569009D93ED /* pch.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1E77C02CB19569009D93ED /* pch.c */; };
+		CA1E77D12CB1975F009D93ED /* wnet_iface.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1E77CB2CB1975F009D93ED /* wnet_iface.c */; };
+		CA1E77D22CB1975F009D93ED /* wnet_iface_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1E77CC2CB1975F009D93ED /* wnet_iface_factory.c */; };
+		CA1E77D32CB1975F009D93ED /* wnet_iface_prov.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1E77CD2CB1975F009D93ED /* wnet_iface_prov.c */; };
+		CA1E77D42CB1975F009D93ED /* wnet_iface_prov_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1E77CE2CB1975F009D93ED /* wnet_iface_prov_factory.c */; };
+		CA1E77D52CB1975F009D93ED /* wnet_iface_prov_m.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1E77CF2CB1975F009D93ED /* wnet_iface_prov_m.c */; };
+		CA1E77D62CB1975F009D93ED /* wnet_iface_prov_u.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1E77D02CB1975F009D93ED /* wnet_iface_prov_u.c */; };
+		CA1E77D82CB197E4009D93ED /* pch_u.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E77D72CB197E4009D93ED /* pch_u.h */; };
+		CA1E77DF2CB1991F009D93ED /* wnet_iface_prov.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E77DC2CB1991F009D93ED /* wnet_iface_prov.h */; };
+		CA1E77E12CB1991F009D93ED /* wnet_iface_prov_u.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E77DE2CB1991F009D93ED /* wnet_iface_prov_u.h */; };
+		CA1E77E22CB1991F009D93ED /* wnet_iface.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E77DB2CB1991F009D93ED /* wnet_iface.h */; };
+		CA1E780E2CB27C5F009D93ED /* warper_cb_data.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E780A2CB27C5F009D93ED /* warper_cb_data.h */; };
+		CA1E78102CB27C5F009D93ED /* arp_cache_entry.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E78092CB27C5F009D93ED /* arp_cache_entry.h */; };
+		CA1E78112CB27C5F009D93ED /* warper.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E780B2CB27C5F009D93ED /* warper.h */; };
+		CA1E781C2CB27C86009D93ED /* warper_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E78182CB27C86009D93ED /* warper_priv.h */; };
+		CA1E781D2CB27C86009D93ED /* warper.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E78122CB27C86009D93ED /* warper.h */; };
+		CA1E781F2CB27C86009D93ED /* warper_m.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E78142CB27C86009D93ED /* warper_m.h */; };
+		CA1E78202CB27C86009D93ED /* warper_u.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E78192CB27C86009D93ED /* warper_u.h */; };
+		CA1E78242CB27C86009D93ED /* warper_u.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1E781A2CB27C86009D93ED /* warper_u.c */; };
+		CA1E78252CB27C86009D93ED /* warper_m.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1E78152CB27C86009D93ED /* warper_m.c */; };
+		CA1E78272CB27D4F009D93ED /* pch_m.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E78262CB27D4F009D93ED /* pch_m.h */; };
+		CA1E782C2CB29A9B009D93ED /* waolane_fact4s.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E782A2CB29A9B009D93ED /* waolane_fact4s.h */; };
+		CA1E782D2CB29A9B009D93ED /* waolane_fact4s.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1E782B2CB29A9B009D93ED /* waolane_fact4s.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA08536D2CB810CC0080EBD9 /* wnet_iface_u.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wnet_iface_u.c; sourceTree = "<group>"; };
+		CA1E77BF2CB19569009D93ED /* pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pch.h; sourceTree = "<group>"; };
+		CA1E77C02CB19569009D93ED /* pch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pch.c; sourceTree = "<group>"; };
+		CA1E77CB2CB1975F009D93ED /* wnet_iface.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wnet_iface.c; sourceTree = "<group>"; };
+		CA1E77CC2CB1975F009D93ED /* wnet_iface_factory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wnet_iface_factory.c; sourceTree = "<group>"; };
+		CA1E77CD2CB1975F009D93ED /* wnet_iface_prov.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wnet_iface_prov.c; sourceTree = "<group>"; };
+		CA1E77CE2CB1975F009D93ED /* wnet_iface_prov_factory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wnet_iface_prov_factory.c; sourceTree = "<group>"; };
+		CA1E77CF2CB1975F009D93ED /* wnet_iface_prov_m.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wnet_iface_prov_m.c; sourceTree = "<group>"; };
+		CA1E77D02CB1975F009D93ED /* wnet_iface_prov_u.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wnet_iface_prov_u.c; sourceTree = "<group>"; };
+		CA1E77D72CB197E4009D93ED /* pch_u.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pch_u.h; sourceTree = "<group>"; };
+		CA1E77DB2CB1991F009D93ED /* wnet_iface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wnet_iface.h; sourceTree = "<group>"; };
+		CA1E77DC2CB1991F009D93ED /* wnet_iface_prov.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wnet_iface_prov.h; sourceTree = "<group>"; };
+		CA1E77DE2CB1991F009D93ED /* wnet_iface_prov_u.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wnet_iface_prov_u.h; sourceTree = "<group>"; };
+		CA1E78092CB27C5F009D93ED /* arp_cache_entry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arp_cache_entry.h; sourceTree = "<group>"; };
+		CA1E780A2CB27C5F009D93ED /* warper_cb_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = warper_cb_data.h; sourceTree = "<group>"; };
+		CA1E780B2CB27C5F009D93ED /* warper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = warper.h; sourceTree = "<group>"; };
+		CA1E78122CB27C86009D93ED /* warper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = warper.h; sourceTree = "<group>"; };
+		CA1E78142CB27C86009D93ED /* warper_m.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = warper_m.h; sourceTree = "<group>"; };
+		CA1E78152CB27C86009D93ED /* warper_m.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = warper_m.c; sourceTree = "<group>"; };
+		CA1E78182CB27C86009D93ED /* warper_priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = warper_priv.h; sourceTree = "<group>"; };
+		CA1E78192CB27C86009D93ED /* warper_u.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = warper_u.h; sourceTree = "<group>"; };
+		CA1E781A2CB27C86009D93ED /* warper_u.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = warper_u.c; sourceTree = "<group>"; };
+		CA1E78262CB27D4F009D93ED /* pch_m.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pch_m.h; sourceTree = "<group>"; };
+		CA1E782A2CB29A9B009D93ED /* waolane_fact4s.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = waolane_fact4s.h; sourceTree = "<group>"; };
+		CA1E782B2CB29A9B009D93ED /* waolane_fact4s.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = waolane_fact4s.c; sourceTree = "<group>"; };
+		CA237BFE2CB5939C00787F1D /* wnet_iface_prov_u_priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wnet_iface_prov_u_priv.h; sourceTree = "<group>"; };
+		CA9D16E32CB18E8E0025FB2E /* liblibwaolane.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibwaolane.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA9D16E12CB18E8D0025FB2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA9D16DA2CB18E8B0025FB2E = {
+			isa = PBXGroup;
+			children = (
+				CA9D16EA2CB18F3A0025FB2E /* include */,
+				CA1E782A2CB29A9B009D93ED /* waolane_fact4s.h */,
+				CA1E782B2CB29A9B009D93ED /* waolane_fact4s.c */,
+				CA1E78122CB27C86009D93ED /* warper.h */,
+				CA1E78142CB27C86009D93ED /* warper_m.h */,
+				CA1E78152CB27C86009D93ED /* warper_m.c */,
+				CA1E78182CB27C86009D93ED /* warper_priv.h */,
+				CA1E78192CB27C86009D93ED /* warper_u.h */,
+				CA1E781A2CB27C86009D93ED /* warper_u.c */,
+				CA1E77CB2CB1975F009D93ED /* wnet_iface.c */,
+				CA1E77DB2CB1991F009D93ED /* wnet_iface.h */,
+				CA1E77CC2CB1975F009D93ED /* wnet_iface_factory.c */,
+				CA1E77CD2CB1975F009D93ED /* wnet_iface_prov.c */,
+				CA1E77DC2CB1991F009D93ED /* wnet_iface_prov.h */,
+				CA1E77DE2CB1991F009D93ED /* wnet_iface_prov_u.h */,
+				CA237BFE2CB5939C00787F1D /* wnet_iface_prov_u_priv.h */,
+				CA1E77CE2CB1975F009D93ED /* wnet_iface_prov_factory.c */,
+				CA1E77CF2CB1975F009D93ED /* wnet_iface_prov_m.c */,
+				CA1E77D02CB1975F009D93ED /* wnet_iface_prov_u.c */,
+				CA08536D2CB810CC0080EBD9 /* wnet_iface_u.c */,
+				CA1E77BF2CB19569009D93ED /* pch.h */,
+				CA1E78262CB27D4F009D93ED /* pch_m.h */,
+				CA1E77D72CB197E4009D93ED /* pch_u.h */,
+				CA1E77C02CB19569009D93ED /* pch.c */,
+				CA9D16E42CB18E8E0025FB2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA9D16E42CB18E8E0025FB2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA9D16E32CB18E8E0025FB2E /* liblibwaolane.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA9D16EA2CB18F3A0025FB2E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CA1E78092CB27C5F009D93ED /* arp_cache_entry.h */,
+				CA1E780A2CB27C5F009D93ED /* warper_cb_data.h */,
+				CA1E780B2CB27C5F009D93ED /* warper.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CA9D16DF2CB18E8D0025FB2E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1E77D82CB197E4009D93ED /* pch_u.h in Headers */,
+				CA1E77DF2CB1991F009D93ED /* wnet_iface_prov.h in Headers */,
+				CA1E780E2CB27C5F009D93ED /* warper_cb_data.h in Headers */,
+				CA1E781C2CB27C86009D93ED /* warper_priv.h in Headers */,
+				CA1E78272CB27D4F009D93ED /* pch_m.h in Headers */,
+				CA1E781D2CB27C86009D93ED /* warper.h in Headers */,
+				CA1E781F2CB27C86009D93ED /* warper_m.h in Headers */,
+				CA1E782C2CB29A9B009D93ED /* waolane_fact4s.h in Headers */,
+				CA1E78202CB27C86009D93ED /* warper_u.h in Headers */,
+				CA1E78102CB27C5F009D93ED /* arp_cache_entry.h in Headers */,
+				CA1E78112CB27C5F009D93ED /* warper.h in Headers */,
+				CA1E77E12CB1991F009D93ED /* wnet_iface_prov_u.h in Headers */,
+				CA1E77E22CB1991F009D93ED /* wnet_iface.h in Headers */,
+				CA1E77C12CB19569009D93ED /* pch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CA9D16E22CB18E8D0025FB2E /* libwaolane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA9D16E72CB18E8E0025FB2E /* Build configuration list for PBXNativeTarget "libwaolane" */;
+			buildPhases = (
+				CA9D16DF2CB18E8D0025FB2E /* Headers */,
+				CA9D16E02CB18E8D0025FB2E /* Sources */,
+				CA9D16E12CB18E8D0025FB2E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libwaolane;
+			productName = libwaolane;
+			productReference = CA9D16E32CB18E8E0025FB2E /* liblibwaolane.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA9D16DB2CB18E8B0025FB2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CA9D16E22CB18E8D0025FB2E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = CA9D16DE2CB18E8C0025FB2E /* Build configuration list for PBXProject "libwaolane" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA9D16DA2CB18E8B0025FB2E;
+			productRefGroup = CA9D16E42CB18E8E0025FB2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA9D16E22CB18E8D0025FB2E /* libwaolane */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA9D16E02CB18E8D0025FB2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1E77D12CB1975F009D93ED /* wnet_iface.c in Sources */,
+				CA1E78242CB27C86009D93ED /* warper_u.c in Sources */,
+				CA1E78252CB27C86009D93ED /* warper_m.c in Sources */,
+				CA1E77D22CB1975F009D93ED /* wnet_iface_factory.c in Sources */,
+				CA1E77D32CB1975F009D93ED /* wnet_iface_prov.c in Sources */,
+				CA1E77D42CB1975F009D93ED /* wnet_iface_prov_factory.c in Sources */,
+				CA1E77D52CB1975F009D93ED /* wnet_iface_prov_m.c in Sources */,
+				CA1E77D62CB1975F009D93ED /* wnet_iface_prov_u.c in Sources */,
+				CA08536E2CB810CC0080EBD9 /* wnet_iface_u.c in Sources */,
+				CA1E77C22CB19569009D93ED /* pch.c in Sources */,
+				CA1E782D2CB29A9B009D93ED /* waolane_fact4s.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA9D16E52CB18E8E0025FB2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../libwlog/include,
+					../libwaolash/include,
+					../waolash/include,
+					../libwaolath/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CA9D16E62CB18E8E0025FB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch.h;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../libwlog/include,
+					../libwaolash/include,
+					../waolash/include,
+					../libwaolath/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CA9D16E82CB18E8E0025FB2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CA9D16E92CB18E8E0025FB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA9D16DE2CB18E8C0025FB2E /* Build configuration list for PBXProject "libwaolane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9D16E52CB18E8E0025FB2E /* Debug */,
+				CA9D16E62CB18E8E0025FB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA9D16E72CB18E8E0025FB2E /* Build configuration list for PBXNativeTarget "libwaolane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9D16E82CB18E8E0025FB2E /* Debug */,
+				CA9D16E92CB18E8E0025FB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA9D16DB2CB18E8B0025FB2E /* Project object */;
+}

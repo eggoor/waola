@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{574f3054-02e2-43e3-a3e7-495b0b0fc327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\Factories">
+      <UniqueIdentifier>{14f0ebe9-db98-4c0c-a21c-406d563ff2a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch_w.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolash_exports.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\whost.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\whost_view.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wlist.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wmem.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\whost_data.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wsockaddr.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wcont4r.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolash_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wcont4r_type.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wdefs.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wstr.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolash_exports_w.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolast_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waoladi_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolane_fact4s_sh.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolare_fact4s_sh.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolare_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolasc_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolava_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolava_merge_host_cbi_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolava_on_host_modified_cbi_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wcont4r_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wdiscoverer_host_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wdiscoverer_iface_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wdiscoverer_iface_monitor_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wdiscoverer_net_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wevent_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\whost_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\whost_view_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wmutex_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wnet_iface_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wnet_iface_prov_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wresolver_host_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wresolver_hosts_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wthread_cbi_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wthread_counter_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wthread_factory.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waoladi_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolare_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolash.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolash_exports_u.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolast_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolava_callback.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolava_opcode.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wasync_callback.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\whost_changed_field.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\whost_field.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\whost_op_result.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wthread_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waoladi_fact4s_sh.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolath_fact4s_sh.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wmutex_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wthread_cbi_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wthread_counter_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolava_fact4s_sh.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolava_on_host_modified_cbi_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolava_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolava_merge_host_cbi_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waoladi_opcode.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolare_opcode.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolasc_opcode.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolath_sh.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolava_sh.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waoladi_sh.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolane_sh.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolare_sh.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolasc_sh.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolast_sh.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolasc_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wnet_iface_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wnet_iface_prov_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolane_fact4s_t.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wresolver_hosts_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wresolver_host_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\warper_cb_data_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waoladi_fact4s_t.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolash_fact4s_sh.h">
+      <Filter>Header Files\include\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolasc_callback.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wmodule.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wevent_t.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wtask.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="whost.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="whost_view.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wlist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wstr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="whost_data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wsockaddr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wcont4r.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="waolash_fact4s.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wstr_w.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

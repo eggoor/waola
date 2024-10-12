@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:WaolaS/WaolaS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:waolac/waolac.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:waola/waola.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:waolash/waolash.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:waolasc/waolasc.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Waola++/Waola++.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libwaola/libwaola.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libwaoladi/libwaoladi.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libwaolane/libwaolane.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libwaolare/libwaolare.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libwaolasc/libwaolasc.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libwaolash/libwaolash.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libwaolast/libwaolast.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libwaolath/libwaolath.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libwaolava/libwaolava.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libwlog/libwlog.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:waolasht/waolasht.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:waoladit/waoladit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:waolavat/waolavat.xcodeproj">
+   </FileRef>
+</Workspace>

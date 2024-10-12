@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="WaolaG">
+	<requires lib="gtk" version="4.0" />
+	<template class="WaolagAboutDlg" parent="GtkWindow">
+		<property name="resizable">false</property>
+		<property name="default-width">640</property>
+		<property name="default-height">300</property>
+		<property name="modal">True</property>
+		<child type="titlebar">
+			<object class="GtkHeaderBar" id="header">
+				<child type="title">
+					<object class="GtkStackSwitcher" id="tabs">
+						<property name="stack">stack</property>
+					</object>
+				</child>
+			</object>
+		</child>
+		<child>
+			<object class="GtkBox" id="vboxOuter">
+				<property name="orientation">vertical</property>
+				<child>
+					<object class="GtkScrolledWindow">
+						<property name="margin-top">2</property>
+						<property name="margin-bottom">2</property>
+						<property name="margin-start">4</property>
+						<property name="margin-end">4</property>
+						<property name="has-frame">true</property>
+						<property name="hexpand">true</property>
+						<property name="vexpand">true</property>
+						<child>
+							<object class="GtkStack" id="stack">
+								<child>
+									<object class="GtkStackPage">
+										<property name="name">About</property>
+										<property name="title">About</property>
+										<property name="child">
+											<object class="GtkTextView" id="appealTextView">
+												<accessibility>
+													<property name="label">About</property>
+												</accessibility>
+												<property name="margin-top">2</property>
+												<property name="margin-bottom">2</property>
+												<property name="margin-start">4</property>
+												<property name="margin-end">4</property>
+												<property name="editable">false</property>
+												<property name="wrap-mode">word</property>
+												<property name="buffer">appealBuffer</property>
+											</object>
+										</property>
+									</object>
+								</child>
+								<child>
+									<object class="GtkStackPage">
+										<property name="name">Credits</property>
+										<property name="title">Credits</property>
+										<property name="child">
+											<object class="GtkTextView" id="creditsTextView">
+												<accessibility>
+													<property name="label">Credits</property>
+												</accessibility>
+												<property name="margin-top">2</property>
+												<property name="margin-bottom">2</property>
+												<property name="margin-start">4</property>
+												<property name="margin-end">4</property>
+												<property name="editable">false</property>
+												<property name="wrap-mode">word</property>
+												<property name="buffer">
+													<object class="GtkTextBuffer">
+														<property
+															name="text">Idea, architecture and implementation: egggor@gmail.com
+
+Icon set: TUNUHA.
+														</property>
+													</object>
+												</property>
+											</object>
+										</property>
+									</object>
+								</child>
+								<child>
+									<object class="GtkStackPage">
+										<property name="name">License</property>
+										<property name="title">License</property>
+										<property name="child">
+											<object class="GtkTextView">
+												<accessibility>
+													<property name="label">License</property>
+												</accessibility>
+												<property name="editable">false</property>
+												<property name="buffer">licenseBuffer</property>
+											</object>
+										</property>
+									</object>
+								</child>
+							</object>
+						</child>
+					</object>
+				</child>
+				<child>
+					<object class="GtkBox">
+						<property name="valign">end</property>
+						<property name="vexpand">false</property>
+						<property name="margin-top">8</property>
+						<property name="margin-bottom">8</property>
+						<property name="margin-start">8</property>
+						<property name="margin-end">8</property>
+						<child>
+							<object class="GtkButton">
+								<property name="margin-start">256</property>
+								<property name="margin-end">256</property>
+								<property name="hexpand">true</property>
+								<property name="label">Close</property>
+								<property name="action-name">dlg.cancel</property>
+							</object>
+						</child>
+					</object>
+				</child>
+			</object>
+		</child>
+	</template>
+	<object class="GtkTextBuffer" id="appealBuffer" />
+	<object class="GtkTextBuffer" id="licenseBuffer" />
+</interface>

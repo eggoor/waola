@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="WaolaWPF.Views.AboutView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ext="clr-namespace:WaolaWPF.Extensions"
+             xmlns:vm="clr-namespace:WaolaWPF.ViewModels"
+             d:DataContext="{d:DesignInstance Type=vm:AboutVm}"
+             mc:Ignorable="d"
+             d:DesignWidth="640"
+             d:DesignHeight="240">
+    <UserControl.Resources>
+        <ResourceDictionary Source="../Dictionaries/DictAboutStrings.xaml" />
+    </UserControl.Resources>
+    <Grid>
+        <TabControl>
+            <TabItem Header="{StaticResource KeywordAbout}">
+                <RichTextBox x:Name="About" Margin="4" IsReadOnly="True" IsDocumentEnabled="True">
+                    <FlowDocument>
+                        <Paragraph>
+                            <Run Text="{StaticResource AboutP11}" />
+                            <Hyperlink NavigateUri="https://en.wikipedia.org/wiki/Wake-on-LAN"
+                                       ext:HyperlinkExtensions.Command="{Binding CommandHyperlinkClick}">
+                                <Run Text="{StaticResource Wake-on-LAN}" />
+                            </Hyperlink>
+                            <Run Text="{StaticResource AboutP12}" />
+                            <Hyperlink NavigateUri="https://en.wikipedia.org/wiki/Address_Resolution_Protocol"
+                                       ext:HyperlinkExtensions.Command="{Binding CommandHyperlinkClick}">
+                                <Run Text="{StaticResource ARP}" />
+                            </Hyperlink>
+                            <Run Text="{StaticResource AboutP13}" />
+                        </Paragraph>
+                        <Paragraph>
+                            <Run Text="{StaticResource AboutP2}" />
+                        </Paragraph>
+                        <Paragraph>
+                            <Run Text="{StaticResource AboutP3}" />
+                        </Paragraph>
+                        <Paragraph>
+                            <Run Text="{StaticResource AboutP4}" />
+                            <Hyperlink NavigateUri="https://www.paypal.com"
+                                       ext:HyperlinkExtensions.Command="{Binding CommandHyperlinkClick}">
+                                <Run Text="{StaticResource PayPalEmail}" />
+                            </Hyperlink>
+                        </Paragraph>
+                    </FlowDocument>
+                    </RichTextBox>
+            </TabItem>
+            <TabItem Header="{StaticResource KeywordCredits}">
+                <RichTextBox x:Name="Credits" Margin="4" IsReadOnly="True" IsDocumentEnabled="True">
+                    <FlowDocument>
+                        <Paragraph>
+                            <Run Text="{StaticResource CreditsP1}" />
+                            <Hyperlink NavigateUri="mailto:egggor@gmail.com"
+                                       ext:HyperlinkExtensions.Command="{Binding CommandHyperlinkClick}">
+                                <Run Text="{StaticResource PayPalEmail}" />
+                            </Hyperlink>
+                        </Paragraph>
+                        <Paragraph>
+                            <Run Text="{StaticResource CreditsP2}" />
+                        </Paragraph>
+                    </FlowDocument>
+                </RichTextBox>
+            </TabItem>
+            <TabItem Header="{StaticResource KeywordLicense}">
+                <RichTextBox x:Name="LicenseRichTextBox" IsReadOnly="True"
+                             Loaded="OnLicenseRichTextBoxLoaded"
+                             VerticalScrollBarVisibility="Auto"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>
