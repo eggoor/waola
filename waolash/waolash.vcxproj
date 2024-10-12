@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c047d2cb-6764-45c0-af26-95f4fcb31bf7}</ProjectGuid>
+    <RootNamespace>waolash</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>waolash</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WAOLASHD_EXPORTS;_WINDOWS;_USRDLL;_DEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../libwlog/include;../libwaolash/include;./include</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>Ws2_32.lib;IPHLPAPI.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WAOLASHD_EXPORTS;_WINDOWS;_USRDLL;NDEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../libwlog/include;../libwaolash/include;./include</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>Ws2_32.lib;IPHLPAPI.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WAOLASHD_EXPORTS;_WINDOWS;_USRDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../libwlog/include;../libwaolash/include;./include</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>Ws2_32.lib;IPHLPAPI.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WAOLASHD_EXPORTS;_WINDOWS;_USRDLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../libwlog/include;../libwaolash/include;./include</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>Ws2_32.lib;IPHLPAPI.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="include\waoladi_fact4s_sh.h" />
+    <ClInclude Include="include\waoladi_fact4s_t.h" />
+    <ClInclude Include="include\waoladi_factory.h" />
+    <ClInclude Include="include\waoladi_opcode.h" />
+    <ClInclude Include="include\waoladi_sh.h" />
+    <ClInclude Include="include\waoladi_t.h" />
+    <ClInclude Include="include\waolane_fact4s_sh.h" />
+    <ClInclude Include="include\waolane_fact4s_t.h" />
+    <ClInclude Include="include\waolane_sh.h" />
+    <ClInclude Include="include\waolare_fact4s_sh.h" />
+    <ClInclude Include="include\waolare_factory.h" />
+    <ClInclude Include="include\waolare_opcode.h" />
+    <ClInclude Include="include\waolare_sh.h" />
+    <ClInclude Include="include\waolare_t.h" />
+    <ClInclude Include="include\waolasc_callback.h" />
+    <ClInclude Include="include\waolasc_factory.h" />
+    <ClInclude Include="include\waolasc_opcode.h" />
+    <ClInclude Include="include\waolasc_sh.h" />
+    <ClInclude Include="include\waolasc_t.h" />
+    <ClInclude Include="include\waolash.h" />
+    <ClInclude Include="include\waolash_exports.h" />
+    <ClInclude Include="include\waolash_exports_u.h" />
+    <ClInclude Include="include\waolash_exports_w.h" />
+    <ClInclude Include="include\waolash_t.h" />
+    <ClInclude Include="include\waolast_factory.h" />
+    <ClInclude Include="include\waolast_sh.h" />
+    <ClInclude Include="include\waolast_t.h" />
+    <ClInclude Include="include\waolath_fact4s_sh.h" />
+    <ClInclude Include="include\waolath_sh.h" />
+    <ClInclude Include="include\waolava_callback.h" />
+    <ClInclude Include="include\waolava_fact4s_sh.h" />
+    <ClInclude Include="include\waolava_factory.h" />
+    <ClInclude Include="include\waolava_merge_host_cbi_factory.h" />
+    <ClInclude Include="include\waolava_merge_host_cbi_t.h" />
+    <ClInclude Include="include\waolava_on_host_modified_cbi_factory.h" />
+    <ClInclude Include="include\waolava_on_host_modified_cbi_t.h" />
+    <ClInclude Include="include\waolava_opcode.h" />
+    <ClInclude Include="include\waolava_sh.h" />
+    <ClInclude Include="include\waolava_t.h" />
+    <ClInclude Include="include\warper_cb_data_t.h" />
+    <ClInclude Include="include\wasync_callback.h" />
+    <ClInclude Include="include\wcont4r.h" />
+    <ClInclude Include="include\waolash_fact4s_sh.h" />
+    <ClInclude Include="include\wcont4r_factory.h" />
+    <ClInclude Include="include\wcont4r_type.h" />
+    <ClInclude Include="include\wdefs.h" />
+    <ClInclude Include="include\wdiscoverer_host_factory.h" />
+    <ClInclude Include="include\wdiscoverer_iface_factory.h" />
+    <ClInclude Include="include\wdiscoverer_iface_monitor_factory.h" />
+    <ClInclude Include="include\wdiscoverer_net_factory.h" />
+    <ClInclude Include="include\wevent_factory.h" />
+    <ClInclude Include="include\wevent_t.h" />
+    <ClInclude Include="include\whost.h" />
+    <ClInclude Include="include\whost_changed_field.h" />
+    <ClInclude Include="include\whost_data.h" />
+    <ClInclude Include="include\whost_factory.h" />
+    <ClInclude Include="include\whost_field.h" />
+    <ClInclude Include="include\whost_op_result.h" />
+    <ClInclude Include="include\whost_view.h" />
+    <ClInclude Include="include\whost_view_factory.h" />
+    <ClInclude Include="include\wlist.h" />
+    <ClInclude Include="include\wmem.h" />
+    <ClInclude Include="include\wmodule.h" />
+    <ClInclude Include="include\wmutex_factory.h" />
+    <ClInclude Include="include\wmutex_t.h" />
+    <ClInclude Include="include\wnet_iface_factory.h" />
+    <ClInclude Include="include\wnet_iface_prov_factory.h" />
+    <ClInclude Include="include\wnet_iface_prov_t.h" />
+    <ClInclude Include="include\wnet_iface_t.h" />
+    <ClInclude Include="include\wresolver_hosts_factory.h" />
+    <ClInclude Include="include\wresolver_hosts_t.h" />
+    <ClInclude Include="include\wresolver_host_factory.h" />
+    <ClInclude Include="include\wresolver_host_t.h" />
+    <ClInclude Include="include\wsockaddr.h" />
+    <ClInclude Include="include\wstr.h" />
+    <ClInclude Include="include\wtask.h" />
+    <ClInclude Include="include\wthread_cbi_factory.h" />
+    <ClInclude Include="include\wthread_cbi_t.h" />
+    <ClInclude Include="include\wthread_counter_factory.h" />
+    <ClInclude Include="include\wthread_counter_t.h" />
+    <ClInclude Include="include\wthread_factory.h" />
+    <ClInclude Include="include\wthread_t.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="pch_w.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.c" />
+    <ClCompile Include="pch.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="wcont4r.c" />
+    <ClCompile Include="waolash_fact4s.c" />
+    <ClCompile Include="whost.c" />
+    <ClCompile Include="whost_data.c" />
+    <ClCompile Include="whost_view.c" />
+    <ClCompile Include="wlist.c" />
+    <ClCompile Include="wmem.c" />
+    <ClCompile Include="wsockaddr.c" />
+    <ClCompile Include="wstr.c" />
+    <ClCompile Include="wstr_w.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libwaolash\libwaolash.vcxproj">
+      <Project>{2680fb94-a7ba-4932-8113-570958578f99}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{077FB622-0B60-41DE-9FF3-96E035CA0F27}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{AA24ED48-265E-402E-A7FC-191A5CFF61BF}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{9E43C843-17DA-406D-BA6A-710A341A90C2}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{2184B03A-0DED-4BDF-889F-F14EBB7E2287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Factories">
+      <UniqueIdentifier>{0D4D7BE7-479B-4E8D-AC00-6F2485BAD78D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waoladi.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="pch_w.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wdiscoverer_net.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wdiscoverer_host.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wdiscoverer_iface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wdiscoverer_iface_monitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sysexits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="waoladi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="waoladi_fact4s.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wdiscoverer_iface_priv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wdiscoverer_net_priv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wdiscoverer_host_priv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waoladi_async_callback.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="wdiscoverer_net_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="waoladi_priv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wdiscoverer_net.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wdiscoverer_host.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wdiscoverer_iface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wdiscoverer_iface_monitor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wdiscoverer_host_factory.c">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="wdiscoverer_iface_factory.c">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="wdiscoverer_iface_monitor_factory.c">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="wdiscoverer_net_factory.c">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="waoladi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="waoladi_factory.c">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="wdiscoverer_iface_w.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="waoladi_fact4s.c">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="wdiscoverer_host_w.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

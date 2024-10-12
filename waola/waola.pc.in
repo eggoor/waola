@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: waola
+Description: Wake on LAN library
+Version: @VERSION@
+Requires: waolash-@WAOLASH_VERSION@
+Libs: -L${libdir} -lwaola
+Cflags: -I${includedir}/waola

@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:system="clr-namespace:System;assembly=netstandard">
+    <system:String x:Key="KeywordAppName">Waola</system:String>
+    <system:String x:Key="ToolTipWakeUp">Wake up selected host(s)</system:String>
+    <system:String x:Key="ToolTipRescan">Rescan network</system:String>
+    <system:String x:Key="ToolTipRefresh">Refresh all hosts</system:String>
+    <system:String x:Key="ToolTipAdd">Add new host</system:String>
+    <system:String x:Key="ToolTipCopy">Copy host(s)</system:String>
+    <system:String x:Key="ToolTipEdit">Edit host</system:String>
+    <system:String x:Key="ToolTipDelete">Delete host(s)</system:String>
+    <system:String x:Key="ToolTipAbout">About Waola</system:String>
+</ResourceDictionary>

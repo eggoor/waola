@@ -1,0 +1,199 @@
+{
+    "tasks": [
+        {
+            "label": "Start gdbserver@WaolaG",
+            "type": "process",
+            "command": "sudo",
+            "args": [
+                "gdbserver", "--once", "localhost:1234",
+                "${workspaceFolder}/debug/WaolaG/waolag"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/debug"
+            },
+            "dependsOn": ["${defaultBuildTask}"],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "isBackground": true,
+            "problemMatcher": {
+                "pattern": [
+                    {
+                        "regexp": ".",
+                        "file": 1,
+                        "location": 2,
+                        "message": 3
+                    }
+                ],
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "^.*Process*",
+                    "endsPattern": "^.*Listening*"
+                }
+            }
+        },
+        {
+            "label": "Start gdbserver@waolac",
+            "type": "process",
+            "command": "sudo",
+            "args": [
+                "gdbserver", "--once", "localhost:1235",
+                "${workspaceFolder}/debug/waolac/waolac"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/debug"
+            },
+            "dependsOn": ["${defaultBuildTask}"],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "isBackground": true,
+            "problemMatcher": {
+                "pattern": [
+                    {
+                        "regexp": ".",
+                        "file": 1,
+                        "location": 2,
+                        "message": 3
+                    }
+                ],
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "^.*Process*",
+                    "endsPattern": "^.*Listening*"
+                }
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Do build with gcc",
+            "command": "make",
+            "options": {
+                "cwd": "${workspaceFolder}/debug",
+                "env": {
+                    "GSETTINGS_SCHEMA_DIR":"/var/tmp/dbg/share/glib-2.0/schemas"
+                }
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "Launches make in debug directory.",
+           
+        },
+        {
+            "label": "Do rebuild with gcc",
+            "type": "shell",
+            "command": "./build_debug.sh",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "aclocal, autoconf, automake, configure and make with gcc in debug directory."
+        },
+        {
+            "label": "Do build release",
+            "type": "shell",
+            "command": "./build.sh",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "aclocal, autoconf, automake, configure and make with gcc in release directory."
+        },
+        {
+            "type": "shell",
+            "label": "Set executables capabilities",
+            "command": "for exe in waolac/waolac WaolaG/waolag; do sudo setcap cap_net_raw=eip $exe; done",
+            "options": {
+                "cwd": "${workspaceFolder}/debug"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "Sets debug executables capabilities"
+        },
+        {
+            "type": "shell",
+            "label": "Set release executables capabilities",
+            "command": "for exe in waolac/waolac WaolaG/waolag; do sudo setcap cap_net_raw=eip $exe; done",
+            "options": {
+                "cwd": "${workspaceFolder}/release"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "Sets release executables capabilities"
+        },
+        {
+            "label": "Build with gcc",
+            "type": "shell",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Do build with gcc",
+                "Set executables capabilities"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Rebuild with gcc",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Do rebuild with gcc",
+                "Set executables capabilities"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Build release with gcc",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Do build release",
+                "Set release executables capabilities"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+    ],
+    "version": "2.0.0"
+}

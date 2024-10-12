@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA194BC92CA419FB00B8AFD6 /* HostChangedField.h in Headers */ = {isa = PBXBuildFile; fileRef = CA194BC82CA419FB00B8AFD6 /* HostChangedField.h */; };
+		CA83F7342C92C6A4001FC565 /* IScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7252C92C6A4001FC565 /* IScanner.h */; };
+		CA83F7352C92C6A4001FC565 /* OpResult.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7262C92C6A4001FC565 /* OpResult.h */; };
+		CA83F7362C92C6A4001FC565 /* Module.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7272C92C6A4001FC565 /* Module.h */; };
+		CA83F7372C92C6A4001FC565 /* StateEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7282C92C6A4001FC565 /* StateEvent.h */; };
+		CA83F7392C92C6A4001FC565 /* LogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F72A2C92C6A4001FC565 /* LogLevel.h */; };
+		CA83F73A2C92C6A4001FC565 /* Task.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F72B2C92C6A4001FC565 /* Task.h */; };
+		CA83F73B2C92C6A4001FC565 /* IHostView.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F72C2C92C6A4001FC565 /* IHostView.h */; };
+		CA83F73C2C92C6A4001FC565 /* IWaola.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F72D2C92C6A4001FC565 /* IWaola.h */; };
+		CA83F73D2C92C6A4001FC565 /* WaolaPlusPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F72E2C92C6A4001FC565 /* WaolaPlusPlus.h */; };
+		CA83F73E2C92C6A4001FC565 /* VaultOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F72F2C92C6A4001FC565 /* VaultOperation.h */; };
+		CA83F73F2C92C6A4001FC565 /* HostData.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7302C92C6A4001FC565 /* HostData.h */; };
+		CA83F7402C92C6A4001FC565 /* HostField.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7312C92C6A4001FC565 /* HostField.h */; };
+		CA83F7412C92C6A4001FC565 /* VaultEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7322C92C6A4001FC565 /* VaultEvent.h */; };
+		CA83F7502C92C6C6001FC565 /* StateEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F7422C92C6C5001FC565 /* StateEvent.cpp */; };
+		CA83F7512C92C6C6001FC565 /* pch_u.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7432C92C6C5001FC565 /* pch_u.h */; };
+		CA83F7522C92C6C6001FC565 /* Waola.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7442C92C6C5001FC565 /* Waola.h */; };
+		CA83F7532C92C6C6001FC565 /* VaultEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F7452C92C6C5001FC565 /* VaultEvent.cpp */; };
+		CA83F7542C92C6C6001FC565 /* Observer.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7462C92C6C5001FC565 /* Observer.h */; };
+		CA83F7552C92C6C6001FC565 /* HostView.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7472C92C6C5001FC565 /* HostView.h */; };
+		CA83F7572C92C6C6001FC565 /* pch.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7492C92C6C5001FC565 /* pch.h */; };
+		CA83F7582C92C6C6001FC565 /* Scanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F74A2C92C6C5001FC565 /* Scanner.cpp */; };
+		CA83F7592C92C6C6001FC565 /* HostData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F74B2C92C6C5001FC565 /* HostData.cpp */; };
+		CA83F75A2C92C6C6001FC565 /* pch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F74C2C92C6C6001FC565 /* pch.cpp */; };
+		CA83F75B2C92C6C6001FC565 /* Scanner.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F74D2C92C6C6001FC565 /* Scanner.h */; };
+		CA83F75C2C92C6C6001FC565 /* HostView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F74E2C92C6C6001FC565 /* HostView.cpp */; };
+		CA83F75D2C92C6C6001FC565 /* Waola.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F74F2C92C6C6001FC565 /* Waola.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA194BC82CA419FB00B8AFD6 /* HostChangedField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HostChangedField.h; sourceTree = "<group>"; };
+		CA83F71C2C92C5E5001FC565 /* libWaola++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libWaola++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA83F7252C92C6A4001FC565 /* IScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IScanner.h; sourceTree = "<group>"; };
+		CA83F7262C92C6A4001FC565 /* OpResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpResult.h; sourceTree = "<group>"; };
+		CA83F7272C92C6A4001FC565 /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
+		CA83F7282C92C6A4001FC565 /* StateEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateEvent.h; sourceTree = "<group>"; };
+		CA83F72A2C92C6A4001FC565 /* LogLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogLevel.h; sourceTree = "<group>"; };
+		CA83F72B2C92C6A4001FC565 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		CA83F72C2C92C6A4001FC565 /* IHostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHostView.h; sourceTree = "<group>"; };
+		CA83F72D2C92C6A4001FC565 /* IWaola.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWaola.h; sourceTree = "<group>"; };
+		CA83F72E2C92C6A4001FC565 /* WaolaPlusPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaolaPlusPlus.h; sourceTree = "<group>"; };
+		CA83F72F2C92C6A4001FC565 /* VaultOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VaultOperation.h; sourceTree = "<group>"; };
+		CA83F7302C92C6A4001FC565 /* HostData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostData.h; sourceTree = "<group>"; };
+		CA83F7312C92C6A4001FC565 /* HostField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostField.h; sourceTree = "<group>"; };
+		CA83F7322C92C6A4001FC565 /* VaultEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VaultEvent.h; sourceTree = "<group>"; };
+		CA83F7422C92C6C5001FC565 /* StateEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateEvent.cpp; sourceTree = "<group>"; };
+		CA83F7432C92C6C5001FC565 /* pch_u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pch_u.h; sourceTree = "<group>"; };
+		CA83F7442C92C6C5001FC565 /* Waola.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Waola.h; sourceTree = "<group>"; };
+		CA83F7452C92C6C5001FC565 /* VaultEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VaultEvent.cpp; sourceTree = "<group>"; };
+		CA83F7462C92C6C5001FC565 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		CA83F7472C92C6C5001FC565 /* HostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostView.h; sourceTree = "<group>"; };
+		CA83F7492C92C6C5001FC565 /* pch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pch.h; sourceTree = "<group>"; };
+		CA83F74A2C92C6C5001FC565 /* Scanner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scanner.cpp; sourceTree = "<group>"; };
+		CA83F74B2C92C6C5001FC565 /* HostData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HostData.cpp; sourceTree = "<group>"; };
+		CA83F74C2C92C6C6001FC565 /* pch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pch.cpp; sourceTree = "<group>"; };
+		CA83F74D2C92C6C6001FC565 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		CA83F74E2C92C6C6001FC565 /* HostView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HostView.cpp; sourceTree = "<group>"; };
+		CA83F74F2C92C6C6001FC565 /* Waola.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Waola.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA83F71A2C92C5E5001FC565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA83F7132C92C5E5001FC565 = {
+			isa = PBXGroup;
+			children = (
+				CA83F7232C92C5F1001FC565 /* include */,
+				CA83F74B2C92C6C5001FC565 /* HostData.cpp */,
+				CA83F74E2C92C6C6001FC565 /* HostView.cpp */,
+				CA83F7472C92C6C5001FC565 /* HostView.h */,
+				CA83F7462C92C6C5001FC565 /* Observer.h */,
+				CA83F7432C92C6C5001FC565 /* pch_u.h */,
+				CA83F74C2C92C6C6001FC565 /* pch.cpp */,
+				CA83F7492C92C6C5001FC565 /* pch.h */,
+				CA83F74A2C92C6C5001FC565 /* Scanner.cpp */,
+				CA83F74D2C92C6C6001FC565 /* Scanner.h */,
+				CA83F7422C92C6C5001FC565 /* StateEvent.cpp */,
+				CA83F7452C92C6C5001FC565 /* VaultEvent.cpp */,
+				CA83F74F2C92C6C6001FC565 /* Waola.cpp */,
+				CA83F7442C92C6C5001FC565 /* Waola.h */,
+				CA83F71D2C92C5E5001FC565 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA83F71D2C92C5E5001FC565 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA83F71C2C92C5E5001FC565 /* libWaola++.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA83F7232C92C5F1001FC565 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CA194BC82CA419FB00B8AFD6 /* HostChangedField.h */,
+				CA83F7302C92C6A4001FC565 /* HostData.h */,
+				CA83F7312C92C6A4001FC565 /* HostField.h */,
+				CA83F72C2C92C6A4001FC565 /* IHostView.h */,
+				CA83F7252C92C6A4001FC565 /* IScanner.h */,
+				CA83F72D2C92C6A4001FC565 /* IWaola.h */,
+				CA83F72A2C92C6A4001FC565 /* LogLevel.h */,
+				CA83F7272C92C6A4001FC565 /* Module.h */,
+				CA83F7262C92C6A4001FC565 /* OpResult.h */,
+				CA83F7282C92C6A4001FC565 /* StateEvent.h */,
+				CA83F72B2C92C6A4001FC565 /* Task.h */,
+				CA83F7322C92C6A4001FC565 /* VaultEvent.h */,
+				CA83F72F2C92C6A4001FC565 /* VaultOperation.h */,
+				CA83F72E2C92C6A4001FC565 /* WaolaPlusPlus.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CA83F7182C92C5E5001FC565 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA194BC92CA419FB00B8AFD6 /* HostChangedField.h in Headers */,
+				CA83F7362C92C6A4001FC565 /* Module.h in Headers */,
+				CA83F73B2C92C6A4001FC565 /* IHostView.h in Headers */,
+				CA83F7392C92C6A4001FC565 /* LogLevel.h in Headers */,
+				CA83F73E2C92C6A4001FC565 /* VaultOperation.h in Headers */,
+				CA83F7552C92C6C6001FC565 /* HostView.h in Headers */,
+				CA83F7372C92C6A4001FC565 /* StateEvent.h in Headers */,
+				CA83F73D2C92C6A4001FC565 /* WaolaPlusPlus.h in Headers */,
+				CA83F73C2C92C6A4001FC565 /* IWaola.h in Headers */,
+				CA83F75B2C92C6C6001FC565 /* Scanner.h in Headers */,
+				CA83F7542C92C6C6001FC565 /* Observer.h in Headers */,
+				CA83F7412C92C6A4001FC565 /* VaultEvent.h in Headers */,
+				CA83F7352C92C6A4001FC565 /* OpResult.h in Headers */,
+				CA83F73F2C92C6A4001FC565 /* HostData.h in Headers */,
+				CA83F7512C92C6C6001FC565 /* pch_u.h in Headers */,
+				CA83F7522C92C6C6001FC565 /* Waola.h in Headers */,
+				CA83F7402C92C6A4001FC565 /* HostField.h in Headers */,
+				CA83F7342C92C6A4001FC565 /* IScanner.h in Headers */,
+				CA83F7572C92C6C6001FC565 /* pch.h in Headers */,
+				CA83F73A2C92C6A4001FC565 /* Task.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CA83F71B2C92C5E5001FC565 /* Waola++ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA83F7202C92C5E5001FC565 /* Build configuration list for PBXNativeTarget "Waola++" */;
+			buildPhases = (
+				CA83F7182C92C5E5001FC565 /* Headers */,
+				CA83F7192C92C5E5001FC565 /* Sources */,
+				CA83F71A2C92C5E5001FC565 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Waola++";
+			productName = "Waola++";
+			productReference = CA83F71C2C92C5E5001FC565 /* libWaola++.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA83F7142C92C5E5001FC565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CA83F71B2C92C5E5001FC565 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = CA83F7172C92C5E5001FC565 /* Build configuration list for PBXProject "Waola++" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA83F7132C92C5E5001FC565;
+			productRefGroup = CA83F71D2C92C5E5001FC565 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA83F71B2C92C5E5001FC565 /* Waola++ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA83F7192C92C5E5001FC565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA83F75C2C92C6C6001FC565 /* HostView.cpp in Sources */,
+				CA83F7592C92C6C6001FC565 /* HostData.cpp in Sources */,
+				CA83F7502C92C6C6001FC565 /* StateEvent.cpp in Sources */,
+				CA83F75A2C92C6C6001FC565 /* pch.cpp in Sources */,
+				CA83F7582C92C6C6001FC565 /* Scanner.cpp in Sources */,
+				CA83F75D2C92C6C6001FC565 /* Waola.cpp in Sources */,
+				CA83F7532C92C6C6001FC565 /* VaultEvent.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA83F71E2C92C5E5001FC565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CA83F71F2C92C5E5001FC565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch.h;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CA83F7212C92C5E5001FC565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = NXSUYYT36N;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../libwlog/include,
+					../waolash/include,
+					../libwaolava/include,
+					../libwaolast/include,
+					../waolasc/include,
+					../waola/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CA83F7222C92C5E5001FC565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = NXSUYYT36N;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../libwlog/include,
+					../waolash/include,
+					../libwaolava/include,
+					../libwaolast/include,
+					../waolasc/include,
+					../waola/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA83F7172C92C5E5001FC565 /* Build configuration list for PBXProject "Waola++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA83F71E2C92C5E5001FC565 /* Debug */,
+				CA83F71F2C92C5E5001FC565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA83F7202C92C5E5001FC565 /* Build configuration list for PBXNativeTarget "Waola++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA83F7212C92C5E5001FC565 /* Debug */,
+				CA83F7222C92C5E5001FC565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA83F7142C92C5E5001FC565 /* Project object */;
+}

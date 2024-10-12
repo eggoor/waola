@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA1AC6AC2CB14F0E007700B5 /* wcont4r.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1AC69D2CB14F0E007700B5 /* wcont4r.c */; };
+		CA1AC6AD2CB14F0E007700B5 /* whost_view.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1AC6A12CB14F0E007700B5 /* whost_view.c */; };
+		CA1AC6AE2CB14F0E007700B5 /* wmac_addr.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1AC6A52CB14F0E007700B5 /* wmac_addr.c */; };
+		CA1AC6AF2CB14F0E007700B5 /* wlist.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1AC6A32CB14F0E007700B5 /* wlist.c */; };
+		CA1AC6B12CB14F0E007700B5 /* pch.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1AC69A2CB14F0E007700B5 /* pch.c */; };
+		CA1AC6B32CB14F0E007700B5 /* whost.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1AC69F2CB14F0E007700B5 /* whost.c */; };
+		CA1AC6B42CB14F0E007700B5 /* wsockaddr.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1AC6AB2CB14F0E007700B5 /* wsockaddr.c */; };
+		CA1E77802CB15569009D93ED /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1E777F2CB15569009D93ED /* main.c */; };
+		CA1E77872CB155A8009D93ED /* liblibwaolash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1E77862CB155A8009D93ED /* liblibwaolash.a */; };
+		CA1E77892CB155B5009D93ED /* liblibwlog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1E77882CB155B5009D93ED /* liblibwlog.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA351A442CB14B6E006AE1AB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA1AC6992CB14F0E007700B5 /* pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pch.h; sourceTree = "<group>"; };
+		CA1AC69A2CB14F0E007700B5 /* pch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pch.c; sourceTree = "<group>"; };
+		CA1AC69B2CB14F0E007700B5 /* pch_u.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pch_u.h; sourceTree = "<group>"; };
+		CA1AC69C2CB14F0E007700B5 /* wcont4r.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wcont4r.h; sourceTree = "<group>"; };
+		CA1AC69D2CB14F0E007700B5 /* wcont4r.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wcont4r.c; sourceTree = "<group>"; };
+		CA1AC69E2CB14F0E007700B5 /* whost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whost.h; sourceTree = "<group>"; };
+		CA1AC69F2CB14F0E007700B5 /* whost.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = whost.c; sourceTree = "<group>"; };
+		CA1AC6A02CB14F0E007700B5 /* whost_view.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whost_view.h; sourceTree = "<group>"; };
+		CA1AC6A12CB14F0E007700B5 /* whost_view.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = whost_view.c; sourceTree = "<group>"; };
+		CA1AC6A22CB14F0E007700B5 /* wlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wlist.h; sourceTree = "<group>"; };
+		CA1AC6A32CB14F0E007700B5 /* wlist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wlist.c; sourceTree = "<group>"; };
+		CA1AC6A42CB14F0E007700B5 /* wmac_addr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wmac_addr.h; sourceTree = "<group>"; };
+		CA1AC6A52CB14F0E007700B5 /* wmac_addr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wmac_addr.c; sourceTree = "<group>"; };
+		CA1AC6AA2CB14F0E007700B5 /* wsockaddr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wsockaddr.h; sourceTree = "<group>"; };
+		CA1AC6AB2CB14F0E007700B5 /* wsockaddr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wsockaddr.c; sourceTree = "<group>"; };
+		CA1E777F2CB15569009D93ED /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CA1E77862CB155A8009D93ED /* liblibwaolash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibwaolash.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1E77882CB155B5009D93ED /* liblibwlog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibwlog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA351A462CB14B6E006AE1AB /* waolasht */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = waolasht; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA351A432CB14B6E006AE1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1E77892CB155B5009D93ED /* liblibwlog.a in Frameworks */,
+				CA1E77872CB155A8009D93ED /* liblibwaolash.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA1E77852CB155A8009D93ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA1E77882CB155B5009D93ED /* liblibwlog.a */,
+				CA1E77862CB155A8009D93ED /* liblibwaolash.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA351A3D2CB14B6E006AE1AB = {
+			isa = PBXGroup;
+			children = (
+				CA1E777F2CB15569009D93ED /* main.c */,
+				CA1AC6992CB14F0E007700B5 /* pch.h */,
+				CA1AC69A2CB14F0E007700B5 /* pch.c */,
+				CA1AC69B2CB14F0E007700B5 /* pch_u.h */,
+				CA1AC69C2CB14F0E007700B5 /* wcont4r.h */,
+				CA1AC69D2CB14F0E007700B5 /* wcont4r.c */,
+				CA1AC69E2CB14F0E007700B5 /* whost.h */,
+				CA1AC69F2CB14F0E007700B5 /* whost.c */,
+				CA1AC6A02CB14F0E007700B5 /* whost_view.h */,
+				CA1AC6A12CB14F0E007700B5 /* whost_view.c */,
+				CA1AC6A22CB14F0E007700B5 /* wlist.h */,
+				CA1AC6A32CB14F0E007700B5 /* wlist.c */,
+				CA1AC6A42CB14F0E007700B5 /* wmac_addr.h */,
+				CA1AC6A52CB14F0E007700B5 /* wmac_addr.c */,
+				CA1AC6AA2CB14F0E007700B5 /* wsockaddr.h */,
+				CA1AC6AB2CB14F0E007700B5 /* wsockaddr.c */,
+				CA1E77852CB155A8009D93ED /* Frameworks */,
+				CA351A472CB14B6E006AE1AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA351A472CB14B6E006AE1AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA351A462CB14B6E006AE1AB /* waolasht */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA351A452CB14B6E006AE1AB /* waolasht */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA351A4D2CB14B6E006AE1AB /* Build configuration list for PBXNativeTarget "waolasht" */;
+			buildPhases = (
+				CA351A422CB14B6E006AE1AB /* Sources */,
+				CA351A432CB14B6E006AE1AB /* Frameworks */,
+				CA351A442CB14B6E006AE1AB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = waolasht;
+			productName = waolasht;
+			productReference = CA351A462CB14B6E006AE1AB /* waolasht */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA351A3E2CB14B6E006AE1AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CA351A452CB14B6E006AE1AB = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = CA351A412CB14B6E006AE1AB /* Build configuration list for PBXProject "waolasht" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA351A3D2CB14B6E006AE1AB;
+			productRefGroup = CA351A472CB14B6E006AE1AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA351A452CB14B6E006AE1AB /* waolasht */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA351A422CB14B6E006AE1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1E77802CB15569009D93ED /* main.c in Sources */,
+				CA1AC6AC2CB14F0E007700B5 /* wcont4r.c in Sources */,
+				CA1AC6AD2CB14F0E007700B5 /* whost_view.c in Sources */,
+				CA1AC6AE2CB14F0E007700B5 /* wmac_addr.c in Sources */,
+				CA1AC6AF2CB14F0E007700B5 /* wlist.c in Sources */,
+				CA1AC6B12CB14F0E007700B5 /* pch.c in Sources */,
+				CA1AC6B32CB14F0E007700B5 /* whost.c in Sources */,
+				CA1AC6B42CB14F0E007700B5 /* wsockaddr.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA351A4B2CB14B6E006AE1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../libwlog/include,
+					../libwaolash/include,
+					../waolash/include,
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CA351A4C2CB14B6E006AE1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch.h;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../libwlog/include,
+					../libwaolash/include,
+					../waolash/include,
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CA351A4E2CB14B6E006AE1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CA351A4F2CB14B6E006AE1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA351A412CB14B6E006AE1AB /* Build configuration list for PBXProject "waolasht" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA351A4B2CB14B6E006AE1AB /* Debug */,
+				CA351A4C2CB14B6E006AE1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA351A4D2CB14B6E006AE1AB /* Build configuration list for PBXNativeTarget "waolasht" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA351A4E2CB14B6E006AE1AB /* Debug */,
+				CA351A4F2CB14B6E006AE1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA351A3E2CB14B6E006AE1AB /* Project object */;
+}

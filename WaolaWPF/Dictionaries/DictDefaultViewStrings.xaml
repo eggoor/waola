@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:system="clr-namespace:System;assembly=netstandard">
+    <system:String x:Key="KeywordDisplayName">Friendly name</system:String>
+    <system:String x:Key="KeywordHostName">Host name</system:String>
+    <system:String x:Key="KeywordIpAddress">IP address</system:String>
+    <system:String x:Key="KeywordMacAddress">MAC address</system:String>
+    <system:String x:Key="KeywordLastSeenOnline">Last seen online</system:String>
+    <system:String x:Key="KeywordWakeUpResult">Wakeup result</system:String>
+    <system:String x:Key="KeywordCancel">Cancel</system:String>
+    <system:String x:Key="KeywordSave">Save</system:String>
+    <system:String x:Key="KeywordWakeup">Wake up!</system:String>
+    <system:String x:Key="KeywordCopy">Copy</system:String>
+    <system:String x:Key="KeywordEdit">Edit</system:String>
+    <system:String x:Key="KeywordDelete">Delete</system:String>
+</ResourceDictionary>

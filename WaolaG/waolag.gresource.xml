@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/asuscomm/smartnclever/WaolaG/">
+    <file preprocess="xml-stripblanks" compressed="true">main_wnd.ui</file>
+    <file preprocess="xml-stripblanks" compressed="true">about_dlg.ui</file>
+    <file preprocess="xml-stripblanks" compressed="true">host_dlg.ui</file>
+    <file compressed="true">../APPEAL.txt</file>
+    <file compressed="true">../LICENSE.txt</file>
+  </gresource>
+</gresources>

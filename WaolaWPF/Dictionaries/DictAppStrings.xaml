@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:system="clr-namespace:System;assembly=netstandard">
+    <system:String x:Key="StatusError">Something went wrong</system:String>
+    <system:String x:Key="StatusScannerIdle">Idle</system:String>
+    <system:String x:Key="StatusScannerDiscovering">Discovering</system:String>
+    <system:String x:Key="StatusScannerResolving">Resolving</system:String>
+    <system:String x:Key="StatusScannerCancelling">Cancelling</system:String>
+    <system:String x:Key="StatusResolverGetAddrInfoFormat">Resolving '{0}'</system:String>
+    <system:String x:Key="StatusResolverGotAddrInfoFormat">Resolved {0}</system:String>
+    <system:String x:Key="StatusResolverGetAddrInfoFailedFormat">Failed to resolve '{0}'</system:String>
+    <system:String x:Key="StatusResolverGetNameInfoFormat">Resolving {0}</system:String>
+    <system:String x:Key="StatusResolverGotNameInfoFormat">Resolved '{0}'</system:String>
+    <system:String x:Key="StatusResolverGetNameInfoFailedFormat">Failed to resolve {0}</system:String>
+    <system:String x:Key="StatusSchedulingArp">Scheduling connection to {0}</system:String>
+    <system:String x:Key="StatusSendingArp">Trying to connect to {0}</system:String>
+    <system:String x:Key="StatusGotArp">{0} connected</system:String>
+    <system:String x:Key="StatusArpFailed">Failed to connect to {0}</system:String>
+    <system:String x:Key="KeywordAddHost">Add new host</system:String>
+    <system:String x:Key="KeywordEditHost">Edit host</system:String>
+    <system:String x:Key="KeywordSuccess">Success</system:String>
+    <system:String x:Key="KeywordFail">Fail</system:String>
+    <system:String x:Key="DeleteSeveralHostsConfirmation">Delete selected hosts?</system:String>
+    <system:String x:Key="DeleteHostConfirmationFormat">Delete '{0}'?</system:String>
+    <system:String x:Key="KeywordShure">Shure</system:String>
+</ResourceDictionary>

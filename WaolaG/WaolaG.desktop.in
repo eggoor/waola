@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=WaolaG
+Comment=Wake on LAN utility
+Icon=Waola
+StartupNotify=false
+Exec=waolag
+TryExec=waolag
+Categories=Network;Utilities;

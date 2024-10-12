@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="WaolaG">
+    <requires lib="gtk" version="4.0"/>
+    <template class="WaolagMainWnd" parent="GtkApplicationWindow">
+        <property name="title">Waola</property>
+        <property name="default-width">720</property>
+        <property name="default-height">480</property>
+        <child type="titlebar">
+            <object class="GtkHeaderBar" id="headerBar">
+                <child type="end">
+                    <object class="GtkMenuButton" id="gears">
+                        <property name="icon-name">open-menu-symbolic</property>
+                        <property name="menu-model">mainMenu</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox" id="vboxOuter">
+                <property name="orientation">vertical</property>
+                <child>
+                    <object class="GtkBox" id="vboxInner">
+                        <child>
+                            <object class="GtkBox" id="leftBar">
+                                <property name="accessible-role">toolbar</property>
+                                <property name="css-classes">toolbar</property>
+                                <property name="orientation">vertical</property>
+                                <accessibility>
+                                    <property name="label">Toolbar</property>
+                                </accessibility>
+                                <child>
+                                    <object class="GtkButton">
+                                        <property name="label" translatable="yes">Wake up</property>
+                                        <property name="tooltip-text" translatable="yes">Wake up selected host(s)</property>
+                                        <property name="icon-name">alarm-symbolic</property>
+                                        <property name="action-name">win.wakeup</property>
+                                    </object>
+                                </child>
+                                <child>
+                                    <object class="GtkSeparator"/>
+                                </child>
+                                <child>
+                                    <object class="GtkButton">
+                                        <property name="label" translatable="yes">Scan</property>
+                                        <property name="tooltip-text" translatable="yes">Scan network</property>
+                                        <property name="icon-name">edit-find-symbolic</property>
+                                        <property name="action-name">win.scan</property>
+                                    </object>
+                                </child>
+                                <child>
+                                    <object class="GtkButton">
+                                        <property name="label" translatable="yes">Refresh</property>
+                                        <property name="tooltip-text" translatable="yes">Refresh known hosts</property>
+                                        <property name="icon-name">view-refresh-symbolic</property>
+                                        <property name="action-name">win.refresh</property>
+                                    </object>
+                                </child>
+                                <child>
+                                    <object class="GtkSeparator"/>
+                                </child>
+                                <child>
+                                    <object class="GtkButton">
+                                        <property name="label" translatable="yes">Copy</property>
+                                        <property name="tooltip-text" translatable="yes">Copy selected host(s) to the clipboard</property>
+                                        <property name="icon-name">edit-copy-symbolic</property>
+                                        <property name="action-name">win.copy</property>
+                                    </object>
+                                </child>
+                                <child>
+                                    <object class="GtkSeparator"/>
+                                </child>
+                                <child>
+                                    <object class="GtkButton">
+                                        <property name="label" translatable="yes">Add new</property>
+                                        <property name="tooltip-text" translatable="yes">Manually add new host</property>
+                                        <property name="icon-name">document-new-symbolic</property>
+                                        <property name="action-name">win.add</property>
+                                    </object>
+                                </child>
+                                <child>
+                                    <object class="GtkButton">
+                                        <property name="label" translatable="yes">Edit</property>
+                                        <property name="tooltip-text" translatable="yes">Edit selected host</property>
+                                        <property name="icon-name">document-edit-symbolic</property>
+                                        <property name="action-name">win.edit</property>
+                                    </object>
+                                </child>
+                                <child>
+                                    <object class="GtkButton">
+                                        <property name="label" translatable="yes">Delete</property>
+                                        <property name="tooltip-text" translatable="yes">Delete selected host(s)</property>
+                                        <property name="icon-name">edit-delete-symbolic</property>
+                                        <property name="action-name">win.delete</property>
+                                    </object>
+                                </child>
+                                <child>
+                                    <object class="GtkSeparator"/>
+                                </child>
+                                <child>
+                                    <object class="GtkButton">
+                                        <property name="label" translatable="yes">About Waola</property>
+                                        <property name="tooltip-text" translatable="yes">About Waola</property>
+                                        <property name="icon-name">dialog-question-symbolic</property>
+                                        <property name="action-name">app.about</property>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkScrolledWindow" id="scrolledwindow">
+                                <property name="has-frame">1</property>
+                                <property name="hexpand">1</property>
+                                <property name="vexpand">1</property>
+                                <child>
+                                    <object class="GtkColumnView" id="columnView">
+                                        <property name="model">
+                                            <object class="GtkMultiSelection">
+                                                <property name="model">
+                                                    <object class="GListStore" id="hostStore"/>
+                                                </property>
+                                            </object>
+                                        </property>
+                                        <signal name="activate" handler="on_row_activated" object="WaolagMainWnd" swapped="no"/>
+                                        <child>
+                                            <object class="GtkColumnViewColumn">
+                                                <property name="title">Friendly name</property>
+                                                <property name="factory">
+                                                    <object class="GtkBuilderListItemFactory">
+                                                        <property name="bytes"><![CDATA[
+                                                            <?xml version="1.0" encoding="UTF-8"?>
+                                                            <interface>
+                                                                <template class="GtkListItem">
+                                                                    <property name="child">
+                                                                        <object class="GtkLabel">
+                                                                            <property name="hexpand">TRUE</property>
+                                                                            <property name="xalign">0.0</property>
+                                                                            <property name="ellipsize">middle</property>
+                                                                            <binding name="label">
+                                                                                <lookup name="DisplayName" type="WaolagHost">
+                                                                                    <lookup name="item">GtkListItem</lookup>
+                                                                                </lookup>
+                                                                            </binding>
+                                                                        </object>
+                                                                    </property>
+                                                                </template>
+                                                            </interface>
+                                                            ]]></property>
+                                                    </object>
+                                                </property>
+                                            </object>
+                                        </child>
+                                        <child>
+                                            <object class="GtkColumnViewColumn">
+                                                <property name="title">Hostname</property>
+                                                <property name="factory">
+                                                    <object class="GtkBuilderListItemFactory">
+                                                        <property name="bytes"><![CDATA[
+                                                            <?xml version="1.0" encoding="UTF-8"?>
+                                                            <interface>
+                                                                <template class="GtkListItem">
+                                                                    <property name="child">
+                                                                        <object class="GtkLabel">
+                                                                            <property name="hexpand">TRUE</property>
+                                                                            <property name="xalign">0.0</property>
+                                                                            <property name="ellipsize">middle</property>
+                                                                            <binding name="label">
+                                                                                <lookup name="Hostname" type="WaolagHost">
+                                                                                    <lookup name="item">GtkListItem</lookup>
+                                                                                </lookup>
+                                                                            </binding>
+                                                                        </object>
+                                                                    </property>
+                                                                </template>
+                                                            </interface>
+                                                            ]]></property>
+                                                    </object>
+                                                </property>
+                                            </object>
+                                        </child>
+                                        <child>
+                                            <object class="GtkColumnViewColumn">
+                                                <property name="title">IP address</property>
+                                                <property name="factory">
+                                                    <object class="GtkBuilderListItemFactory">
+                                                        <property name="bytes"><![CDATA[
+                                                            <?xml version="1.0" encoding="UTF-8"?>
+                                                            <interface>
+                                                                <template class="GtkListItem">
+                                                                    <property name="child">
+                                                                        <object class="GtkLabel">
+                                                                            <property name="hexpand">TRUE</property>
+                                                                            <property name="xalign">0.0</property>
+                                                                            <binding name="label">
+                                                                                <lookup name="IpAddress" type="WaolagHost">
+                                                                                    <lookup name="item">GtkListItem</lookup>
+                                                                                </lookup>
+                                                                            </binding>
+                                                                        </object>
+                                                                    </property>
+                                                                </template>
+                                                            </interface>
+                                                            ]]></property>
+                                                    </object>
+                                                </property>
+                                            </object>
+                                        </child>
+                                        <child>
+                                            <object class="GtkColumnViewColumn">
+                                                <property name="title">MAC address</property>
+                                                <property name="factory">
+                                                    <object class="GtkBuilderListItemFactory">
+                                                        <property name="bytes"><![CDATA[
+                                                            <?xml version="1.0" encoding="UTF-8"?>
+                                                            <interface>
+                                                                <template class="GtkListItem">
+                                                                    <property name="child">
+                                                                        <object class="GtkLabel">
+                                                                            <property name="hexpand">TRUE</property>
+                                                                            <property name="xalign">0.0</property>
+                                                                            <binding name="label">
+                                                                                <lookup name="MacAddress" type="WaolagHost">
+                                                                                    <lookup name="item">GtkListItem</lookup>
+                                                                                </lookup>
+                                                                            </binding>
+                                                                        </object>
+                                                                    </property>
+                                                                </template>
+                                                            </interface>
+                                                            ]]></property>
+                                                    </object>
+                                                </property>
+                                            </object>
+                                        </child>
+                                        <child>
+                                            <object class="GtkColumnViewColumn">
+                                                <property name="title">Last seen online</property>
+                                                <property name="factory">
+                                                    <object class="GtkBuilderListItemFactory">
+                                                        <property name="bytes"><![CDATA[
+                                                            <?xml version="1.0" encoding="UTF-8"?>
+                                                            <interface>
+                                                                <template class="GtkListItem">
+                                                                    <property name="child">
+                                                                        <object class="GtkLabel">
+                                                                            <property name="hexpand">TRUE</property>
+                                                                            <property name="xalign">0.0</property>
+                                                                            <binding name="label">
+                                                                                <lookup name="LastSeenOnline" type="WaolagHost">
+                                                                                    <lookup name="item">GtkListItem</lookup>
+                                                                                </lookup>
+                                                                            </binding>
+                                                                        </object>
+                                                                    </property>
+                                                                </template>
+                                                            </interface>
+                                                            ]]></property>
+                                                    </object>
+                                                </property>
+                                            </object>
+                                        </child>
+                                        <child>
+                                            <object class="GtkColumnViewColumn">
+                                                <property name="title">Wakeup result</property>
+                                                <property name="factory">
+                                                    <object class="GtkBuilderListItemFactory">
+                                                        <property name="bytes"><![CDATA[
+                                                            <?xml version="1.0" encoding="UTF-8"?>
+                                                            <interface>
+                                                                <template class="GtkListItem">
+                                                                    <property name="child">
+                                                                        <object class="GtkLabel">
+                                                                            <property name="hexpand">TRUE</property>
+                                                                            <property name="xalign">0.0</property>
+                                                                            <binding name="label">
+                                                                                <lookup name="WakeupResult" type="WaolagHost">
+                                                                                    <lookup name="item">GtkListItem</lookup>
+                                                                                </lookup>
+                                                                            </binding>
+                                                                        </object>
+                                                                    </property>
+                                                                </template>
+                                                            </interface>
+                                                            ]]></property>
+                                                    </object>
+                                                </property>
+                                            </object>
+                                        </child>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkLabel" id="statusBar">
+                        <property name="xalign">0</property>
+                        <property name="margin-start">2</property>
+                        <property name="margin-end">2</property>
+                        <property name="margin-top">2</property>
+                        <property name="margin-bottom">2</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </template>
+    <menu id="mainMenu">
+        <section>
+            <item>
+                <attribute name="label" translatable="yes">_About Waola</attribute>
+                <attribute name="action">app.about</attribute>
+            </item>
+            <item>
+                <attribute name="label" translatable="yes">_Quit</attribute>
+                <attribute name="action">app.quit</attribute>
+            </item>
+        </section>
+    </menu>
+</interface>

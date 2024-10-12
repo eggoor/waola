@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA142D212C834484007CF514 /* pch_u.c in Sources */ = {isa = PBXBuildFile; fileRef = CA142D202C834484007CF514 /* pch_u.c */; };
+		CA443FF92C4163B900B31661 /* wmutex.h in Headers */ = {isa = PBXBuildFile; fileRef = CA443FF02C4163B900B31661 /* wmutex.h */; };
+		CA443FFD2C4163B900B31661 /* wthread_cbi.h in Headers */ = {isa = PBXBuildFile; fileRef = CA443FF42C4163B900B31661 /* wthread_cbi.h */; };
+		CA443FFF2C4163B900B31661 /* waolath.h in Headers */ = {isa = PBXBuildFile; fileRef = CA443FF62C4163B900B31661 /* waolath.h */; };
+		CA4440002C4163B900B31661 /* wthread_counter.h in Headers */ = {isa = PBXBuildFile; fileRef = CA443FF72C4163B900B31661 /* wthread_counter.h */; };
+		CA4440012C4163B900B31661 /* wthread.h in Headers */ = {isa = PBXBuildFile; fileRef = CA443FF82C4163B900B31661 /* wthread.h */; };
+		CA4440122C4163F300B31661 /* wthread_counter.c in Sources */ = {isa = PBXBuildFile; fileRef = CA4440022C4163F200B31661 /* wthread_counter.c */; };
+		CA4440142C4163F300B31661 /* wthread_counter_max.c in Sources */ = {isa = PBXBuildFile; fileRef = CA4440042C4163F200B31661 /* wthread_counter_max.c */; };
+		CA4440172C4163F300B31661 /* pch.c in Sources */ = {isa = PBXBuildFile; fileRef = CA4440072C4163F200B31661 /* pch.c */; };
+		CA44401A2C4163F300B31661 /* wthread_counter_max.h in Headers */ = {isa = PBXBuildFile; fileRef = CA44400A2C4163F200B31661 /* wthread_counter_max.h */; };
+		CA44401C2C4163F300B31661 /* wthread_cbi.c in Sources */ = {isa = PBXBuildFile; fileRef = CA44400C2C4163F200B31661 /* wthread_cbi.c */; };
+		CA44401E2C4163F300B31661 /* pch.h in Headers */ = {isa = PBXBuildFile; fileRef = CA44400E2C4163F200B31661 /* pch.h */; };
+		CA4440202C4163F300B31661 /* wmutex.c in Sources */ = {isa = PBXBuildFile; fileRef = CA4440102C4163F200B31661 /* wmutex.c */; };
+		CA4441212C4176CB00B31661 /* wmutex_m.c in Sources */ = {isa = PBXBuildFile; fileRef = CA44411F2C4176CB00B31661 /* wmutex_m.c */; };
+		CAA8DCE72C42B8C2000833D0 /* wthread.c in Sources */ = {isa = PBXBuildFile; fileRef = CAA8DCE52C42B8C2000833D0 /* wthread.c */; };
+		CAA8DCE82C42B8C2000833D0 /* wthread.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA8DCE62C42B8C2000833D0 /* wthread.h */; };
+		CACD584C2C833A80007EA4B4 /* wevent.h in Headers */ = {isa = PBXBuildFile; fileRef = CACD584B2C833A80007EA4B4 /* wevent.h */; };
+		CACD58522C833ADC007EA4B4 /* wevent.c in Sources */ = {isa = PBXBuildFile; fileRef = CACD584F2C833ADC007EA4B4 /* wevent.c */; };
+		CACD58532C833ADC007EA4B4 /* wevent.h in Headers */ = {isa = PBXBuildFile; fileRef = CACD58502C833ADC007EA4B4 /* wevent.h */; };
+		CACD58542C833ADC007EA4B4 /* wevent_u.c in Sources */ = {isa = PBXBuildFile; fileRef = CACD58512C833ADC007EA4B4 /* wevent_u.c */; };
+		CACD58562C833B59007EA4B4 /* wevent_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CACD58552C833B59007EA4B4 /* wevent_factory.c */; };
+		CAE9511D2C47C38F00767DCC /* wthread_u.c in Sources */ = {isa = PBXBuildFile; fileRef = CAE9511A2C47C38F00767DCC /* wthread_u.c */; };
+		CAE9511E2C47C38F00767DCC /* pch_u.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE9511B2C47C38F00767DCC /* pch_u.h */; };
+		CAE9511F2C47C38F00767DCC /* wmutex_u.c in Sources */ = {isa = PBXBuildFile; fileRef = CAE9511C2C47C38F00767DCC /* wmutex_u.c */; };
+		CAEC6A3F2C7E0A9100547BC9 /* wthread_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A392C7E0A9000547BC9 /* wthread_factory.c */; };
+		CAEC6A402C7E0A9100547BC9 /* wthread_u.h in Headers */ = {isa = PBXBuildFile; fileRef = CAEC6A3A2C7E0A9000547BC9 /* wthread_u.h */; };
+		CAEC6A412C7E0A9100547BC9 /* wthread_cbi_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A3B2C7E0A9000547BC9 /* wthread_cbi_factory.c */; };
+		CAEC6A432C7E0A9100547BC9 /* wmutex_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A3D2C7E0A9100547BC9 /* wmutex_factory.c */; };
+		CAEC6A442C7E0A9100547BC9 /* wthread_counter_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A3E2C7E0A9100547BC9 /* wthread_counter_factory.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA142D202C834484007CF514 /* pch_u.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pch_u.c; sourceTree = "<group>"; };
+		CA443FE82C41587900B31661 /* liblibwaolath.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibwaolath.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA443FF02C4163B900B31661 /* wmutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wmutex.h; sourceTree = "<group>"; };
+		CA443FF42C4163B900B31661 /* wthread_cbi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wthread_cbi.h; sourceTree = "<group>"; };
+		CA443FF62C4163B900B31661 /* waolath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = waolath.h; sourceTree = "<group>"; };
+		CA443FF72C4163B900B31661 /* wthread_counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wthread_counter.h; sourceTree = "<group>"; };
+		CA443FF82C4163B900B31661 /* wthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wthread.h; sourceTree = "<group>"; };
+		CA4440022C4163F200B31661 /* wthread_counter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wthread_counter.c; sourceTree = "<group>"; };
+		CA4440042C4163F200B31661 /* wthread_counter_max.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wthread_counter_max.c; sourceTree = "<group>"; };
+		CA4440072C4163F200B31661 /* pch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pch.c; sourceTree = "<group>"; };
+		CA44400A2C4163F200B31661 /* wthread_counter_max.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wthread_counter_max.h; sourceTree = "<group>"; };
+		CA44400C2C4163F200B31661 /* wthread_cbi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wthread_cbi.c; sourceTree = "<group>"; };
+		CA44400E2C4163F200B31661 /* pch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pch.h; sourceTree = "<group>"; };
+		CA4440102C4163F200B31661 /* wmutex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wmutex.c; sourceTree = "<group>"; };
+		CA44411F2C4176CB00B31661 /* wmutex_m.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wmutex_m.c; sourceTree = "<group>"; };
+		CAA8DCE52C42B8C2000833D0 /* wthread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wthread.c; sourceTree = "<group>"; };
+		CAA8DCE62C42B8C2000833D0 /* wthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wthread.h; sourceTree = "<group>"; };
+		CACD584B2C833A80007EA4B4 /* wevent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wevent.h; sourceTree = "<group>"; };
+		CACD584F2C833ADC007EA4B4 /* wevent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wevent.c; sourceTree = "<group>"; };
+		CACD58502C833ADC007EA4B4 /* wevent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wevent.h; sourceTree = "<group>"; };
+		CACD58512C833ADC007EA4B4 /* wevent_u.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wevent_u.c; sourceTree = "<group>"; };
+		CACD58552C833B59007EA4B4 /* wevent_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wevent_factory.c; sourceTree = "<group>"; };
+		CAE9511A2C47C38F00767DCC /* wthread_u.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wthread_u.c; sourceTree = "<group>"; };
+		CAE9511B2C47C38F00767DCC /* pch_u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pch_u.h; sourceTree = "<group>"; };
+		CAE9511C2C47C38F00767DCC /* wmutex_u.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wmutex_u.c; sourceTree = "<group>"; };
+		CAEC6A392C7E0A9000547BC9 /* wthread_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wthread_factory.c; sourceTree = "<group>"; };
+		CAEC6A3A2C7E0A9000547BC9 /* wthread_u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wthread_u.h; sourceTree = "<group>"; };
+		CAEC6A3B2C7E0A9000547BC9 /* wthread_cbi_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wthread_cbi_factory.c; sourceTree = "<group>"; };
+		CAEC6A3D2C7E0A9100547BC9 /* wmutex_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wmutex_factory.c; sourceTree = "<group>"; };
+		CAEC6A3E2C7E0A9100547BC9 /* wthread_counter_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wthread_counter_factory.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA443FE62C41587900B31661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA443FDF2C41587900B31661 = {
+			isa = PBXGroup;
+			children = (
+				CA443FEF2C41636500B31661 /* include */,
+				CACD58552C833B59007EA4B4 /* wevent_factory.c */,
+				CAEC6A3D2C7E0A9100547BC9 /* wmutex_factory.c */,
+				CAEC6A3B2C7E0A9000547BC9 /* wthread_cbi_factory.c */,
+				CAEC6A3E2C7E0A9100547BC9 /* wthread_counter_factory.c */,
+				CAEC6A392C7E0A9000547BC9 /* wthread_factory.c */,
+				CACD58512C833ADC007EA4B4 /* wevent_u.c */,
+				CACD584F2C833ADC007EA4B4 /* wevent.c */,
+				CACD58502C833ADC007EA4B4 /* wevent.h */,
+				CAEC6A3A2C7E0A9000547BC9 /* wthread_u.h */,
+				CAA8DCE52C42B8C2000833D0 /* wthread.c */,
+				CAA8DCE62C42B8C2000833D0 /* wthread.h */,
+				CAE9511A2C47C38F00767DCC /* wthread_u.c */,
+				CA4440072C4163F200B31661 /* pch.c */,
+				CA142D202C834484007CF514 /* pch_u.c */,
+				CA44400E2C4163F200B31661 /* pch.h */,
+				CAE9511B2C47C38F00767DCC /* pch_u.h */,
+				CA4440102C4163F200B31661 /* wmutex.c */,
+				CA44411F2C4176CB00B31661 /* wmutex_m.c */,
+				CAE9511C2C47C38F00767DCC /* wmutex_u.c */,
+				CA44400C2C4163F200B31661 /* wthread_cbi.c */,
+				CA4440042C4163F200B31661 /* wthread_counter_max.c */,
+				CA44400A2C4163F200B31661 /* wthread_counter_max.h */,
+				CA4440022C4163F200B31661 /* wthread_counter.c */,
+				CA443FE92C41587900B31661 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA443FE92C41587900B31661 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA443FE82C41587900B31661 /* liblibwaolath.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA443FEF2C41636500B31661 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CA443FF62C4163B900B31661 /* waolath.h */,
+				CACD584B2C833A80007EA4B4 /* wevent.h */,
+				CA443FF02C4163B900B31661 /* wmutex.h */,
+				CA443FF42C4163B900B31661 /* wthread_cbi.h */,
+				CA443FF72C4163B900B31661 /* wthread_counter.h */,
+				CA443FF82C4163B900B31661 /* wthread.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CA443FE42C41587900B31661 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA443FF92C4163B900B31661 /* wmutex.h in Headers */,
+				CA44401A2C4163F300B31661 /* wthread_counter_max.h in Headers */,
+				CA443FFF2C4163B900B31661 /* waolath.h in Headers */,
+				CA4440012C4163B900B31661 /* wthread.h in Headers */,
+				CACD584C2C833A80007EA4B4 /* wevent.h in Headers */,
+				CACD58532C833ADC007EA4B4 /* wevent.h in Headers */,
+				CAA8DCE82C42B8C2000833D0 /* wthread.h in Headers */,
+				CA44401E2C4163F300B31661 /* pch.h in Headers */,
+				CAEC6A402C7E0A9100547BC9 /* wthread_u.h in Headers */,
+				CA4440002C4163B900B31661 /* wthread_counter.h in Headers */,
+				CAE9511E2C47C38F00767DCC /* pch_u.h in Headers */,
+				CA443FFD2C4163B900B31661 /* wthread_cbi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CA443FE72C41587900B31661 /* libwaolath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA443FEC2C41587900B31661 /* Build configuration list for PBXNativeTarget "libwaolath" */;
+			buildPhases = (
+				CA443FE42C41587900B31661 /* Headers */,
+				CA443FE52C41587900B31661 /* Sources */,
+				CA443FE62C41587900B31661 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libwaolath;
+			productName = waolath;
+			productReference = CA443FE82C41587900B31661 /* liblibwaolath.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA443FE02C41587900B31661 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CA443FE72C41587900B31661 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = CA443FE32C41587900B31661 /* Build configuration list for PBXProject "libwaolath" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA443FDF2C41587900B31661;
+			productRefGroup = CA443FE92C41587900B31661 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA443FE72C41587900B31661 /* libwaolath */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA443FE52C41587900B31661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4440122C4163F300B31661 /* wthread_counter.c in Sources */,
+				CACD58562C833B59007EA4B4 /* wevent_factory.c in Sources */,
+				CAE9511D2C47C38F00767DCC /* wthread_u.c in Sources */,
+				CAEC6A3F2C7E0A9100547BC9 /* wthread_factory.c in Sources */,
+				CAA8DCE72C42B8C2000833D0 /* wthread.c in Sources */,
+				CAEC6A442C7E0A9100547BC9 /* wthread_counter_factory.c in Sources */,
+				CAEC6A432C7E0A9100547BC9 /* wmutex_factory.c in Sources */,
+				CACD58522C833ADC007EA4B4 /* wevent.c in Sources */,
+				CA4440142C4163F300B31661 /* wthread_counter_max.c in Sources */,
+				CAE9511F2C47C38F00767DCC /* wmutex_u.c in Sources */,
+				CA4441212C4176CB00B31661 /* wmutex_m.c in Sources */,
+				CA142D212C834484007CF514 /* pch_u.c in Sources */,
+				CA44401C2C4163F300B31661 /* wthread_cbi.c in Sources */,
+				CA4440202C4163F300B31661 /* wmutex.c in Sources */,
+				CACD58542C833ADC007EA4B4 /* wevent_u.c in Sources */,
+				CAEC6A412C7E0A9100547BC9 /* wthread_cbi_factory.c in Sources */,
+				CA4440172C4163F300B31661 /* pch.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA443FEA2C41587900B31661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CA443FEB2C41587900B31661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch.h;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CA443FED2C41587900B31661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../libwlog/include,
+					../libwaolash/include,
+					../waolash/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CA443FEE2C41587900B31661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../libwlog/include,
+					../libwaolash/include,
+					../waolash/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA443FE32C41587900B31661 /* Build configuration list for PBXProject "libwaolath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA443FEA2C41587900B31661 /* Debug */,
+				CA443FEB2C41587900B31661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA443FEC2C41587900B31661 /* Build configuration list for PBXNativeTarget "libwaolath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA443FED2C41587900B31661 /* Debug */,
+				CA443FEE2C41587900B31661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA443FE02C41587900B31661 /* Project object */;
+}

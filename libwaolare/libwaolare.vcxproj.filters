@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{19064722-C8A1-4F1A-8209-72C1126DFEFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{4AFED026-3BD4-4A78-84F5-A5829ED482D9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Factories">
+      <UniqueIdentifier>{5ee13b80-156a-4deb-b018-e7bf8a21feba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch_w.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wresolver_sockaddr_resolve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sysexits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waolare.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wresolver_hostname.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="factories.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wresolver_hosts.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="wresolver_hosts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wresolver_host.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="waolare_fact4s.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="waolare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wresolver_host_priv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wresolver_hosts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wresolver_hostname.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wresolver_sockaddr_resolve.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wresolver_host_factory.c">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="wresolver_hosts_factory.c">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="waolare_fact4s.c">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="waolare.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="waolare_factory.c">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="wresolver_hosts_w.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wresolver_host_w.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wresolver_host.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

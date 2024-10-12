@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="KeywordAbout">About</system:String>
+    <system:String x:Key="KeywordCredits">Credits</system:String>
+    <system:String x:Key="KeywordLicense">License</system:String>
+    <system:String x:Key="AboutP11">Waola is a </system:String>
+    <system:String x:Key="Wake-on-LAN">Wake-on-LAN</system:String>
+    <system:String x:Key="AboutP12"> utility with embedded </system:String>
+    <system:String x:Key="ARP">ARP</system:String>
+    <system:String x:Key="AboutP13">-based network scanner.</system:String>
+    <system:String x:Key="AboutP2">Author of this tool ​​is a citizen of Ukraine who created and maintains this software literally under attacks of russian missiles.</system:String>
+    <system:String x:Key="AboutP3">Also I try to help our army to fight off the invasion as much as I can.</system:String>
+    <system:String x:Key="AboutP4">If this tool was useful to you and you'd like to help us to defend our freedom and independence - feel free to donate any convenient for you amount to PayPal account</system:String>
+    <system:String x:Key="PayPalEmail">egggor@gmail.com</system:String>
+    <system:String x:Key="CreditsP1">Idea, architecture and implementation: </system:String>
+    <system:String x:Key="CreditsP2">Icon set: TUNUHA.</system:String>
+</ResourceDictionary>

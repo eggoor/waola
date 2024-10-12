@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WaolaWPF": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

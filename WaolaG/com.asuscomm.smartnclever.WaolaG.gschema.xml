@@ -1,0 +1,23 @@
+<schemalist>
+  <schema id="com.asuscomm.smartnclever.WaolaG.Window" gettext-domain="WaolaG">
+    <child name="main" schema="com.asuscomm.smartnclever.WaolaG.Window" />
+    <key name="width" type="i">
+      <default>640</default>
+    </key>
+    <key name="height" type="i">
+      <default>480</default>
+    </key>
+    <key name="is-maximized" type="b">
+      <default>false</default>
+    </key>
+    <key name="is-fullscreen" type="b">
+      <default>false</default>
+    </key>
+  </schema>
+  <schema id="com.asuscomm.smartnclever.WaolaG.Hosts" path="/com/asuscomm/smartnclever/WaolaG/Hosts/"
+    gettext-domain="WaolaG">
+    <key name="hosts" type="a(sssst)">
+      <default>[]</default>
+    </key>
+  </schema>
+</schemalist>

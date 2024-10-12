@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA01EC4D2CA1C282007EDE26 /* wmax.c in Sources */ = {isa = PBXBuildFile; fileRef = CA01EC4B2CA1C282007EDE26 /* wmax.c */; };
+		CA01EC4E2CA1C282007EDE26 /* wmin.c in Sources */ = {isa = PBXBuildFile; fileRef = CA01EC4C2CA1C282007EDE26 /* wmin.c */; };
+		CA01EC522CA1C299007EDE26 /* wmin.h in Headers */ = {isa = PBXBuildFile; fileRef = CA01EC512CA1C299007EDE26 /* wmin.h */; };
+		CA01EC532CA1C299007EDE26 /* wcont4r_s.h in Headers */ = {isa = PBXBuildFile; fileRef = CA01EC4F2CA1C299007EDE26 /* wcont4r_s.h */; };
+		CA01EC542CA1C299007EDE26 /* wmax.h in Headers */ = {isa = PBXBuildFile; fileRef = CA01EC502CA1C299007EDE26 /* wmax.h */; };
+		CA08536C2CB810980080EBD9 /* waolash.c in Sources */ = {isa = PBXBuildFile; fileRef = CA08536B2CB810980080EBD9 /* waolash.c */; };
+		CA1A75BE2C6E704C00D8C7E7 /* wstr_u.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1A75BC2C6E704C00D8C7E7 /* wstr_u.c */; };
+		CACDC1EE2C9193E9008FEF0C /* wstr_u.h in Headers */ = {isa = PBXBuildFile; fileRef = CACDC1ED2C9193E9008FEF0C /* wstr_u.h */; };
+		CAE9510F2C47C2D000767DCC /* waolash_u.c in Sources */ = {isa = PBXBuildFile; fileRef = CAE951052C47C2CF00767DCC /* waolash_u.c */; };
+		CAE951122C47C2D000767DCC /* wmem_u.c in Sources */ = {isa = PBXBuildFile; fileRef = CAE951082C47C2CF00767DCC /* wmem_u.c */; };
+		CAE951162C47C2D000767DCC /* pch_u.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE9510C2C47C2D000767DCC /* pch_u.h */; };
+		CAEC6A6A2C7E0BF200547BC9 /* whost_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A662C7E0BF200547BC9 /* whost_factory.c */; };
+		CAEC6A6C2C7E0BF200547BC9 /* whost_view_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A682C7E0BF200547BC9 /* whost_view_factory.c */; };
+		CAEC6A8B2C7E0DCE00547BC9 /* wcont_list_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A892C7E0DCE00547BC9 /* wcont_list_factory.c */; };
+		CAEC6A8C2C7E0DCE00547BC9 /* wcont4r_factory.c in Sources */ = {isa = PBXBuildFile; fileRef = CAEC6A8A2C7E0DCE00547BC9 /* wcont4r_factory.c */; };
+		CAFAFAB52C4127220097714A /* wcont4r.c in Sources */ = {isa = PBXBuildFile; fileRef = CAFAFAAE2C4127220097714A /* wcont4r.c */; };
+		CAFAFAB72C4127220097714A /* pch.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFAB02C4127220097714A /* pch.h */; };
+		CAFAFAB82C4127220097714A /* pch.c in Sources */ = {isa = PBXBuildFile; fileRef = CAFAFAB12C4127220097714A /* pch.c */; };
+		CAFAFAD92C4127500097714A /* whost.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFABC2C41274E0097714A /* whost.h */; };
+		CAFAFADE2C4127500097714A /* wmac_addr.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFAC12C41274F0097714A /* wmac_addr.h */; };
+		CAFAFAE42C4127500097714A /* whost_data.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFAC72C41274F0097714A /* whost_data.h */; };
+		CAFAFAE62C4127500097714A /* wlist.c in Sources */ = {isa = PBXBuildFile; fileRef = CAFAFAC92C41274F0097714A /* wlist.c */; };
+		CAFAFAE72C4127500097714A /* whost_data.c in Sources */ = {isa = PBXBuildFile; fileRef = CAFAFACA2C41274F0097714A /* whost_data.c */; };
+		CAFAFAE82C4127500097714A /* whost_view.c in Sources */ = {isa = PBXBuildFile; fileRef = CAFAFACB2C41274F0097714A /* whost_view.c */; };
+		CAFAFAED2C4127500097714A /* wmac_addr.c in Sources */ = {isa = PBXBuildFile; fileRef = CAFAFAD02C41274F0097714A /* wmac_addr.c */; };
+		CAFAFAF02C4127500097714A /* wsockaddr.c in Sources */ = {isa = PBXBuildFile; fileRef = CAFAFAD32C4127500097714A /* wsockaddr.c */; };
+		CAFAFAF12C4127500097714A /* wstr.c in Sources */ = {isa = PBXBuildFile; fileRef = CAFAFAD42C4127500097714A /* wstr.c */; };
+		CAFAFAF22C4127500097714A /* whost_view.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFAD52C4127500097714A /* whost_view.h */; };
+		CAFAFAF32C4127500097714A /* whost.c in Sources */ = {isa = PBXBuildFile; fileRef = CAFAFAD62C4127500097714A /* whost.c */; };
+		CAFAFB0D2C4127DD0097714A /* whost_data_s.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFAF72C4127DB0097714A /* whost_data_s.h */; };
+		CAFAFB0F2C4127DD0097714A /* libwaolash.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFAF92C4127DB0097714A /* libwaolash.h */; };
+		CAFAFB112C4127DD0097714A /* wlist_s.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFAFB2C4127DB0097714A /* wlist_s.h */; };
+		CAFAFB122C4127DD0097714A /* wmac_addr_s.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFAFC2C4127DB0097714A /* wmac_addr_s.h */; };
+		CAFAFB132C4127DD0097714A /* wmem_s.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFAFD2C4127DC0097714A /* wmem_s.h */; };
+		CAFAFB152C4127DD0097714A /* whost_s.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFAFF2C4127DC0097714A /* whost_s.h */; };
+		CAFAFB182C4127DD0097714A /* whost_view_s.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFB022C4127DC0097714A /* whost_view_s.h */; };
+		CAFAFB1A2C4127DD0097714A /* wsockaddr_s.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFB042C4127DC0097714A /* wsockaddr_s.h */; };
+		CAFAFB212C4127DD0097714A /* wstr_s.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFB0B2C4127DD0097714A /* wstr_s.h */; };
+		CAFAFB262C4128760097714A /* pch_m.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFAFB252C4128760097714A /* pch_m.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA01EC4B2CA1C282007EDE26 /* wmax.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wmax.c; sourceTree = "<group>"; };
+		CA01EC4C2CA1C282007EDE26 /* wmin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wmin.c; sourceTree = "<group>"; };
+		CA01EC4F2CA1C299007EDE26 /* wcont4r_s.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wcont4r_s.h; sourceTree = "<group>"; };
+		CA01EC502CA1C299007EDE26 /* wmax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wmax.h; sourceTree = "<group>"; };
+		CA01EC512CA1C299007EDE26 /* wmin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wmin.h; sourceTree = "<group>"; };
+		CA08536B2CB810980080EBD9 /* waolash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = waolash.c; sourceTree = "<group>"; };
+		CA1A75BC2C6E704C00D8C7E7 /* wstr_u.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wstr_u.c; sourceTree = "<group>"; };
+		CA3140892C91CB0400AF535C /* whost_priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whost_priv.h; sourceTree = "<group>"; };
+		CACDC1ED2C9193E9008FEF0C /* wstr_u.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wstr_u.h; sourceTree = "<group>"; };
+		CAE951052C47C2CF00767DCC /* waolash_u.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = waolash_u.c; sourceTree = "<group>"; };
+		CAE951082C47C2CF00767DCC /* wmem_u.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wmem_u.c; sourceTree = "<group>"; };
+		CAE9510C2C47C2D000767DCC /* pch_u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pch_u.h; sourceTree = "<group>"; };
+		CAEC6A662C7E0BF200547BC9 /* whost_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = whost_factory.c; sourceTree = "<group>"; };
+		CAEC6A682C7E0BF200547BC9 /* whost_view_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = whost_view_factory.c; sourceTree = "<group>"; };
+		CAEC6A892C7E0DCE00547BC9 /* wcont_list_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wcont_list_factory.c; sourceTree = "<group>"; };
+		CAEC6A8A2C7E0DCE00547BC9 /* wcont4r_factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wcont4r_factory.c; sourceTree = "<group>"; };
+		CAFAFAA52C4124DB0097714A /* liblibwaolash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibwaolash.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFAFAAE2C4127220097714A /* wcont4r.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wcont4r.c; sourceTree = "<group>"; };
+		CAFAFAB02C4127220097714A /* pch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pch.h; sourceTree = "<group>"; };
+		CAFAFAB12C4127220097714A /* pch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pch.c; sourceTree = "<group>"; };
+		CAFAFABC2C41274E0097714A /* whost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whost.h; sourceTree = "<group>"; };
+		CAFAFAC12C41274F0097714A /* wmac_addr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wmac_addr.h; sourceTree = "<group>"; };
+		CAFAFAC72C41274F0097714A /* whost_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whost_data.h; sourceTree = "<group>"; };
+		CAFAFAC92C41274F0097714A /* wlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wlist.c; sourceTree = "<group>"; };
+		CAFAFACA2C41274F0097714A /* whost_data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = whost_data.c; sourceTree = "<group>"; };
+		CAFAFACB2C41274F0097714A /* whost_view.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = whost_view.c; sourceTree = "<group>"; };
+		CAFAFAD02C41274F0097714A /* wmac_addr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wmac_addr.c; sourceTree = "<group>"; };
+		CAFAFAD32C4127500097714A /* wsockaddr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wsockaddr.c; sourceTree = "<group>"; };
+		CAFAFAD42C4127500097714A /* wstr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wstr.c; sourceTree = "<group>"; };
+		CAFAFAD52C4127500097714A /* whost_view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whost_view.h; sourceTree = "<group>"; };
+		CAFAFAD62C4127500097714A /* whost.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = whost.c; sourceTree = "<group>"; };
+		CAFAFAF72C4127DB0097714A /* whost_data_s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whost_data_s.h; sourceTree = "<group>"; };
+		CAFAFAF92C4127DB0097714A /* libwaolash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libwaolash.h; sourceTree = "<group>"; };
+		CAFAFAFB2C4127DB0097714A /* wlist_s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wlist_s.h; sourceTree = "<group>"; };
+		CAFAFAFC2C4127DB0097714A /* wmac_addr_s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wmac_addr_s.h; sourceTree = "<group>"; };
+		CAFAFAFD2C4127DC0097714A /* wmem_s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wmem_s.h; sourceTree = "<group>"; };
+		CAFAFAFF2C4127DC0097714A /* whost_s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whost_s.h; sourceTree = "<group>"; };
+		CAFAFB022C4127DC0097714A /* whost_view_s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whost_view_s.h; sourceTree = "<group>"; };
+		CAFAFB042C4127DC0097714A /* wsockaddr_s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wsockaddr_s.h; sourceTree = "<group>"; };
+		CAFAFB0B2C4127DD0097714A /* wstr_s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wstr_s.h; sourceTree = "<group>"; };
+		CAFAFB252C4128760097714A /* pch_m.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pch_m.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAFAFAA32C4124DB0097714A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAFAFA9C2C4124DB0097714A = {
+			isa = PBXGroup;
+			children = (
+				CAFAFAF62C41276D0097714A /* include */,
+				CA08536B2CB810980080EBD9 /* waolash.c */,
+				CAE951052C47C2CF00767DCC /* waolash_u.c */,
+				CAFAFACA2C41274F0097714A /* whost_data.c */,
+				CAFAFAC72C41274F0097714A /* whost_data.h */,
+				CAFAFACB2C41274F0097714A /* whost_view.c */,
+				CAFAFAD52C4127500097714A /* whost_view.h */,
+				CAFAFAD62C4127500097714A /* whost.c */,
+				CAFAFABC2C41274E0097714A /* whost.h */,
+				CA3140892C91CB0400AF535C /* whost_priv.h */,
+				CAEC6A662C7E0BF200547BC9 /* whost_factory.c */,
+				CAEC6A8A2C7E0DCE00547BC9 /* wcont4r_factory.c */,
+				CAEC6A892C7E0DCE00547BC9 /* wcont_list_factory.c */,
+				CAEC6A682C7E0BF200547BC9 /* whost_view_factory.c */,
+				CAFAFAC92C41274F0097714A /* wlist.c */,
+				CAFAFAD02C41274F0097714A /* wmac_addr.c */,
+				CAFAFAC12C41274F0097714A /* wmac_addr.h */,
+				CA01EC4B2CA1C282007EDE26 /* wmax.c */,
+				CA01EC4C2CA1C282007EDE26 /* wmin.c */,
+				CAE951082C47C2CF00767DCC /* wmem_u.c */,
+				CAFAFAD32C4127500097714A /* wsockaddr.c */,
+				CAFAFAD42C4127500097714A /* wstr.c */,
+				CAFAFB252C4128760097714A /* pch_m.h */,
+				CAFAFAB12C4127220097714A /* pch.c */,
+				CAFAFAB02C4127220097714A /* pch.h */,
+				CAE9510C2C47C2D000767DCC /* pch_u.h */,
+				CAFAFAAE2C4127220097714A /* wcont4r.c */,
+				CA1A75BC2C6E704C00D8C7E7 /* wstr_u.c */,
+				CAFAFAA62C4124DB0097714A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAFAFAA62C4124DB0097714A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAFAFAA52C4124DB0097714A /* liblibwaolash.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAFAFAF62C41276D0097714A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CAFAFAF92C4127DB0097714A /* libwaolash.h */,
+				CA01EC4F2CA1C299007EDE26 /* wcont4r_s.h */,
+				CAFAFAF72C4127DB0097714A /* whost_data_s.h */,
+				CAFAFAFF2C4127DC0097714A /* whost_s.h */,
+				CAFAFB022C4127DC0097714A /* whost_view_s.h */,
+				CAFAFAFB2C4127DB0097714A /* wlist_s.h */,
+				CA01EC502CA1C299007EDE26 /* wmax.h */,
+				CA01EC512CA1C299007EDE26 /* wmin.h */,
+				CAFAFAFC2C4127DB0097714A /* wmac_addr_s.h */,
+				CAFAFAFD2C4127DC0097714A /* wmem_s.h */,
+				CAFAFB042C4127DC0097714A /* wsockaddr_s.h */,
+				CAFAFB0B2C4127DD0097714A /* wstr_s.h */,
+				CACDC1ED2C9193E9008FEF0C /* wstr_u.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CAFAFAA12C4124DB0097714A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFAFB262C4128760097714A /* pch_m.h in Headers */,
+				CAFAFB112C4127DD0097714A /* wlist_s.h in Headers */,
+				CAFAFAB72C4127220097714A /* pch.h in Headers */,
+				CAFAFB0F2C4127DD0097714A /* libwaolash.h in Headers */,
+				CAE951162C47C2D000767DCC /* pch_u.h in Headers */,
+				CAFAFB182C4127DD0097714A /* whost_view_s.h in Headers */,
+				CAFAFB152C4127DD0097714A /* whost_s.h in Headers */,
+				CA01EC522CA1C299007EDE26 /* wmin.h in Headers */,
+				CA01EC532CA1C299007EDE26 /* wcont4r_s.h in Headers */,
+				CA01EC542CA1C299007EDE26 /* wmax.h in Headers */,
+				CAFAFAE42C4127500097714A /* whost_data.h in Headers */,
+				CAFAFADE2C4127500097714A /* wmac_addr.h in Headers */,
+				CAFAFB0D2C4127DD0097714A /* whost_data_s.h in Headers */,
+				CAFAFAF22C4127500097714A /* whost_view.h in Headers */,
+				CAFAFB1A2C4127DD0097714A /* wsockaddr_s.h in Headers */,
+				CAFAFB212C4127DD0097714A /* wstr_s.h in Headers */,
+				CACDC1EE2C9193E9008FEF0C /* wstr_u.h in Headers */,
+				CAFAFB132C4127DD0097714A /* wmem_s.h in Headers */,
+				CAFAFAD92C4127500097714A /* whost.h in Headers */,
+				CAFAFB122C4127DD0097714A /* wmac_addr_s.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CAFAFAA42C4124DB0097714A /* libwaolash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFAFAA92C4124DB0097714A /* Build configuration list for PBXNativeTarget "libwaolash" */;
+			buildPhases = (
+				CAFAFAA12C4124DB0097714A /* Headers */,
+				CAFAFAA22C4124DB0097714A /* Sources */,
+				CAFAFAA32C4124DB0097714A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libwaolash;
+			productName = waolash;
+			productReference = CAFAFAA52C4124DB0097714A /* liblibwaolash.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAFAFA9D2C4124DB0097714A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CAFAFAA42C4124DB0097714A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = CAFAFAA02C4124DB0097714A /* Build configuration list for PBXProject "libwaolash" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAFAFA9C2C4124DB0097714A;
+			productRefGroup = CAFAFAA62C4124DB0097714A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAFAFAA42C4124DB0097714A /* libwaolash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAFAFAA22C4124DB0097714A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFAFAE72C4127500097714A /* whost_data.c in Sources */,
+				CAFAFAB82C4127220097714A /* pch.c in Sources */,
+				CAEC6A8C2C7E0DCE00547BC9 /* wcont4r_factory.c in Sources */,
+				CAEC6A8B2C7E0DCE00547BC9 /* wcont_list_factory.c in Sources */,
+				CAFAFAF12C4127500097714A /* wstr.c in Sources */,
+				CAFAFAF02C4127500097714A /* wsockaddr.c in Sources */,
+				CAFAFAB52C4127220097714A /* wcont4r.c in Sources */,
+				CAFAFAED2C4127500097714A /* wmac_addr.c in Sources */,
+				CA1A75BE2C6E704C00D8C7E7 /* wstr_u.c in Sources */,
+				CAFAFAE82C4127500097714A /* whost_view.c in Sources */,
+				CAEC6A6C2C7E0BF200547BC9 /* whost_view_factory.c in Sources */,
+				CAEC6A6A2C7E0BF200547BC9 /* whost_factory.c in Sources */,
+				CA01EC4D2CA1C282007EDE26 /* wmax.c in Sources */,
+				CA08536C2CB810980080EBD9 /* waolash.c in Sources */,
+				CA01EC4E2CA1C282007EDE26 /* wmin.c in Sources */,
+				CAFAFAE62C4127500097714A /* wlist.c in Sources */,
+				CAE951122C47C2D000767DCC /* wmem_u.c in Sources */,
+				CAFAFAF32C4127500097714A /* whost.c in Sources */,
+				CAE9510F2C47C2D000767DCC /* waolash_u.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CAFAFAA72C4124DB0097714A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CAFAFAA82C4124DB0097714A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = pch.h;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CAFAFAAA2C4124DB0097714A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../libwlog/include,
+					../waolash/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CAFAFAAB2C4124DB0097714A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../libwlog/include,
+					../waolash/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAFAFAA02C4124DB0097714A /* Build configuration list for PBXProject "libwaolash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFAFAA72C4124DB0097714A /* Debug */,
+				CAFAFAA82C4124DB0097714A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAFAFAA92C4124DB0097714A /* Build configuration list for PBXNativeTarget "libwaolash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFAFAAA2C4124DB0097714A /* Debug */,
+				CAFAFAAB2C4124DB0097714A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAFAFA9D2C4124DB0097714A /* Project object */;
+}
