@@ -71,9 +71,9 @@ Currently supported are Linux, macOS and Windows.
 
     Being started without arguments `waolac` will scan network and print information about each discovered host in a form `<mac_addr>\t<ip_addr>\t<hostname>\n`.
 
-    Started with MAC address(es) `waolac` sends appropriate WoL 'magic packet'(s)s through all up and running network interfaces.
+    Started with MAC address(es) `waolac` sends appropriate WoL 'magic packet'(s) through all up and running network interfaces.
 
-    Exit code: 0 if all appropriate 'magic packets' were successfully sent through all up and running network interfaces, othervise error code.
+    Exit code: 0 if all appropriate 'magic packets' were successfully sent through all up and running network interfaces, othervise exit code.
 
 * GUI frontends.
 
