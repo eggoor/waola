@@ -67,7 +67,7 @@ Currently supported are Linux, macOS and Windows.
 
     `waolac [mac_addr...]`
 
-    , where `mac_addr...` is zero or more space-delimeted MAC addresses. Bytes of MAC address can be delimeted by `:`, `-` and can be not delimeted at all, i. e. `01:23:45:67:89:AB`, `01-23-45-67-89-AB` and `0123456789AB` are all valid (and equal).
+    , where `mac_addr...` is zero or more space-delimeted MAC addresses. Bytes of MAC address can be delimeted by `:`, `-` or can be not delimeted at all, i. e. `01:23:45:67:89:AB`, `01-23-45-67-89-AB` and `0123456789AB` are all valid (and equal).
 
     Being started without arguments `waolac` will scan network and print information about each discovered host in a form `<mac_addr>\t<ip_addr>\t<hostname>\n`.
 
