@@ -1,4 +1,4 @@
-/** @file libwaolasc.h
+/** @file waolasc.c
 * Waola scanner implementation for dynamic linking.
 */
 

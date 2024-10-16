@@ -73,7 +73,8 @@ BOOL wmac_addr_is_empty_s(const byte* const restrict mac)
 	return !mac || memcmp(mac, emptyMac, ETHER_ADDR_LEN) == 0;
 }
 
-const char* wmac_addr_to_string_s(const byte* mac_addr, char* const restrict buffer)
+const char* wmac_addr_to_string_s(const byte* const restrict mac_addr,
+	char* const restrict buffer)
 {
 	static const size_t buf_size = 3 * ETHER_ADDR_LEN;
 
@@ -90,7 +91,7 @@ const char* wmac_addr_to_string_s(const byte* mac_addr, char* const restrict buf
 	return buffer;
 }
 
-int wmac_addr_compare_s(const byte* l, const byte* const restrict r)
+int wmac_addr_compare_s(const byte* const restrict l, const byte* const restrict r)
 {
 	int res = 0;
 

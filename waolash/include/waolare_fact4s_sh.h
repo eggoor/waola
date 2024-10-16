@@ -1,5 +1,5 @@
-/** @file waolare_fact4s.h
-* Waola host resolver factories forward declaration.
+/** @file waolare_fact4s_sh.h
+* Waola host resolver factories forward declarations.
 */
 
 #pragma once

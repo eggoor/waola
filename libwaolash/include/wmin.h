@@ -1,4 +1,4 @@
-/** @file min.h
+/** @file wmin.h
 * Safe C11 MIN macro.
 */
 

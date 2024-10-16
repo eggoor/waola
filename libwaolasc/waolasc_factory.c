@@ -1,4 +1,4 @@
-/** @file libwaolasc.h
+/** @file waolasc_factory.h
 * Waola scanner factory implementation.
 */
 

@@ -1,4 +1,4 @@
-/** @file max.h
+/** @file wmax.h
 * Safe C11 MAX macro.
 */
 

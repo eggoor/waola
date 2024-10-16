@@ -1,4 +1,4 @@
-/** @file waolash_fact4s.h
+/** @file waolash_fact4s_sh.h
 * Factories for Waola shared library.
 */
 

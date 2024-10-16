@@ -1,4 +1,4 @@
-/** @file waolava.h
+/** @file waolava.c
 * Waola vault implementation.
 */
 

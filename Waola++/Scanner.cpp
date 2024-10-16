@@ -1,5 +1,5 @@
-/** @file Scanner.h
-* C++ binding to waola scanner implementation.
+/** @file Scanner.c
+* C++ binding to Waola scanner implementation.
 */
 
 #include "pch.h"

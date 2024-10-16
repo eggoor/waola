@@ -1,4 +1,4 @@
-/** @file waolane_fact4s.h
+/** @file waolane_fact4s_sh.h
 * Waola network library factories forward declaration.
 */
 

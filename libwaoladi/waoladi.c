@@ -1,4 +1,4 @@
-/** @file waoladi.h
+/** @file waoladi.c
 *
 * Waola network scanner (aka discoverer) implementation.
 */

@@ -1,4 +1,4 @@
-/** @file waolath_fact4s.h
+/** @file waolath_fact4s_sh.h
 *
 * Waola multithreading library factories.
 */

@@ -1,4 +1,4 @@
-/** @file list.h
+/** @file wlist.h
 * Waola linked list.
 */
 

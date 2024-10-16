@@ -1,4 +1,4 @@
-/** @file wthread.h
+/** @file wmutex.h
 * Waola mutex.
 */
 

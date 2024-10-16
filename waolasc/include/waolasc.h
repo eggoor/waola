@@ -187,9 +187,7 @@ WAOLACOD_API void waolasc_refresh_host(waolasc_t* const self,
 WAOLACOD_API void waolasc_add(waolasc_t* const self, const whost_data_t* const hd);
 
 /**
- * Adds client-specified hosts to the vault, then tries to
- * connect to to each one to update its data.
- * Notifices subscribed clients about each change with vault's callback.
+ * Adds client-specified hosts to the vault.
  *
  * @param self scanner interface pointer.
  * @param hosts array of of client-provided /ref whost_data_t.

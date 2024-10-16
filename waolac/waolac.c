@@ -1,8 +1,5 @@
-/** @file waola.c
-* Network scanner.
-*
-* Scans (discovers) network for online hosts
-* by sending ARP requests.
+/** @file waolaс.c
+* Waola console interface client implementation.
 */
 
 #include "pch.h"

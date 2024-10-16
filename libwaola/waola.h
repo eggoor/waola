@@ -1,4 +1,4 @@
-/** @file libwaola.h
+/** @file waola.h
 * Wake on LAN library.
 *
 * Broadcasts magic packet for each specified MAC

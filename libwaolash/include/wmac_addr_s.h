@@ -25,9 +25,10 @@ extern "C" {
 	byte* wmac_addr_dup_s(const byte* const restrict src);
 	byte* wmac_addr_from_string_s(const char* restrict str);
 	BOOL wmac_addr_is_empty_s(const byte* const restrict mac);
-	const char* wmac_addr_to_string_s(const byte* mac_addr,
+	const char* wmac_addr_to_string_s(const byte* const restrict mac_addr,
 		char* const restrict buffer);
-	int wmac_addr_compare_s(const byte* l, const byte* const restrict r);
+	int wmac_addr_compare_s(const byte* const restrict l,
+		const byte* const restrict r);
 
 #if __cplusplus
 }   // Extern C

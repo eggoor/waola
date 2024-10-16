@@ -1,5 +1,5 @@
 /** @file waola.c
-* Wake on LAN library.
+* Wake on LAN library implementation.
 *
 * Broadcasts magic packet for each specified MAC
 * address through all active network interfaces.
