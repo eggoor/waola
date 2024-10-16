@@ -36,6 +36,8 @@ wresolver_host_t* wresolver_host_make_impl(wthread_cbi_t* parent_cbi,
 	reh->parentCbi = parent_cbi;
 	reh->hostView = hw;
 	reh->status = status;
+	
+	whost_view_set_op_result_s(reh->hostView, wor_undefined);
 
 #if defined(DEBUG) || defined(_DEBUG)
 	reh->id = whost_view_get_host_id_s(reh->hostView);

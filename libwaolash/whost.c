@@ -283,9 +283,9 @@ BOOL whost_set_display_name(whost_t* host, const char* const restrict displayNam
 	return TRUE;
 }
 
-BOOL whost_set_op_result(whost_t* const restrict host, whost_op_result_t opr)
+BOOL whost_set_op_result(whost_t* const restrict host, const whost_op_result_t opr)
 {
-	if (host->opResult == opr) {
+	if (opr == host->opResult) {
 		return FALSE;
 	}
 	else {
