@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA60A5FA2CC1535200E7BD79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA60A5F92CC1535200E7BD79 /* AppDelegate.m */; };
+		CA60A5FC2CC153EA00E7BD79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA60A5FB2CC153EA00E7BD79 /* Assets.xcassets */; };
+		CA60A5FF2CC153EA00E7BD79 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA60A5FD2CC153EA00E7BD79 /* MainMenu.xib */; };
+		CA60A6012CC153EA00E7BD79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA60A6002CC153EA00E7BD79 /* main.m */; };
+		CA60A60C2CC1540300E7BD79 /* WaolaOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA60A60B2CC1540300E7BD79 /* WaolaOTests.m */; };
+		CA60A6162CC1540300E7BD79 /* WaolaOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA60A6152CC1540300E7BD79 /* WaolaOUITests.m */; };
+		CA60A6182CC1540300E7BD79 /* WaolaOUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA60A6172CC1540300E7BD79 /* WaolaOUITestsLaunchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA60A6082CC1540300E7BD79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA60A5ED2CC1534F00E7BD79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA60A5F42CC1535100E7BD79;
+			remoteInfo = WaolaO;
+		};
+		CA60A6122CC1540300E7BD79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA60A5ED2CC1534F00E7BD79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA60A5F42CC1535100E7BD79;
+			remoteInfo = WaolaO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA60A5F52CC1535100E7BD79 /* WaolaO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaolaO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA60A5F82CC1535100E7BD79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA60A5F92CC1535200E7BD79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA60A5FB2CC153EA00E7BD79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA60A5FE2CC153EA00E7BD79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CA60A6002CC153EA00E7BD79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA60A6022CC153EB00E7BD79 /* WaolaO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaolaO.entitlements; sourceTree = "<group>"; };
+		CA60A6072CC1540300E7BD79 /* WaolaOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaolaOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA60A60B2CC1540300E7BD79 /* WaolaOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaolaOTests.m; sourceTree = "<group>"; };
+		CA60A6112CC1540300E7BD79 /* WaolaOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaolaOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA60A6152CC1540300E7BD79 /* WaolaOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaolaOUITests.m; sourceTree = "<group>"; };
+		CA60A6172CC1540300E7BD79 /* WaolaOUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaolaOUITestsLaunchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA60A5F22CC1535100E7BD79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA60A6042CC1540300E7BD79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA60A60E2CC1540300E7BD79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA60A5EC2CC1534E00E7BD79 = {
+			isa = PBXGroup;
+			children = (
+				CA60A5F72CC1535100E7BD79 /* WaolaO */,
+				CA60A60A2CC1540300E7BD79 /* WaolaOTests */,
+				CA60A6142CC1540300E7BD79 /* WaolaOUITests */,
+				CA60A5F62CC1535100E7BD79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA60A5F62CC1535100E7BD79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA60A5F52CC1535100E7BD79 /* WaolaO.app */,
+				CA60A6072CC1540300E7BD79 /* WaolaOTests.xctest */,
+				CA60A6112CC1540300E7BD79 /* WaolaOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA60A5F72CC1535100E7BD79 /* WaolaO */ = {
+			isa = PBXGroup;
+			children = (
+				CA60A5F82CC1535100E7BD79 /* AppDelegate.h */,
+				CA60A5F92CC1535200E7BD79 /* AppDelegate.m */,
+				CA60A5FB2CC153EA00E7BD79 /* Assets.xcassets */,
+				CA60A5FD2CC153EA00E7BD79 /* MainMenu.xib */,
+				CA60A6002CC153EA00E7BD79 /* main.m */,
+				CA60A6022CC153EB00E7BD79 /* WaolaO.entitlements */,
+			);
+			path = WaolaO;
+			sourceTree = "<group>";
+		};
+		CA60A60A2CC1540300E7BD79 /* WaolaOTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA60A60B2CC1540300E7BD79 /* WaolaOTests.m */,
+			);
+			path = WaolaOTests;
+			sourceTree = "<group>";
+		};
+		CA60A6142CC1540300E7BD79 /* WaolaOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA60A6152CC1540300E7BD79 /* WaolaOUITests.m */,
+				CA60A6172CC1540300E7BD79 /* WaolaOUITestsLaunchTests.m */,
+			);
+			path = WaolaOUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA60A5F42CC1535100E7BD79 /* WaolaO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA60A61B2CC1540400E7BD79 /* Build configuration list for PBXNativeTarget "WaolaO" */;
+			buildPhases = (
+				CA60A5F12CC1535100E7BD79 /* Sources */,
+				CA60A5F22CC1535100E7BD79 /* Frameworks */,
+				CA60A5F32CC1535100E7BD79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaolaO;
+			productName = WaolaO;
+			productReference = CA60A5F52CC1535100E7BD79 /* WaolaO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA60A6062CC1540300E7BD79 /* WaolaOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA60A61E2CC1540400E7BD79 /* Build configuration list for PBXNativeTarget "WaolaOTests" */;
+			buildPhases = (
+				CA60A6032CC1540300E7BD79 /* Sources */,
+				CA60A6042CC1540300E7BD79 /* Frameworks */,
+				CA60A6052CC1540300E7BD79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA60A6092CC1540300E7BD79 /* PBXTargetDependency */,
+			);
+			name = WaolaOTests;
+			productName = WaolaOTests;
+			productReference = CA60A6072CC1540300E7BD79 /* WaolaOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA60A6102CC1540300E7BD79 /* WaolaOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA60A6212CC1540400E7BD79 /* Build configuration list for PBXNativeTarget "WaolaOUITests" */;
+			buildPhases = (
+				CA60A60D2CC1540300E7BD79 /* Sources */,
+				CA60A60E2CC1540300E7BD79 /* Frameworks */,
+				CA60A60F2CC1540300E7BD79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA60A6132CC1540300E7BD79 /* PBXTargetDependency */,
+			);
+			name = WaolaOUITests;
+			productName = WaolaOUITests;
+			productReference = CA60A6112CC1540300E7BD79 /* WaolaOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA60A5ED2CC1534F00E7BD79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CA60A5F42CC1535100E7BD79 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CA60A6062CC1540300E7BD79 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CA60A5F42CC1535100E7BD79;
+					};
+					CA60A6102CC1540300E7BD79 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CA60A5F42CC1535100E7BD79;
+					};
+				};
+			};
+			buildConfigurationList = CA60A5F02CC1534F00E7BD79 /* Build configuration list for PBXProject "WaolaO" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA60A5EC2CC1534E00E7BD79;
+			productRefGroup = CA60A5F62CC1535100E7BD79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA60A5F42CC1535100E7BD79 /* WaolaO */,
+				CA60A6062CC1540300E7BD79 /* WaolaOTests */,
+				CA60A6102CC1540300E7BD79 /* WaolaOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA60A5F32CC1535100E7BD79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA60A5FC2CC153EA00E7BD79 /* Assets.xcassets in Resources */,
+				CA60A5FF2CC153EA00E7BD79 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA60A6052CC1540300E7BD79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA60A60F2CC1540300E7BD79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA60A5F12CC1535100E7BD79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA60A6012CC153EA00E7BD79 /* main.m in Sources */,
+				CA60A5FA2CC1535200E7BD79 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA60A6032CC1540300E7BD79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA60A60C2CC1540300E7BD79 /* WaolaOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA60A60D2CC1540300E7BD79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA60A6162CC1540300E7BD79 /* WaolaOUITests.m in Sources */,
+				CA60A6182CC1540300E7BD79 /* WaolaOUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA60A6092CC1540300E7BD79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA60A5F42CC1535100E7BD79 /* WaolaO */;
+			targetProxy = CA60A6082CC1540300E7BD79 /* PBXContainerItemProxy */;
+		};
+		CA60A6132CC1540300E7BD79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA60A5F42CC1535100E7BD79 /* WaolaO */;
+			targetProxy = CA60A6122CC1540300E7BD79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA60A5FD2CC153EA00E7BD79 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA60A5FE2CC153EA00E7BD79 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA60A6192CC1540300E7BD79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CA60A61A2CC1540400E7BD79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CA60A61C2CC1540400E7BD79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WaolaO/WaolaO.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.smartnclever.WaolaO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		CA60A61D2CC1540400E7BD79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WaolaO/WaolaO.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.smartnclever.WaolaO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		CA60A61F2CC1540400E7BD79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.smartnclever.WaolaOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaolaO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WaolaO";
+			};
+			name = Debug;
+		};
+		CA60A6202CC1540400E7BD79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.smartnclever.WaolaOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaolaO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WaolaO";
+			};
+			name = Release;
+		};
+		CA60A6222CC1540400E7BD79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.smartnclever.WaolaOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = WaolaO;
+			};
+			name = Debug;
+		};
+		CA60A6232CC1540400E7BD79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.smartnclever.WaolaOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = WaolaO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA60A5F02CC1534F00E7BD79 /* Build configuration list for PBXProject "WaolaO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA60A6192CC1540300E7BD79 /* Debug */,
+				CA60A61A2CC1540400E7BD79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA60A61B2CC1540400E7BD79 /* Build configuration list for PBXNativeTarget "WaolaO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA60A61C2CC1540400E7BD79 /* Debug */,
+				CA60A61D2CC1540400E7BD79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA60A61E2CC1540400E7BD79 /* Build configuration list for PBXNativeTarget "WaolaOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA60A61F2CC1540400E7BD79 /* Debug */,
+				CA60A6202CC1540400E7BD79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA60A6212CC1540400E7BD79 /* Build configuration list for PBXNativeTarget "WaolaOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA60A6222CC1540400E7BD79 /* Debug */,
+				CA60A6232CC1540400E7BD79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA60A5ED2CC1534F00E7BD79 /* Project object */;
+}
