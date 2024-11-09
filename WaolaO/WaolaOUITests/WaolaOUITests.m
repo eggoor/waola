@@ -2,7 +2,7 @@
 //  WaolaOUITests.m
 //  WaolaOUITests
 //
-//  Created by Igor Kriuchkov on 17.10.2024.
+//  Created by e on 01.11.2024.
 //
 
 #import <XCTest/XCTest.h>

@@ -1,5 +1,5 @@
 /** @file whost_data.h
-* Waola host data.
+* Waola host data functions.
 */
 
 #pragma once

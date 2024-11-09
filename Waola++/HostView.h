@@ -43,8 +43,9 @@ namespace Waola {
 		std::string ToString() const override;
 
 		bool Equals(const IHostView* const other) const override;
-
 		
+		void SetExtraData(const void* data, size_t size) override;
+		void* GetExtraData() const override;
 
 	private:
 		HostView(const HostView&) = delete;

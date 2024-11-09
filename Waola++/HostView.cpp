@@ -21,8 +21,8 @@ const HostId HostView::GetHostId() const
 
 std::string HostView::GetHumanReadableId() const
 {
-	auto displayName = whost_view_get_host_id(hostView);
-	return displayName ? displayName : std::string();
+	auto id = whost_view_get_host_id(hostView);
+	return id ? id : std::string();
 }
 
 std::string HostView::GetDisplayName() const
@@ -141,6 +141,16 @@ bool HostView::Equals(const IHostView* const other) const
 	return otherHostView ?
 		whost_view_compare(hostView, otherHostView->hostView) == 0
 		: false;
+}
+
+void HostView::SetExtraData(const void* data, size_t size)
+{
+	whost_view_set_extra_data(hostView, data, size);
+}
+
+void* HostView::GetExtraData() const
+{
+	return whost_view_get_extra_data(hostView);
 }
 
 void HostView::AddToStream(std::stringstream& ss,

@@ -6,8 +6,7 @@
 
 #include "wdiscoverer_net_priv.h"
 
-struct wdiscoverer_net
-{
+struct wdiscoverer_net {
 #if defined(DEBUG) || defined(_DEBUG)
 	const char* id;
 #endif
@@ -212,6 +211,7 @@ static int on_discovery_finished(wdiscoverer_net_t* self)
 	}
 
 	wcont4r_free_s(self->discoverers);
+	self->discoverers = NULL;
 
 	if (0 == rc && 0 != self->threadCbi->errNo) {
 		rc = self->threadCbi->errNo;
@@ -402,7 +402,7 @@ static void child_thread_finished_callback(const wthread_cbi_t* const cbi)
 			wevent_wait(self->discoveryScheduledEvent, INFINITE);
 		}
 
-		if (wthread_counter_get_thread_count(self->threadCounter) == 0) {
+		if (!self->cancelled && wthread_counter_get_thread_count(self->threadCounter) == 0) {
 			on_discovery_finished((wdiscoverer_net_t*)self);
 		}
 	}

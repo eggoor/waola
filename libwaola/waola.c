@@ -76,6 +76,12 @@ int waolah_s(const wcont4r_factory cont4r_factory, const wmutex_factory mutex_fa
 {
 	int rc = 0;
 
+	if (0 == count) {
+		wlog_if_level(wll_error, "Empty host list has passed to %s\n", __func__);
+		rc = EX_DATAERR;
+		goto end;
+	}
+
 	wthread_counter_t* tc = thread_counter_factory(mutex_factory);
 	if (!tc) {
 		wlog_if_level(wll_warning, "Unable to make thread counter\n");
@@ -203,12 +209,6 @@ static int waolah(const wcont4r_t* iface_list,
 	size_t count)
 {
 	int rc = 0;
-
-	if (0 == count) {
-		wlog_if_level(wll_error, "Empty host list\n");
-		rc = EX_DATAERR;
-		goto end;
-	}
 
 	rc = waola_prepare();
 

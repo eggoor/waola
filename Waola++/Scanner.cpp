@@ -51,7 +51,8 @@ void Scanner::VaultCallback(const waolava_cbi_t* const cbi)
 
 void Scanner::StateCallback(wtask_t tasks)
 {
-	stateObserver.Notify(StateEvent((Task)tasks));
+	auto stateEvent = StateEvent((Task)tasks);
+	stateObserver.Notify(stateEvent);
 }
 
 void Scanner::VaultCallback(waolava_op_t opCode,
@@ -63,9 +64,9 @@ void Scanner::VaultCallback(waolava_op_t opCode,
 	vaultObserver.Notify(vaultEvent);
 }
 
-VaultUnsubscribeToken Scanner::SubscribeForVaultEvents(VaultEventCallback eventCb)
+VaultUnsubscribeToken Scanner::SubscribeForVaultEvents(const VaultEventCallbackData& cbData)
 {
-	return vaultObserver.Subscribe(eventCb);
+	return vaultObserver.Subscribe(cbData);
 }
 
 void Scanner::UnubscribeFromVaultEvents(VaultUnsubscribeToken unsubscribeToken)
@@ -73,9 +74,9 @@ void Scanner::UnubscribeFromVaultEvents(VaultUnsubscribeToken unsubscribeToken)
 	vaultObserver.Unubscribe(unsubscribeToken);
 }
 
-StateUnsubscribeToken Scanner::SubscribeForStateEvents(StateEventCallback eventCb)
+StateUnsubscribeToken Scanner::SubscribeForStateEvents(const StateEventCallbackData& cbData)
 {
-	return stateObserver.Subscribe(eventCb);
+	return stateObserver.Subscribe(cbData);
 }
 
 void Scanner::UnubscribeFromStateEvents(StateUnsubscribeToken unsubscribeToken)

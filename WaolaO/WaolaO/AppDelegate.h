@@ -2,13 +2,11 @@
 //  AppDelegate.h
 //  WaolaO
 //
-//  Created by Igor Kriuchkov on 17.10.2024.
+//  Created by e on 01.11.2024.
 //
 
-#import <Cocoa/Cocoa.h>
+@interface AppDelegate : NSObject<NSApplicationDelegate>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
-
+@property (readonly, strong) NSPersistentContainer* persistentContainer;
 
 @end
-

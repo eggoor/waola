@@ -32,7 +32,7 @@ extern "C" {
 	typedef struct wcont4r wcont4r_t;
 
 	/**
-	 * \struct Waola host data.
+	 * \struct Waola host plain data without behavior.
 	 */
 	typedef struct whost_data whost_data_t;
 

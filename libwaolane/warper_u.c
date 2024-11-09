@@ -10,8 +10,7 @@
 
 #define ARP_REQ_TIMEOUT_MS 128
 
-struct warper
-{
+struct warper {
 #if defined(DEBUG) || defined(_DEBUG)
 	const char* id;
 #endif
@@ -104,7 +103,7 @@ void warper_wait_for_listening_finished(warper_t* self,
 	BOOL join_thread)
 {
 	wmutex_lock(self->mutex, INFINITE);
-
+	
 	if (self->thread) {
 		wthread_free(self->thread, join_thread ? INFINITE : 0);
 		self->thread = NULL;

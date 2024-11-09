@@ -8,17 +8,17 @@ namespace Waola {
 	public:
 		TUnsubscribeToken Subscribe(const TCallback& callback);
 		void Unubscribe(const TUnsubscribeToken& token);
-		void Notify(const TEvent& event);
+		void Notify(TEvent& event);
 
 	private:
-		std::forward_list<TCallback> subscribers;
+		std::forward_list<TCallback> subscribtions;
 	};
 
 	template<typename TCallback, typename TUnsubscribeToken, typename TEvent>
 	TUnsubscribeToken Observer<TCallback, TUnsubscribeToken, TEvent>::Subscribe(const TCallback& callback)
 	{
-		auto unsubscribeToken = subscribers.before_begin();
-		subscribers.push_front(callback);
+		auto unsubscribeToken = subscribtions.before_begin();
+		subscribtions.push_front(callback);
 
 		return unsubscribeToken;
 	}
@@ -26,14 +26,14 @@ namespace Waola {
 	template<typename TCallback, typename TUnsubscribeToken, typename TEvent>
 	void Observer<TCallback, TUnsubscribeToken, TEvent>::Unubscribe(const TUnsubscribeToken& token)
 	{
-		subscribers.erase_after(token);
+		subscribtions.erase_after(token);
 	}
 
 	template<typename TCallback, typename TUnsubscribeToken, typename TEvent>
-	void Observer<TCallback, TUnsubscribeToken, TEvent>::Notify(const TEvent& event)
+	void Observer<TCallback, TUnsubscribeToken, TEvent>::Notify(TEvent& event)
 	{
-		for (auto& callback : subscribers) {
-			callback(event);
+		for (auto& subscribtion : subscribtions) {
+			subscribtion.Raise(event);
 		}
 	}
 }

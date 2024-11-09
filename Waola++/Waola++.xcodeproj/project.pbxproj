@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CA194BC92CA419FB00B8AFD6 /* HostChangedField.h in Headers */ = {isa = PBXBuildFile; fileRef = CA194BC82CA419FB00B8AFD6 /* HostChangedField.h */; };
+		CA366F822CDBA18200FE9122 /* EventCallbackData.h in Headers */ = {isa = PBXBuildFile; fileRef = CA366F812CDBA18200FE9122 /* EventCallbackData.h */; };
+		CA366F842CDBA46B00FE9122 /* EventBase.h in Headers */ = {isa = PBXBuildFile; fileRef = CA366F832CDBA46B00FE9122 /* EventBase.h */; };
+		CA366F862CDBA51300FE9122 /* EventBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA366F852CDBA51300FE9122 /* EventBase.cpp */; };
 		CA83F7342C92C6A4001FC565 /* IScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7252C92C6A4001FC565 /* IScanner.h */; };
 		CA83F7352C92C6A4001FC565 /* OpResult.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7262C92C6A4001FC565 /* OpResult.h */; };
 		CA83F7362C92C6A4001FC565 /* Module.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7272C92C6A4001FC565 /* Module.h */; };
@@ -23,7 +26,7 @@
 		CA83F7412C92C6A4001FC565 /* VaultEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7322C92C6A4001FC565 /* VaultEvent.h */; };
 		CA83F7502C92C6C6001FC565 /* StateEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F7422C92C6C5001FC565 /* StateEvent.cpp */; };
 		CA83F7512C92C6C6001FC565 /* pch_u.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7432C92C6C5001FC565 /* pch_u.h */; };
-		CA83F7522C92C6C6001FC565 /* Waola.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7442C92C6C5001FC565 /* Waola.h */; };
+		CA83F7522C92C6C6001FC565 /* Waola++.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7442C92C6C5001FC565 /* Waola++.h */; };
 		CA83F7532C92C6C6001FC565 /* VaultEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F7452C92C6C5001FC565 /* VaultEvent.cpp */; };
 		CA83F7542C92C6C6001FC565 /* Observer.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7462C92C6C5001FC565 /* Observer.h */; };
 		CA83F7552C92C6C6001FC565 /* HostView.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F7472C92C6C5001FC565 /* HostView.h */; };
@@ -33,11 +36,14 @@
 		CA83F75A2C92C6C6001FC565 /* pch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F74C2C92C6C6001FC565 /* pch.cpp */; };
 		CA83F75B2C92C6C6001FC565 /* Scanner.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F74D2C92C6C6001FC565 /* Scanner.h */; };
 		CA83F75C2C92C6C6001FC565 /* HostView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F74E2C92C6C6001FC565 /* HostView.cpp */; };
-		CA83F75D2C92C6C6001FC565 /* Waola.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F74F2C92C6C6001FC565 /* Waola.cpp */; };
+		CA83F75D2C92C6C6001FC565 /* Waola++.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F74F2C92C6C6001FC565 /* Waola++.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA194BC82CA419FB00B8AFD6 /* HostChangedField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HostChangedField.h; sourceTree = "<group>"; };
+		CA366F812CDBA18200FE9122 /* EventCallbackData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventCallbackData.h; sourceTree = "<group>"; };
+		CA366F832CDBA46B00FE9122 /* EventBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventBase.h; sourceTree = "<group>"; };
+		CA366F852CDBA51300FE9122 /* EventBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EventBase.cpp; sourceTree = "<group>"; };
 		CA83F71C2C92C5E5001FC565 /* libWaola++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libWaola++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA83F7252C92C6A4001FC565 /* IScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IScanner.h; sourceTree = "<group>"; };
 		CA83F7262C92C6A4001FC565 /* OpResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpResult.h; sourceTree = "<group>"; };
@@ -54,7 +60,7 @@
 		CA83F7322C92C6A4001FC565 /* VaultEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VaultEvent.h; sourceTree = "<group>"; };
 		CA83F7422C92C6C5001FC565 /* StateEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateEvent.cpp; sourceTree = "<group>"; };
 		CA83F7432C92C6C5001FC565 /* pch_u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pch_u.h; sourceTree = "<group>"; };
-		CA83F7442C92C6C5001FC565 /* Waola.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Waola.h; sourceTree = "<group>"; };
+		CA83F7442C92C6C5001FC565 /* Waola++.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Waola++.h"; sourceTree = "<group>"; };
 		CA83F7452C92C6C5001FC565 /* VaultEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VaultEvent.cpp; sourceTree = "<group>"; };
 		CA83F7462C92C6C5001FC565 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
 		CA83F7472C92C6C5001FC565 /* HostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostView.h; sourceTree = "<group>"; };
@@ -64,7 +70,9 @@
 		CA83F74C2C92C6C6001FC565 /* pch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pch.cpp; sourceTree = "<group>"; };
 		CA83F74D2C92C6C6001FC565 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
 		CA83F74E2C92C6C6001FC565 /* HostView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HostView.cpp; sourceTree = "<group>"; };
-		CA83F74F2C92C6C6001FC565 /* Waola.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Waola.cpp; sourceTree = "<group>"; };
+		CA83F74F2C92C6C6001FC565 /* Waola++.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Waola++.cpp"; sourceTree = "<group>"; };
+		CAC277BF2CDA79B20028F284 /* liblibwaolasc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibwaolasc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC277C12CDA7A260028F284 /* libwaolasc.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libwaolasc.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				CA83F7232C92C5F1001FC565 /* include */,
+				CA366F852CDBA51300FE9122 /* EventBase.cpp */,
 				CA83F74B2C92C6C5001FC565 /* HostData.cpp */,
 				CA83F74E2C92C6C6001FC565 /* HostView.cpp */,
 				CA83F7472C92C6C5001FC565 /* HostView.h */,
@@ -93,8 +102,9 @@
 				CA83F74D2C92C6C6001FC565 /* Scanner.h */,
 				CA83F7422C92C6C5001FC565 /* StateEvent.cpp */,
 				CA83F7452C92C6C5001FC565 /* VaultEvent.cpp */,
-				CA83F74F2C92C6C6001FC565 /* Waola.cpp */,
-				CA83F7442C92C6C5001FC565 /* Waola.h */,
+				CA83F74F2C92C6C6001FC565 /* Waola++.cpp */,
+				CA83F7442C92C6C5001FC565 /* Waola++.h */,
+				CAC277BE2CDA79B20028F284 /* Frameworks */,
 				CA83F71D2C92C5E5001FC565 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,8 +134,19 @@
 				CA83F7322C92C6A4001FC565 /* VaultEvent.h */,
 				CA83F72F2C92C6A4001FC565 /* VaultOperation.h */,
 				CA83F72E2C92C6A4001FC565 /* WaolaPlusPlus.h */,
+				CA366F812CDBA18200FE9122 /* EventCallbackData.h */,
+				CA366F832CDBA46B00FE9122 /* EventBase.h */,
 			);
 			path = include;
+			sourceTree = "<group>";
+		};
+		CAC277BE2CDA79B20028F284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAC277C12CDA7A260028F284 /* libwaolasc.dylib */,
+				CAC277BF2CDA79B20028F284 /* liblibwaolasc.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA194BC92CA419FB00B8AFD6 /* HostChangedField.h in Headers */,
+				CA366F822CDBA18200FE9122 /* EventCallbackData.h in Headers */,
+				CA366F842CDBA46B00FE9122 /* EventBase.h in Headers */,
 				CA83F7362C92C6A4001FC565 /* Module.h in Headers */,
 				CA83F73B2C92C6A4001FC565 /* IHostView.h in Headers */,
 				CA83F7392C92C6A4001FC565 /* LogLevel.h in Headers */,
@@ -150,7 +173,7 @@
 				CA83F7352C92C6A4001FC565 /* OpResult.h in Headers */,
 				CA83F73F2C92C6A4001FC565 /* HostData.h in Headers */,
 				CA83F7512C92C6C6001FC565 /* pch_u.h in Headers */,
-				CA83F7522C92C6C6001FC565 /* Waola.h in Headers */,
+				CA83F7522C92C6C6001FC565 /* Waola++.h in Headers */,
 				CA83F7402C92C6A4001FC565 /* HostField.h in Headers */,
 				CA83F7342C92C6A4001FC565 /* IScanner.h in Headers */,
 				CA83F7572C92C6C6001FC565 /* pch.h in Headers */,
@@ -218,9 +241,10 @@
 				CA83F75C2C92C6C6001FC565 /* HostView.cpp in Sources */,
 				CA83F7592C92C6C6001FC565 /* HostData.cpp in Sources */,
 				CA83F7502C92C6C6001FC565 /* StateEvent.cpp in Sources */,
+				CA366F862CDBA51300FE9122 /* EventBase.cpp in Sources */,
 				CA83F75A2C92C6C6001FC565 /* pch.cpp in Sources */,
 				CA83F7582C92C6C6001FC565 /* Scanner.cpp in Sources */,
-				CA83F75D2C92C6C6001FC565 /* Waola.cpp in Sources */,
+				CA83F75D2C92C6C6001FC565 /* Waola++.cpp in Sources */,
 				CA83F7532C92C6C6001FC565 /* VaultEvent.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

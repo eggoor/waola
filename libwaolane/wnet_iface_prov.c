@@ -193,7 +193,7 @@ void wnet_iface_prov_wait_for_listening_finished(const wnet_iface_prov_t* self)
 {
 	wnet_iface_t* nif = wcont4r_get_first_s(self->ifList);
 	while (nif) {
-		wnet_iface_wait_for_listening_finished(nif, TRUE);
+		wnet_iface_wait_for_warper_listening_finished(nif, TRUE);
 		nif = wcont4r_get_next_s(self->ifList);
 	}
 }

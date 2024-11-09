@@ -10,8 +10,7 @@
 
 #include "waoladi.h"
 
-struct waoladi
-{
+struct waoladi {
 	const async_operation_data_t* asyncCbi;
 	const waolava_merge_host_cbi_t* mergeHostCbi;
 	waoladi_fact4s_t* fact4s;
@@ -78,6 +77,8 @@ end:
 
 void waoladi_free(waoladi_t* const self)
 {
+	waoladi_cancel_task_s(self);
+	
 	if (self->ifaceProv) {
 		wnet_iface_prov_free(self->ifaceProv);
 	}

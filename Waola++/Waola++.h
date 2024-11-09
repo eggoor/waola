@@ -7,6 +7,6 @@ namespace Waola {
 	class Waola : public IWaola
 	{
 	public:
-		void WaolaH(std::vector<IHostView*> hostList) override;
+		void WakeUp(std::vector<IHostView*> hostList) override;
 	};
 }

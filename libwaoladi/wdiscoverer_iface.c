@@ -116,7 +116,7 @@ int wdiscoverer_iface_free(wdiscoverer_iface_t* self, BOOL join_thread)
 	wdiscoverer_iface_free_discovery_scheduled_event(self);
 	wmutex_free(self->discoveryScheduledEventMutex);
 
-	wnet_iface_wait_for_listening_finished(self->netIface, join_thread);
+	wnet_iface_wait_for_warper_listening_finished(self->netIface, join_thread);
 
 	if (self->thread) {
 		int rc = wthread_free(self->thread, join_thread ? INFINITE : 0);
@@ -306,7 +306,7 @@ static void wdiscoverer_iface_child_thread_finished_callback(const wthread_cbi_t
 	}
 
 	if (self->parentCbi->childThreadFinishedCb) {
-		(* self->parentCbi->childThreadFinishedCb)(self->parentCbi);
+		(self->parentCbi->childThreadFinishedCb)(self->parentCbi);
 	}
 }
 

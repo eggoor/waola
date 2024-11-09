@@ -32,6 +32,9 @@
 		CA1E78272CB27D4F009D93ED /* pch_m.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E78262CB27D4F009D93ED /* pch_m.h */; };
 		CA1E782C2CB29A9B009D93ED /* waolane_fact4s.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E782A2CB29A9B009D93ED /* waolane_fact4s.h */; };
 		CA1E782D2CB29A9B009D93ED /* waolane_fact4s.c in Sources */ = {isa = PBXBuildFile; fileRef = CA1E782B2CB29A9B009D93ED /* waolane_fact4s.c */; };
+		CAA5D5432CDF689D00CFF81F /* waolane.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA5D5402CDF689D00CFF81F /* waolane.h */; };
+		CAA5D5442CDF689D00CFF81F /* wnet_iface.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA5D5412CDF689D00CFF81F /* wnet_iface.h */; };
+		CAA5D5452CDF689D00CFF81F /* wnet_iface_prov.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA5D5422CDF689D00CFF81F /* wnet_iface_prov.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		CA1E782B2CB29A9B009D93ED /* waolane_fact4s.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = waolane_fact4s.c; sourceTree = "<group>"; };
 		CA237BFE2CB5939C00787F1D /* wnet_iface_prov_u_priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wnet_iface_prov_u_priv.h; sourceTree = "<group>"; };
 		CA9D16E32CB18E8E0025FB2E /* liblibwaolane.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibwaolane.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAA5D5402CDF689D00CFF81F /* waolane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = waolane.h; sourceTree = "<group>"; };
+		CAA5D5412CDF689D00CFF81F /* wnet_iface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wnet_iface.h; sourceTree = "<group>"; };
+		CAA5D5422CDF689D00CFF81F /* wnet_iface_prov.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wnet_iface_prov.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,9 @@
 		CA9D16EA2CB18F3A0025FB2E /* include */ = {
 			isa = PBXGroup;
 			children = (
+				CAA5D5402CDF689D00CFF81F /* waolane.h */,
+				CAA5D5412CDF689D00CFF81F /* wnet_iface.h */,
+				CAA5D5422CDF689D00CFF81F /* wnet_iface_prov.h */,
 				CA1E78092CB27C5F009D93ED /* arp_cache_entry.h */,
 				CA1E780A2CB27C5F009D93ED /* warper_cb_data.h */,
 				CA1E780B2CB27C5F009D93ED /* warper.h */,
@@ -136,6 +145,9 @@
 				CA1E780E2CB27C5F009D93ED /* warper_cb_data.h in Headers */,
 				CA1E781C2CB27C86009D93ED /* warper_priv.h in Headers */,
 				CA1E78272CB27D4F009D93ED /* pch_m.h in Headers */,
+				CAA5D5432CDF689D00CFF81F /* waolane.h in Headers */,
+				CAA5D5442CDF689D00CFF81F /* wnet_iface.h in Headers */,
+				CAA5D5452CDF689D00CFF81F /* wnet_iface_prov.h in Headers */,
 				CA1E781D2CB27C86009D93ED /* warper.h in Headers */,
 				CA1E781F2CB27C86009D93ED /* warper_m.h in Headers */,
 				CA1E782C2CB29A9B009D93ED /* waolane_fact4s.h in Headers */,
@@ -175,7 +187,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					CA9D16E22CB18E8D0025FB2E = {
 						CreatedOnToolsVersion = 14.2;
@@ -226,6 +238,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -294,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

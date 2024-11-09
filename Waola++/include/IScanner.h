@@ -1,3 +1,7 @@
+/** @file IScanner.h
+ * C++ binding for Waola network scanner.
+ */
+
 #pragma once
 
 /*
@@ -14,14 +18,17 @@
 #include "Module.h"
 #include "VaultEvent.h"
 #include "StateEvent.h"
+#include "EventCallbackData.h"
 
 namespace Waola {
 
 	typedef std::function<void(const StateEvent&)> StateEventCallback;
-	typedef std::forward_list<StateEventCallback>::iterator StateUnsubscribeToken;
+	typedef EventCallbackData<StateEventCallback, StateEvent> StateEventCallbackData;
+	typedef std::forward_list<StateEventCallbackData>::iterator StateUnsubscribeToken;
 
 	typedef std::function<void(const VaultEvent&)> VaultEventCallback;
-	typedef std::forward_list<VaultEventCallback>::iterator VaultUnsubscribeToken;
+	typedef EventCallbackData<VaultEventCallback, VaultEvent> VaultEventCallbackData;
+	typedef std::forward_list<VaultEventCallbackData>::iterator VaultUnsubscribeToken;
 
 	class IScanner
 	{
@@ -45,10 +52,10 @@ namespace Waola {
 		virtual void CancelTask() = 0;
 		virtual const void* GetStatus(Module* module, int* const opCode) = 0;
 
-		virtual StateUnsubscribeToken SubscribeForStateEvents(StateEventCallback eventCb) = 0;
+		virtual StateUnsubscribeToken SubscribeForStateEvents(const StateEventCallbackData& cbData) = 0;
 		virtual void UnubscribeFromStateEvents(StateUnsubscribeToken unsubscribeToken) = 0;
 
-		virtual VaultUnsubscribeToken SubscribeForVaultEvents(VaultEventCallback eventCb) = 0;
+		virtual VaultUnsubscribeToken SubscribeForVaultEvents(const VaultEventCallbackData& cbData) = 0;
 		virtual void UnubscribeFromVaultEvents(VaultUnsubscribeToken unsubscribeToken) = 0;
 
 	public:

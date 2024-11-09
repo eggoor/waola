@@ -203,7 +203,7 @@ int wnet_iface_resolve_ip_2_mac(const wnet_iface_t* self,
 	return rc;
 }
 
-void wnet_iface_wait_for_listening_finished(const wnet_iface_t* self,
+void wnet_iface_wait_for_warper_listening_finished(const wnet_iface_t* self,
 	BOOL join_thread)
 {
 	warper_wait_for_listening_finished(self->warper, join_thread);

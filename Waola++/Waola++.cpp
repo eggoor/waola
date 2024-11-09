@@ -1,6 +1,6 @@
 #include "pch.h"
 
-#include "Waola.h"
+#include "Waola++.h"
 
 Waola::IWaola* Waola::IWaola::Create()
 {
@@ -12,7 +12,7 @@ void Waola::IWaola::Destroy(Waola::IWaola* const waola)
 	delete waola;
 }
 
-void Waola::Waola::WaolaH(std::vector<IHostView*> hostList)
+void Waola::Waola::WakeUp(std::vector<IHostView*> hostList)
 {
 	std::vector<whost_view_t*> hosts(hostList.size());
 	std::transform(cbegin(hostList), cend(hostList), begin(hosts),

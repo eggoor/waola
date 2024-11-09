@@ -1,3 +1,10 @@
+/** @file HostData.h
+* Waola network host view interface.
+
+Represents simple host model view which converts
+host's data from and to their string representation.
+*/
+
 #pragma once
 
 /*

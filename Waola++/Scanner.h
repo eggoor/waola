@@ -1,6 +1,7 @@
 #pragma once
 
 #include "include/IScanner.h"
+
 #include "Observer.h"
 
 namespace Waola {
@@ -28,10 +29,10 @@ namespace Waola {
 		void CancelTask() override;
 		const void* GetStatus(Module* module, int* const opCode) override;
 
-		StateUnsubscribeToken SubscribeForStateEvents(StateEventCallback eventCb) override;
+		StateUnsubscribeToken SubscribeForStateEvents(const StateEventCallbackData& cbData) override;
 		void UnubscribeFromStateEvents(StateUnsubscribeToken unsubscribeToken) override;
 
-		VaultUnsubscribeToken SubscribeForVaultEvents(VaultEventCallback eventCb) override;
+		VaultUnsubscribeToken SubscribeForVaultEvents(const VaultEventCallbackData& cbData) override;
 		void UnubscribeFromVaultEvents(VaultUnsubscribeToken unsubscribeToken) override;
 
 	private:
@@ -46,7 +47,13 @@ namespace Waola {
 		waolava_subscribe_data_t vaultCbi;
 		waolasc_t* scanner;
 
-		Observer<VaultEventCallback, VaultUnsubscribeToken, VaultEvent> vaultObserver;
-		Observer<StateEventCallback, StateUnsubscribeToken, StateEvent> stateObserver;
+		Observer<VaultEventCallbackData, VaultUnsubscribeToken, VaultEvent> vaultObserver;
+		Observer<StateEventCallbackData, StateUnsubscribeToken, StateEvent> stateObserver;
+		
+	private:
+		Scanner(const IScanner&) = delete;
+		Scanner(IScanner&&) = delete;
+		Scanner& operator=(const IScanner&) = delete;
+		Scanner& operator=(IScanner&&) = delete;
 	};
 }

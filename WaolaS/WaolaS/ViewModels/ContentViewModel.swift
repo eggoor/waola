@@ -63,7 +63,7 @@ extension ContentView {
 			case wva_added:
 				addHost(hostView: hostView)
 			case wva_modified:
-				updateHost(hostView: hostView)
+				updateHost()
 			case wva_deleted:
 				deleteHost(hostView: hostView)
 				break
@@ -134,7 +134,7 @@ extension ContentView {
 			}
 		}
 		
-		private func updateHost(hostView: OpaquePointer) {
+		private func updateHost() {
 			DispatchQueue.main.async {
 				self.objectWillChange.send()
 			}

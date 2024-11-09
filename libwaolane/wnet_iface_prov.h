@@ -2,8 +2,7 @@
 
 #include "include/wnet_iface_prov.h"
 
-struct wnet_iface_prov
-{
+struct wnet_iface_prov {
 	waolane_fact4s_t* fact4s;
 	wcont4r_t* ifList;
 	wcont4r_t* arp_cache;
