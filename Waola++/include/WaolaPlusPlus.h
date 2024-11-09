@@ -1,11 +1,11 @@
-//
-//  WaolaPlusPlus.h
-//  WaolaPlusPlus
-//
-//  Created by e on 11.09.2024.
-//
+/** @file WaolaPlusPlus.h
+* Waola++ "umbrella" header.
+*/
 
+/*
+Include in precompiled header:
 #import <Foundation/Foundation.h>
+*/
 
 //! Project version number for WaolaPlusPlus.
 FOUNDATION_EXPORT double WaolaPlusPlusVersionNumber;
@@ -13,7 +13,7 @@ FOUNDATION_EXPORT double WaolaPlusPlusVersionNumber;
 //! Project version string for WaolaPlusPlus.
 FOUNDATION_EXPORT const unsigned char WaolaPlusPlusVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <WaolaPlusPlus/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <include/WaolaPlusPlus.h>
 
 #import "HostData.h"
 #import "HostField.h"

@@ -1,3 +1,7 @@
+/** @file VaultEvent.h
+* Waola vault opearation event.
+*/
+
 #pragma once
 
 #include "VaultOperation.h"
@@ -14,5 +18,14 @@ namespace Waola {
 	public:
 		const VaultOperation OpCode;
 		const IHostView& HostView;
+		
+	public:
+		~VaultEvent() = default;
+
+	private:
+		VaultEvent(const VaultEvent&) = delete;
+		VaultEvent(VaultEvent&&) = delete;
+		VaultEvent& operator=(const VaultEvent&) = delete;
+		VaultEvent& operator=(VaultEvent&&) = delete;
 	};
 }

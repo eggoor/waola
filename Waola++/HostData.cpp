@@ -5,10 +5,10 @@
 using namespace Waola;
 
 HostData::HostData(const char* displayName,
-	const char* hostName, const char* ipAddr,
+	const char* hostname, const char* ipAddr,
 	const char* macAddr, time_t lastSeenOnline)
 	: DisplayName(StrDup(displayName))
-	, Hostname(StrDup(hostName))
+	, Hostname(StrDup(hostname))
 	, IpAddr(StrDup(ipAddr))
 	, MacAddr(StrDup(macAddr))
 	, LastSeenOnline(lastSeenOnline)

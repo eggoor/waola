@@ -14,7 +14,19 @@ namespace Waola {
 		static IWaola* Create();
 		static void Destroy(IWaola* const waola);
 		
+	public:
 		virtual void WakeUp(std::vector<IHostView*> hostList) = 0;
-		virtual ~IWaola() {}
+		
+	public:
+		virtual ~IWaola() = default;
+
+	protected:
+		IWaola() = default;
+
+	private:
+		IWaola(const IWaola&) = delete;
+		IWaola(IWaola&&) = delete;
+		IWaola& operator=(const IWaola&) = delete;
+		IWaola& operator=(IWaola&&) = delete;
 	};
 }

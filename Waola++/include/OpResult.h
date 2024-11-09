@@ -1,3 +1,7 @@
+/** @file OpResult.h
+* Waola wakeip result enumeration.
+*/
+
 #pragma once
 
 namespace Waola {

@@ -1,3 +1,7 @@
+/** @file EventCallbackData.h
+* Waola event callback data.
+*/
+
 #pragma once
 
 namespace Waola {

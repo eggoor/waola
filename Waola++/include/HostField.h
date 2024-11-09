@@ -1,3 +1,7 @@
+/** @file HostField.h
+* Waola host properties enumeration.
+*/
+
 #pragma once
 
 namespace Waola {

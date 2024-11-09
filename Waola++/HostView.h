@@ -18,13 +18,13 @@ namespace Waola {
 		std::string GetExactDisplayName() const override;
 
 		std::string GetHostname() const override;
-		void SetHostname(const char* const hostName) override;
+		void SetHostname(const char* const hostname) override;
 
 		std::string GetIpAddressString() const	override;
-		void SetIpAddressString(const char* const hostName) override;
+		void SetIpAddressString(const char* const ipAddrString) override;
 
 		std::string GetMacAddressString() const override;
-		void SetMacAddressString(const char* const hostName) override;
+		void SetMacAddressString(const char* const macAddrString) override;
 
 		std::string GetLastSeenOnlineString() const override;
 
@@ -46,6 +46,9 @@ namespace Waola {
 		
 		void SetExtraData(const void* data, size_t size) override;
 		void* GetExtraData() const override;
+		
+	public:
+		~HostView() = default;
 
 	private:
 		HostView(const HostView&) = delete;

@@ -1,3 +1,8 @@
+/** @file HostChangedField.h
+* Flags showing which fields were changed
+* since last check.
+*/
+
 #pragma once
 
 namespace Waola {

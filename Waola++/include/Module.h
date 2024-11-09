@@ -1,3 +1,7 @@
+/** @file Module.h
+* Waola modules enumeration.
+*/
+
 #pragma once
 
 namespace Waola {

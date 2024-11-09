@@ -8,5 +8,14 @@ namespace Waola {
 	{
 	public:
 		void WakeUp(std::vector<IHostView*> hostList) override;
-	};
+		
+	public:
+		Waola() = default;
+		~Waola() = default;
+
+	private:
+		Waola(const Waola&) = delete;
+		Waola(Waola&&) = delete;
+		Waola& operator=(const Waola&) = delete;
+		Waola& operator=(Waola&&) = delete;	};
 }

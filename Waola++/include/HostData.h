@@ -1,8 +1,5 @@
 /** @file HostData.h
-* Waola network host view interface.
-
-Represents simple host model view which converts
-host's data from and to their string representation.
+* Waola host plain data without behavior.
 */
 
 #pragma once
@@ -18,7 +15,7 @@ namespace Waola {
 	class HostData
 	{
 	public:
-		HostData(const char* displayName, const char* hostName,
+		HostData(const char* displayName, const char* hostname,
 			const char* ipAddr, const char* macAddr,
 			time_t lastSeenOnline);
 		~HostData();

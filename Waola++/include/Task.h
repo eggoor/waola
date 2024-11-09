@@ -1,3 +1,7 @@
+/** @file Task.h
+* Waola scanner rask enumeration.
+*/
+
 #pragma once
 
 namespace Waola {
@@ -6,7 +10,7 @@ namespace Waola {
 	*/
 	enum Task {
 		wt_idle
-		, wt_discover = 0x01
-		, wt_refresh = 0x02
+		, wt_discover =	0x01
+		, wt_refresh =	0x02
 	};
 }

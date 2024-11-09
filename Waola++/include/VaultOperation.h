@@ -1,3 +1,7 @@
+/** @file VaultOperation.h
+* Waola vault operation enumeration.
+*/
+
 #pragma once
 
 namespace Waola {
