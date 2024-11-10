@@ -111,7 +111,6 @@ void warper_wait_for_listening_finished(warper_t* self,
 	}
 
 	if (self->arpCbData) {
-		wcont4r_free_s(self->arpCbData->hostDiscovererList);
 		wfree_s(self->arpCbData);
 		self->arpCbData = NULL;
 	}
@@ -268,7 +267,6 @@ static void thread_finished_callback(const wthread_cbi_t* const restrict cbi)
 		}
 
 		if (self->arpCbData) {
-			wcont4r_free_s(self->arpCbData->hostDiscovererList);
 			wfree_s(self->arpCbData);
 			self->arpCbData = NULL;
 		}

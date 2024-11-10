@@ -138,7 +138,7 @@ static int thread_callbak(const wthread_cbi_t* const restrict cbi)
 static void thread_finished_callback(const wthread_cbi_t* const restrict cbi)
 {
 	wdiscoverer_host_t* drh = cbi->threadOwner;
-	(*drh->parentCbi->childThreadFinishedCb)(drh->parentCbi);
+	(drh->parentCbi->childThreadFinishedCb)(drh->parentCbi);
 }
 
 static int discover_host(wdiscoverer_host_t* self)

@@ -44,9 +44,11 @@ static void host_callback(const waolava_cbi_t* const restrict cbi)
 	const BOOL printed = TRUE;
 
 	if (whost_view_get_hostname_s(cbi->hostView)) {
-		whost_view_set_extra_data_s(cbi->hostView,
-			&printed, sizeof(printed));
-		print_host(cbi->hostView);
+		if (!whost_view_get_extra_data_s(cbi->hostView)) {
+			whost_view_set_extra_data_s(cbi->hostView,
+				&printed, sizeof(printed));
+			print_host(cbi->hostView);
+		}
 	}
 	else if (wva_added == cbi->opCode) {
 		wcont4r_add_s(hosts, cbi->hostView);

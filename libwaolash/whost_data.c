@@ -32,4 +32,5 @@ void whost_data_free_s(whost_data_t* const restrict hd)
 	wfree_s(hd->hostName);
 	wfree_s(hd->ipAddr);
 	wfree_s(hd->macAddr);
+	wfree_s(hd);
 }

@@ -47,23 +47,12 @@ static int begin_discovery(wdiscoverer_iface_t* self)
 	wnet_iface_t* nif = wdiscoverer_iface_get_net_iface(self);
 
 	if (wnet_iface_is_ready_for_arp(nif)) {
-		//wdiscoverer_net_t* drn = wdiscoverer_iface_get_parent(self);
-		const waoladi_fact4s_t* fact4s = wdiscoverer_iface_get_fact4s(self);
-
-		wcont4r_t* dh_list = (*fact4s->make_cont4r)(wct_list);
-
-		if (!dh_list)
-		{
-			wlog_if_level(wll_warning, "Unable to make host discoverer list\n");
-			rc = ENOMEM;
-			goto end;
-		}
-
 		warper_cb_data_t cb_data = {
 			.context = self,
 			.parentThreadCbi = wdiscoverer_iface_get_thread_cbi(self),
 			.cb = on_arp_response,
-			.hostDiscovererList = dh_list};
+			.hostDiscovererList = wdiscoverer_iface_get_host_discoverer_list(self)
+		};
 
 		rc = wnet_iface_start_listening(nif, &cb_data);
 	}
