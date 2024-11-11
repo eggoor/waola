@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -60,21 +60,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CA51432B2CD4B9C8006D11CA /* WaolaO */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WaolaO;
-			sourceTree = "<group>";
-		};
-		CA5143412CD4B9CB006D11CA /* WaolaOTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WaolaOTests;
-			sourceTree = "<group>";
-		};
-		CA51434B2CD4B9CC006D11CA /* WaolaOUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WaolaOUITests;
-			sourceTree = "<group>";
-		};
+		CA51432B2CD4B9C8006D11CA /* WaolaO */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WaolaO; sourceTree = "<group>"; };
+		CA5143412CD4B9CB006D11CA /* WaolaOTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WaolaOTests; sourceTree = "<group>"; };
+		CA51434B2CD4B9CC006D11CA /* WaolaOUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WaolaOUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +221,7 @@
 				};
 			};
 			buildConfigurationList = CA5143242CD4B9C8006D11CA /* Build configuration list for PBXProject "WaolaO" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -241,7 +230,6 @@
 			);
 			mainGroup = CA5143202CD4B9C8006D11CA;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = CA51432A2CD4B9C8006D11CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
