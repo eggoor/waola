@@ -101,6 +101,7 @@ int waolah_s(const wcont4r_factory cont4r_factory, const wmutex_factory mutex_fa
 	const wcont4r_t* iface_list = wnet_iface_prov_get_collected_ifaces(nip);
 	rc = waolah(iface_list, hosts, count);
 	wnet_iface_prov_free(nip);
+	wthread_counter_free(tc);
 
 end:
 	return rc;
