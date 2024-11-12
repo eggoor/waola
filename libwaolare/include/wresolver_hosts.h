@@ -15,7 +15,7 @@ extern "C" {
 
 int wresolver_hosts_resolve(wresolver_hosts_t* self,
 	const wcont4r_t* host_list);
-void wresolver_hosts_cancel(wresolver_hosts_t* const restrict hsr);
+void wresolver_hosts_cancel(wresolver_hosts_t* const restrict self);
 
 BOOL wresolver_hosts_increment_thread_count(wresolver_hosts_t* self);
 void wresolver_hosts_decrement_thread_count(wresolver_hosts_t* self);
