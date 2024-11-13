@@ -15,9 +15,10 @@
 	Waola::VaultUnsubscribeToken _vaultUnsubscribeToken;
 }
 
-@property (strong) IBOutlet NSWindow* window;
+@property (weak) IBOutlet NSWindow* window;
 @property (strong) NSMutableArray* hosts;
 @property (weak) IBOutlet NSArrayController* hostsController;
+@property (weak) IBOutlet NSProgressIndicator* progressSpinner;
 
 - (void)save;
 
@@ -49,11 +50,12 @@
 	Waola::StateEventCallbackData stateCbData((__bridge const void*)self, OnScannerStateChanged);
 	_stateUnsubscribeToken = _scanner->SubscribeForStateEvents(stateCbData);
 	
-
+	
 	Waola::VaultEventCallbackData vaultCbData((__bridge const void*)self, OnVaultEvent);
 	_vaultUnsubscribeToken = _scanner->SubscribeForVaultEvents(vaultCbData);
-
+	
 	if (_scanner->IsVaultEmpty()) {
+		[self.progressSpinner startAnimation:self];
 		_scanner->DiscoverAsync();
 	}
 }
@@ -65,7 +67,6 @@
 	Waola::IScanner::Destroy(_scanner);
 }
 
-
 - (BOOL)applicationSupportsSecureRestorableState:(NSApplication *)app {
 	return YES;
 }
@@ -74,6 +75,7 @@
 	if (stateEvent->Tasks == Waola::wt_idle) {
 		dispatch_async(dispatch_get_main_queue(), ^{
 			[self.hostsController rearrangeObjects];
+			[self.progressSpinner stopAnimation:self];
 		});
 	}
 }
@@ -92,7 +94,7 @@
 			if (!hostViewView) {
 				[NSException raise:@"Waola exception" format:@"Cannot alloc HostView in %s", __func__];
 			}
-
+			
 			[self.hosts addObject:hostViewView];
 			dispatch_async(dispatch_get_main_queue(), ^{
 				[self.hostsController rearrangeObjects];
@@ -110,27 +112,114 @@
 		}
 			break;
 		case Waola::wva_deleted:
-			//
+			const void* bridge = vaultEvent->HostView.GetExtraData();
+			HostView* __weak hostViewView = *(HostView* __weak *)bridge;
+			[self.hosts removeObject:hostViewView];
+			dispatch_async(dispatch_get_main_queue(), ^{
+				[self.hostsController rearrangeObjects];
+			});
 			break;
 	}
 }
 
 - (IBAction)OnTableViewDoubleAction:(id)sender {
+	[self WakeUpSelection];
+}
+
+- (IBAction)OnWakeUp:(id)sender {
+	[self WakeUpSelection];
+}
+
+- (IBAction)OnRescan:(id)sender {
+	[self.progressSpinner startAnimation:self];
+	_scanner->DiscoverAsync();
+}
+
+- (IBAction)OnRefresh:(id)sender {
+	[self.progressSpinner startAnimation:self];
+	_scanner->Refresh();
+}
+
+- (IBAction)OnCopy:(id)sender {
+}
+
+- (IBAction)OnAdd:(id)sender {
+	[self.progressSpinner startAnimation:nil];
+}
+
+- (IBAction)OnEdit:(id)sender {
+	[self.progressSpinner startAnimation:self];
+}
+
+- (IBAction)OnDelete:(id)sender {
 	NSArray* selectedHosts = [self.hostsController selectedObjects];
 	NSUInteger n = [selectedHosts count];
-	std::vector<Waola::IHostView*> hostList(n);
-	for (NSUInteger i = n; i --> 0;) {
-		HostView* hostView = selectedHosts[i];
-		[hostView willChangeValueForKey:@"wakeupResult"];
-		hostList[i] = ([hostView hostView]);
+	
+	if (n > 0) {
+		NSAlert* alert = [[NSAlert alloc] init];
+		NSString* messageText = n > 1
+		? @"Delete selected host?"
+		: [NSString stringWithFormat:@"%@%@%@", @"Delete '", [selectedHosts[0] humanReadableId], @"'?"];		
+		
+		[alert setMessageText:messageText];
+		[alert addButtonWithTitle:@"Yes"];
+		[alert addButtonWithTitle:@"No"];
+		[alert setAlertStyle:NSAlertStyleWarning];
+		
+		[alert beginSheetModalForWindow:self.window completionHandler:^(NSModalResponse returnCode) {
+			if (returnCode == NSAlertFirstButtonReturn) {
+				[self deleteSelection];
+			}
+		}];
+	}
+}
+
+- (void) deleteSelection {
+	[self.progressSpinner startAnimation:nil];
+	
+	auto hostList = [self selection];
+	for (auto& hostView : hostList) {
+		_scanner->DeleteHost(hostView);
 	}
 	
-	_waola->WakeUp(hostList);
+	[self.progressSpinner stopAnimation:nil];
+}
+
+- (IBAction)OnAbout:(id)sender {
+}
+
+- (void) WakeUpSelection {
+	NSArray* selectedHosts = [self.hostsController selectedObjects];
+	NSUInteger n = [selectedHosts count];
 	
-	for (NSUInteger i = n; i --> 0;) {
-		HostView* hostView = selectedHosts[i];
-		[hostView didChangeValueForKey:@"wakeupResult"];
+	if (n > 0) {
+		std::vector<IHostView*> hostList(n);
+		
+		for (NSUInteger i = n; i --> 0;) {
+			HostView* hostViewView = selectedHosts[i];
+			[hostViewView willChangeValueForKey:@"wakeupResult"];
+			hostList[i] = ([hostViewView hostView]);
+		}
+		
+		_waola->WakeUp(hostList);
+		
+		for (NSUInteger i = n; i --> 0;) {
+			HostView* hostViewView = selectedHosts[i];
+			[hostViewView didChangeValueForKey:@"wakeupResult"];
+		}
 	}
+}
+
+- (std::vector<IHostView*>) selection {
+	NSArray* selectedHosts = [self.hostsController selectedObjects];
+	NSUInteger n = [selectedHosts count];
+	std::vector<IHostView*> hostList(n);
+		
+	for (NSUInteger i = n; i --> 0;) {
+		hostList[i] = ([selectedHosts[i] hostView]);
+	}
+	
+	return hostList;
 }
 
 void OnScannerStateChanged(const Waola::StateEvent& stateEvent) {

@@ -11,6 +11,8 @@
 		CA366F682CDA7B7300FE9122 /* libwaolasc.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CA366F662CDA7B7300FE9122 /* libwaolasc.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CA366F6B2CDA7B8F00FE9122 /* libwaolash.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA366F6A2CDA7B8F00FE9122 /* libwaolash.dylib */; };
 		CA366F6C2CDA7B8F00FE9122 /* libwaolash.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CA366F6A2CDA7B8F00FE9122 /* libwaolash.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CA9042C42CE3B4B900123FF8 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = CA9042C32CE3B4B900123FF8 /* Credits.html */; };
+		CA9042C62CE3B68E00123FF8 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA9042C52CE3B68E00123FF8 /* LICENSE.txt */; };
 		CAA5D53E2CDE60A800CFF81F /* libwaola.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA5D53D2CDE60A800CFF81F /* libwaola.dylib */; };
 		CAA5D53F2CDE60A800CFF81F /* libwaola.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CAA5D53D2CDE60A800CFF81F /* libwaola.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CAC277BD2CDA773D0028F284 /* libWaola++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC277BC2CDA773D0028F284 /* libWaola++.a */; };
@@ -55,6 +57,8 @@
 		CA5143292CD4B9C8006D11CA /* WaolaO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaolaO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA51433E2CD4B9CB006D11CA /* WaolaOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaolaOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5143482CD4B9CC006D11CA /* WaolaOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaolaOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9042C32CE3B4B900123FF8 /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		CA9042C52CE3B68E00123FF8 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE.txt; path = ../LICENSE.txt; sourceTree = SOURCE_ROOT; };
 		CAA5D53D2CDE60A800CFF81F /* libwaola.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libwaola.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC277BC2CDA773D0028F284 /* libWaola++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libWaola++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -97,6 +101,8 @@
 		CA5143202CD4B9C8006D11CA = {
 			isa = PBXGroup;
 			children = (
+				CA9042C52CE3B68E00123FF8 /* LICENSE.txt */,
+				CA9042C32CE3B4B900123FF8 /* Credits.html */,
 				CA51432B2CD4B9C8006D11CA /* WaolaO */,
 				CA5143412CD4B9CB006D11CA /* WaolaOTests */,
 				CA51434B2CD4B9CC006D11CA /* WaolaOUITests */,
@@ -246,6 +252,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9042C62CE3B68E00123FF8 /* LICENSE.txt in Resources */,
+				CA9042C42CE3B4B900123FF8 /* Credits.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 
 @implementation HostView
 
+@dynamic humanReadableId;
 @dynamic displayName;
 @dynamic hostname;
 @dynamic ipAddress;
@@ -61,6 +62,12 @@
 	if (cf_op_result & dirtyFields) {
 		[self didChangeValueForKey:@"wakeupResult"];
 	}
+	
+	_hostView->SetFieldChangeProcessed(dirtyFields);
+}
+
+-(NSString*) humanReadableId {
+	return @(_hostView->GetHumanReadableId().c_str());
 }
 
 -(void) setDisplayName:(NSString*)displayName {

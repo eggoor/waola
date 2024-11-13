@@ -9,6 +9,7 @@ using namespace Waola;
 
 @interface HostView : NSObject
 
+@property (weak, readonly) NSString* humanReadableId;
 @property (weak) NSString* displayName;
 @property (weak) NSString* hostname;
 @property (weak) NSString* ipAddress;
