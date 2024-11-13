@@ -6,6 +6,7 @@
 //
 
 #import "HostView.h"
+#import "WaolaHost+CoreDataClass.h"
 #import "AppDelegate.h"
 
 @interface AppDelegate () {
@@ -50,9 +51,32 @@
 	Waola::StateEventCallbackData stateCbData((__bridge const void*)self, OnScannerStateChanged);
 	_stateUnsubscribeToken = _scanner->SubscribeForStateEvents(stateCbData);
 	
-	
 	Waola::VaultEventCallbackData vaultCbData((__bridge const void*)self, OnVaultEvent);
 	_vaultUnsubscribeToken = _scanner->SubscribeForVaultEvents(vaultCbData);
+	
+	NSManagedObjectContext* viewContext = self.persistentContainer.viewContext;
+	NSError* fetchError = nil;
+	NSArray* savedHosts = [viewContext executeFetchRequest:[WaolaHost fetchRequest] error:&fetchError];
+	
+	if (fetchError) {
+		NSLog(@"%@", fetchError.localizedDescription);
+	}
+	
+	const NSUInteger savedHostCount = [savedHosts count];
+	std::vector<const HostData*> hostData(savedHostCount);
+	
+	for (NSUInteger i = savedHostCount; i --> 0;) {
+		WaolaHost* host = savedHosts[i];
+		hostData[i] = new HostData([host.displayName UTF8String],
+			[host.hostname UTF8String], [host.ipAddress UTF8String],
+			[host.macAddress UTF8String], [host.lastSeenOnline timeIntervalSince1970]);
+	}
+	
+	_scanner->BatchAdd(hostData);
+	
+	for (NSUInteger i = savedHostCount; i --> 0;) {
+		delete hostData[i];
+	}
 	
 	if (_scanner->IsVaultEmpty()) {
 		[self.progressSpinner startAnimation:self];
@@ -63,8 +87,38 @@
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
 	_scanner->UnubscribeFromVaultEvents(_vaultUnsubscribeToken);
 	_scanner->UnubscribeFromStateEvents(_stateUnsubscribeToken);
+	[self persistData];
 	Waola::IWaola::Destroy(_waola);
 	Waola::IScanner::Destroy(_scanner);
+}
+
+- (void) persistData {
+	NSFetchRequest* fetchRequest = [WaolaHost fetchRequest];
+	[fetchRequest setIncludesPropertyValues:NO];
+	NSManagedObjectContext* viewContext = self.persistentContainer.viewContext;
+	NSError* error;
+	NSArray* hosts = [viewContext executeFetchRequest:fetchRequest error:&error];
+	
+	if (error) {
+		NSLog(@"%@", error.localizedDescription);
+	}
+	
+
+	for (NSManagedObject* host in hosts)
+	{
+		[viewContext deleteObject:host];
+	}
+	
+	for (HostView* hostView in self.hosts) {
+		WaolaHost* host = [NSEntityDescription insertNewObjectForEntityForName:@"WaolaHost" inManagedObjectContext:viewContext];
+		host.displayName = hostView.exactDisplayName;
+		host.hostname = hostView.hostname;
+		host.ipAddress = hostView.ipAddress;
+		host.macAddress = hostView.macAddress;
+		host.lastSeenOnline = hostView.lastSeenOnline;
+	}
+	
+	[self save];
 }
 
 - (BOOL)applicationSupportsSecureRestorableState:(NSApplication *)app {
@@ -105,7 +159,6 @@
 		{
 			const void* bridge = vaultEvent->HostView.GetExtraData();
 			HostView* __weak hostViewView = *(HostView* __weak *)bridge;
-			
 			if (hostViewView) {
 				[hostViewView processChanges];
 			}
@@ -214,11 +267,10 @@
 	NSArray* selectedHosts = [self.hostsController selectedObjects];
 	NSUInteger n = [selectedHosts count];
 	std::vector<IHostView*> hostList(n);
-		
 	for (NSUInteger i = n; i --> 0;) {
 		hostList[i] = ([selectedHosts[i] hostView]);
 	}
-	
+
 	return hostList;
 }
 

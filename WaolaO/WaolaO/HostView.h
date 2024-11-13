@@ -11,10 +11,11 @@ using namespace Waola;
 
 @property (weak, readonly) NSString* humanReadableId;
 @property (weak) NSString* displayName;
+@property (weak, readonly) NSString* exactDisplayName;
 @property (weak) NSString* hostname;
 @property (weak) NSString* ipAddress;
 @property (weak) NSString* macAddress;
-@property (weak, readonly) NSString* lastSeenOnline;
+@property (weak, readonly) NSDate* lastSeenOnline;
 @property (weak, readonly) NSString* wakeupResult;
 @property (readonly, nonnull) Waola::IHostView* hostView;
 

@@ -11,6 +11,7 @@
 
 @dynamic humanReadableId;
 @dynamic displayName;
+@dynamic exactDisplayName;
 @dynamic hostname;
 @dynamic ipAddress;
 @dynamic macAddress;
@@ -81,6 +82,10 @@
 	return @(_hostView->GetDisplayName().c_str());
 }
 
+-(NSString*) exactDisplayName {
+	return @(_hostView->GetExactDisplayName().c_str());
+}
+
 -(void) setHostname:(NSString*)hostname {
 	[self willChangeValueForKey:@"hostname"];
 	_hostView->SetHostname([hostname UTF8String]);
@@ -114,9 +119,9 @@
 	return @(_hostView->GetMacAddressString().c_str());
 }
 
--(NSString*) lastSeenOnline {
+-(NSDate*) lastSeenOnline {
 	_hostView->SetFieldChangeProcessed(Waola::cf_last_seen_online);
-	return @(_hostView->GetLastSeenOnlineString().c_str());
+	return [[NSDate alloc] initWithTimeIntervalSince1970:_hostView->GetLastSeenOnline()];
 }
 
 -(NSString*) wakeupResult {
