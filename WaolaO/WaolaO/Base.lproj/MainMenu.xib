@@ -681,26 +681,26 @@
                     </menu>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="200" y="121"/>
+            <point key="canvasLocation" x="-95" y="65"/>
         </menu>
         <window title="Waola" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="WaolaO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="884" y="554" width="804" height="290"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
-            <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="805" height="262"/>
+            <view key="contentView" misplaced="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="804" height="290"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="45" horizontalPageScroll="10" verticalLineScroll="45" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH6-Qw-KA4">
-                        <rect key="frame" x="-1" y="-1" width="807" height="264"/>
+                        <rect key="frame" x="-1" y="-1" width="806" height="292"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" id="yh5-ZM-7m2">
-                            <rect key="frame" x="1" y="1" width="805" height="262"/>
+                            <rect key="frame" x="1" y="1" width="804" height="275"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" autosaveColumns="NO" rowHeight="45" rowSizeStyle="automatic" headerView="Nxz-kH-MWJ" viewBased="YES" id="ICy-HA-K5K">
-                                    <rect key="frame" x="0.0" y="0.0" width="805" height="234"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="805" height="247"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="17" height="0.0"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -942,15 +942,15 @@
                                         </tableColumn>
                                     </tableColumns>
                                     <connections>
-                                        <action trigger="doubleAction" selector="OnTableViewDoubleAction:" target="Voe-Tx-rLC" id="wAg-rh-6kN"/>
+                                        <action trigger="doubleAction" selector="onTableViewDoubleAction:" target="Voe-Tx-rLC" id="wAg-rh-6kN"/>
                                         <binding destination="beY-od-ITr" name="content" keyPath="arrangedObjects" id="mrR-2a-UmX"/>
                                         <binding destination="beY-od-ITr" name="selectionIndexes" keyPath="selectionIndexes" previousBinding="mrR-2a-UmX" id="EFS-6C-THU"/>
                                     </connections>
                                 </tableView>
                             </subviews>
                         </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Rpn-j2-Zqa">
-                            <rect key="frame" x="1" y="248" width="804" height="15"/>
+                        <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Rpn-j2-Zqa">
+                            <rect key="frame" x="1" y="276" width="804" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="Nfg-kU-Hlj">
@@ -963,7 +963,7 @@
                         </tableHeaderView>
                     </scrollView>
                     <progressIndicator maxValue="100" displayedWhenStopped="NO" indeterminate="YES" style="spinning" id="orQ-Vz-U4R">
-                        <rect key="frame" x="387" y="115" width="32" height="32"/>
+                        <rect key="frame" x="386" y="129" width="32" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     </progressIndicator>
                 </subviews>
@@ -972,43 +972,43 @@
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="5C8F6359-45E1-41A8-AFA6-A371B5AFBA6C" label="Wake up" paletteLabel="Wake up" tag="-1" image="alarm" catalog="system" bordered="YES" sizingBehavior="auto" id="ECa-33-9dc">
                         <connections>
-                            <action selector="OnWakeUp:" target="Voe-Tx-rLC" id="Hcu-C0-KoY"/>
+                            <action selector="onWakeUp:" target="Voe-Tx-rLC" id="Hcu-C0-KoY"/>
                         </connections>
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="A0N-5M-RaI"/>
                     <toolbarItem implicitItemIdentifier="EC50170B-65C2-4C05-9198-060231F5D049" label="Rescan network" paletteLabel="Rescan network" tag="-1" image="network" catalog="system" bordered="YES" sizingBehavior="auto" id="A76-Tm-jmz">
                         <connections>
-                            <action selector="OnRescan:" target="Voe-Tx-rLC" id="gs3-vV-zAx"/>
+                            <action selector="onRescan:" target="Voe-Tx-rLC" id="gs3-vV-zAx"/>
                         </connections>
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="296B6BD6-22E6-4A18-BA84-FB46790DB829" label="Refresh hosts" paletteLabel="Refresh hosts" tag="-1" image="arrow.clockwise" catalog="system" bordered="YES" sizingBehavior="auto" id="3u1-Er-lQB">
                         <connections>
-                            <action selector="OnRefresh:" target="Voe-Tx-rLC" id="IhQ-qO-gUD"/>
+                            <action selector="onRefresh:" target="Voe-Tx-rLC" id="IhQ-qO-gUD"/>
                         </connections>
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="FD07D171-BA2B-404D-AB1A-8AB3B2FBE260" label="Copy" paletteLabel="Copy" tag="-1" image="doc.on.doc" catalog="system" bordered="YES" sizingBehavior="auto" id="TtL-V6-0p2">
                         <connections>
-                            <action selector="OnCopy:" target="Voe-Tx-rLC" id="Xbl-dt-YUN"/>
+                            <action selector="onCopy:" target="Voe-Tx-rLC" id="Xbl-dt-YUN"/>
                         </connections>
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="AEB455BD-E8F1-48D2-9BCA-82004591F3E9" label="Add" paletteLabel="Add" tag="-1" image="plus.circle" catalog="system" bordered="YES" sizingBehavior="auto" id="f8x-QX-vnH">
                         <connections>
-                            <action selector="OnAdd:" target="Voe-Tx-rLC" id="VWb-yg-2xu"/>
+                            <action selector="onAdd:" target="Voe-Tx-rLC" id="VWb-yg-2xu"/>
                         </connections>
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="4E5AF969-473B-4E1D-A96C-B66E1B064E22" label="Edit" paletteLabel="Edit" tag="-1" image="pencil" catalog="system" bordered="YES" sizingBehavior="auto" id="QtV-NK-Fpx">
                         <connections>
-                            <action selector="OnEdit:" target="Voe-Tx-rLC" id="Uul-A8-Rg1"/>
+                            <action selector="onEdit:" target="Voe-Tx-rLC" id="Uul-A8-Rg1"/>
                         </connections>
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="70914FD7-9E06-4BD6-AAD1-6D485B11897F" label="Delete" paletteLabel="Delete" tag="-1" image="minus.circle" catalog="system" bordered="YES" sizingBehavior="auto" id="agg-VP-gDs">
                         <connections>
-                            <action selector="OnDelete:" target="Voe-Tx-rLC" id="p3B-Fg-arc"/>
+                            <action selector="onDelete:" target="Voe-Tx-rLC" id="p3B-Fg-arc"/>
                         </connections>
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="1DE3C404-ECD9-488F-8091-938DE691D87B" label="About" paletteLabel="About" tag="-1" image="questionmark.circle" catalog="system" bordered="YES" sizingBehavior="auto" id="X60-5L-uX9">
                         <connections>
-                            <action selector="OnAbout:" target="Voe-Tx-rLC" id="32F-NJ-TUX"/>
+                            <action selector="onAbout:" target="Voe-Tx-rLC" id="32F-NJ-TUX"/>
                         </connections>
                     </toolbarItem>
                 </allowedToolbarItems>
@@ -1030,7 +1030,7 @@
             <connections>
                 <outlet property="delegate" destination="Voe-Tx-rLC" id="top-28-M4D"/>
             </connections>
-            <point key="canvasLocation" x="242" y="537"/>
+            <point key="canvasLocation" x="78" y="313"/>
         </window>
         <arrayController objectClassName="HostView" id="beY-od-ITr" userLabel="HostsArrayController">
             <classReference key="objectClass" className="HostView"/>

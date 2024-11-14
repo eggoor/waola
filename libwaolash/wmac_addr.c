@@ -57,7 +57,7 @@ byte* wmac_addr_from_string_s(const char* restrict str)
 	}
 
 	if (ETHER_ADDR_LEN != byteCounter) {
-		wlog_if_level(wll_warning, "%s: rovided string '%s' isn't recognized as a MAC address; ignored\n",
+		wlog_if_level(wll_warning, "%s: provided string '%s' isn't recognized as a MAC address; ignored\n",
 			__func__, str_copy);
 		wfree_s(macAddress);
 		macAddress = NULL;

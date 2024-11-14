@@ -7,6 +7,8 @@
 
 #import "HostView.h"
 #import "WaolaHost+CoreDataClass.h"
+#import "AddEditHost.h"
+
 #import "AppDelegate.h"
 
 @interface AppDelegate () {
@@ -17,15 +19,18 @@
 }
 
 @property (weak) IBOutlet NSWindow* window;
-@property (strong) NSMutableArray* hosts;
+@property (weak) IBOutlet AddEditHost* addEditHost;
 @property (weak) IBOutlet NSArrayController* hostsController;
 @property (weak) IBOutlet NSProgressIndicator* progressSpinner;
+@property (strong) NSMutableArray* hosts;
 
 - (void)save;
 
 @end
 
 @implementation AppDelegate
+
+@synthesize addEditHost = _addEditHost;
 
 - (BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication*)application {
 	return YES;
@@ -103,7 +108,6 @@
 		NSLog(@"%@", error.localizedDescription);
 	}
 	
-
 	for (NSManagedObject* host in hosts)
 	{
 		[viewContext deleteObject:host];
@@ -125,16 +129,16 @@
 	return YES;
 }
 
-- (void) OnScannerStateChanged:(const Waola::StateEvent*) stateEvent {
+- (void) onScannerStateChanged:(const Waola::StateEvent*) stateEvent {
 	if (stateEvent->Tasks == Waola::wt_idle) {
 		dispatch_async(dispatch_get_main_queue(), ^{
-			[self.hostsController rearrangeObjects];
+			//[self.hostsController rearrangeObjects];
 			[self.progressSpinner stopAnimation:self];
 		});
 	}
 }
 
-- (void) OnVaultEvent:(const Waola::VaultEvent*) vaultEvent {
+- (void) onVaultEvent:(const Waola::VaultEvent*) vaultEvent {
 	switch (vaultEvent->OpCode) {
 		case Waola::wva_undefined:
 			[NSException raise:@"Waola exception" format:@"VaultEvent == wva_undefined has passed to %s", __func__];
@@ -175,36 +179,76 @@
 	}
 }
 
-- (IBAction)OnTableViewDoubleAction:(id)sender {
+- (IBAction)onTableViewDoubleAction:(id)sender {
 	[self WakeUpSelection];
 }
 
-- (IBAction)OnWakeUp:(id)sender {
+- (IBAction)onWakeUp:(id)sender {
 	[self WakeUpSelection];
 }
 
-- (IBAction)OnRescan:(id)sender {
+- (IBAction)onRescan:(id)sender {
 	[self.progressSpinner startAnimation:self];
 	_scanner->DiscoverAsync();
 }
 
-- (IBAction)OnRefresh:(id)sender {
+- (IBAction)onRefresh:(id)sender {
 	[self.progressSpinner startAnimation:self];
 	_scanner->Refresh();
 }
 
-- (IBAction)OnCopy:(id)sender {
+- (IBAction)onCopy:(id)sender {
 }
 
-- (IBAction)OnAdd:(id)sender {
-	[self.progressSpinner startAnimation:nil];
+- (IBAction)onAdd:(id)sender {
+	if (!self.addEditHost) {
+		NSArray* topLevelObjects;
+		[[NSBundle mainBundle] loadNibNamed:@"AddEditHost" owner:self topLevelObjects:&topLevelObjects];
+	}
+	
+	[self.window beginSheet:self.addEditHost completionHandler:^(NSModalResponse returnCode) {
+		if (returnCode == YES) {
+			[self.progressSpinner startAnimation:self];
+			
+			HostData hostData([self.addEditHost.displayName UTF8String], [self.addEditHost.hostname UTF8String], [self.addEditHost.ipAddress UTF8String], [self.addEditHost.macAddress UTF8String], 0);
+			self->_scanner->Add(hostData);
+			
+			[self.progressSpinner stopAnimation:nil];
+		}
+		self.addEditHost = nil;
+	}];
 }
 
-- (IBAction)OnEdit:(id)sender {
-	[self.progressSpinner startAnimation:self];
+- (IBAction)onEdit:(id)sender {
+	
+	NSArray* selectedHosts = [self.hostsController selectedObjects];
+	if ([selectedHosts count] > 0) {
+		
+		if (!self.addEditHost) {
+			NSArray* topLevelObjects;
+			[[NSBundle mainBundle] loadNibNamed:@"AddEditHost" owner:self topLevelObjects:&topLevelObjects];
+		}
+		
+		HostView* selectedHost = selectedHosts[0];
+		
+		self.addEditHost.displayName = selectedHost.exactDisplayName;
+		self.addEditHost.hostname = selectedHost.hostname;
+		self.addEditHost.ipAddress = selectedHost.ipAddress;
+		self.addEditHost.macAddress = selectedHost.macAddress;
+
+		[self.window beginSheet:self.addEditHost completionHandler:^(NSModalResponse returnCode) {
+			if (returnCode == YES) {
+				selectedHost.displayName = self.addEditHost.displayName;
+				selectedHost.hostname = self.addEditHost.hostname;
+				selectedHost.ipAddress = self.addEditHost.ipAddress;
+				selectedHost.macAddress = self.addEditHost.macAddress;
+			}
+			self.addEditHost = nil;
+		}];
+	}
 }
 
-- (IBAction)OnDelete:(id)sender {
+- (IBAction)onDelete:(id)sender {
 	NSArray* selectedHosts = [self.hostsController selectedObjects];
 	NSUInteger n = [selectedHosts count];
 	
@@ -238,7 +282,15 @@
 	[self.progressSpinner stopAnimation:nil];
 }
 
-- (IBAction)OnAbout:(id)sender {
+- (IBAction)onAbout:(id)sender {
+}
+
+- (IBAction)onAddSheetCancel:(id)sender {
+	[NSApp endSheet:self.addEditHost returnCode:NO];
+}
+
+- (IBAction)onAddSheetSave:(id)sender {
+	[NSApp endSheet:self.addEditHost returnCode:YES];
 }
 
 - (void) WakeUpSelection {
@@ -276,12 +328,12 @@
 
 void OnScannerStateChanged(const Waola::StateEvent& stateEvent) {
 	AppDelegate* self = (__bridge AppDelegate*)stateEvent.GetSubscriber();
-	[self OnScannerStateChanged:&stateEvent];
+	[self onScannerStateChanged:&stateEvent];
 }
 
 void OnVaultEvent(const Waola::VaultEvent& vaultEvent) {
 	AppDelegate* self = (__bridge AppDelegate*)vaultEvent.GetSubscriber();
-	[self OnVaultEvent:&vaultEvent];
+	[self onVaultEvent:&vaultEvent];
 }
 
 #pragma mark - Core Data stack
