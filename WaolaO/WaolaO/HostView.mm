@@ -41,26 +41,32 @@
 	const auto dirtyFields = _hostView->GetHostState();
 	
 	if (cf_display_name & dirtyFields) {
+		[self willChangeValueForKey:@"displayName"];
 		[self didChangeValueForKey:@"displayName"];
 	}
 	
 	if (cf_host_name & dirtyFields) {
+		[self willChangeValueForKey:@"hostname"];
 		[self didChangeValueForKey:@"hostname"];
 	}
 	
 	if (cf_ip_address & dirtyFields) {
+		[self willChangeValueForKey:@"ipAddress"];
 		[self didChangeValueForKey:@"ipAddress"];
 	}
 	
 	if (cf_mac_address & dirtyFields) {
+		[self willChangeValueForKey:@"macAddress"];
 		[self didChangeValueForKey:@"macAddress"];
 	}
 	
 	if (cf_last_seen_online & dirtyFields) {
+		[self willChangeValueForKey:@"lastSeenOnline"];
 		[self didChangeValueForKey:@"lastSeenOnline"];
 	}
 	
 	if (cf_op_result & dirtyFields) {
+		[self willChangeValueForKey:@"wakeupResult"];
 		[self didChangeValueForKey:@"wakeupResult"];
 	}
 	

@@ -30,10 +30,10 @@ namespace Waola {
 		const void* GetStatus(Module* module, int* const opCode) override;
 
 		StateUnsubscribeToken SubscribeForStateEvents(const StateEventCallbackData& cbData) override;
-		void UnubscribeFromStateEvents(StateUnsubscribeToken unsubscribeToken) override;
+		void UnsubscribeFromStateEvents(StateUnsubscribeToken unsubscribeToken) override;
 
 		VaultUnsubscribeToken SubscribeForVaultEvents(const VaultEventCallbackData& cbData) override;
-		void UnubscribeFromVaultEvents(VaultUnsubscribeToken unsubscribeToken) override;
+		void UnsubscribeFromVaultEvents(VaultUnsubscribeToken unsubscribeToken) override;
 
 	private:
 		static void StateCallback(const waolasc_cbi_t* const cbi);

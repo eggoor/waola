@@ -54,12 +54,14 @@
                                                     <textView wantsLayer="YES" editable="NO" importsGraphics="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" spellingCorrection="YES" smartInsertDelete="YES" id="O7p-S4-PGY">
                                                         <rect key="frame" x="0.0" y="0.0" width="467" height="188"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         <size key="minSize" width="467" height="188"/>
                                                         <size key="maxSize" width="482" height="10000000"/>
                                                         <attributedString key="textStorage">
                                                             <fragment content="Waola is a ">
                                                                 <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                                     <real key="NSKern" value="0.0"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -70,7 +72,7 @@
                                                             </fragment>
                                                             <fragment content="Wake-on-LAN">
                                                                 <attributes>
-                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.93332999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                                     <real key="NSKern" value="0.0"/>
                                                                     <url key="NSLink" string="https://en.wikipedia.org/wiki/Wake-on-LAN"/>
@@ -84,6 +86,7 @@
                                                             </fragment>
                                                             <fragment content=" utility with embedded ">
                                                                 <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                                     <real key="NSKern" value="0.0"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -94,7 +97,7 @@
                                                             </fragment>
                                                             <fragment content="ARP-based">
                                                                 <attributes>
-                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.93332999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                                     <real key="NSKern" value="0.0"/>
                                                                     <url key="NSLink" string="https://en.wikipedia.org/wiki/Address_Resolution_Protocol"/>
@@ -112,6 +115,7 @@ Author of this tool is a citizen of Ukraine who created and maintains this softw
 Also I try to help our army to fight off the invasion as much as I can.
 If this tool was useful to you and you'd like to help us to defend our freedom and independence - feel free to donate any convenient for you amount to PayPal account </string>
                                                                 <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                                     <real key="NSKern" value="0.0"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -122,7 +126,7 @@ If this tool was useful to you and you'd like to help us to defend our freedom a
                                                             </fragment>
                                                             <fragment content="egggor@gmail.com">
                                                                 <attributes>
-                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.93332999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                                     <real key="NSKern" value="0.0"/>
                                                                     <url key="NSLink" string="https://www.paypal.com/ua/home"/>
@@ -136,6 +140,7 @@ If this tool was useful to you and you'd like to help us to defend our freedom a
                                                             </fragment>
                                                             <fragment content=".">
                                                                 <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                                     <real key="NSKern" value="0.0"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -178,7 +183,7 @@ If this tool was useful to you and you'd like to help us to defend our freedom a
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         <size key="minSize" width="467" height="181"/>
-                                                        <size key="maxSize" width="467" height="10000000"/>
+                                                        <size key="maxSize" width="482" height="10000000"/>
                                                         <attributedString key="textStorage">
                                                             <fragment content="Idea, architecture and implementation: ">
                                                                 <attributes>
@@ -247,7 +252,7 @@ Icon set: TUNUHA.</string>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         <size key="minSize" width="467" height="181"/>
-                                                        <size key="maxSize" width="467" height="10000000"/>
+                                                        <size key="maxSize" width="482" height="10000000"/>
                                                     </textView>
                                                 </subviews>
                                             </clipView>

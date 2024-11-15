@@ -53,10 +53,10 @@ namespace Waola {
 		virtual const void* GetStatus(Module* module, int* const opCode) = 0;
 
 		virtual StateUnsubscribeToken SubscribeForStateEvents(const StateEventCallbackData& cbData) = 0;
-		virtual void UnubscribeFromStateEvents(StateUnsubscribeToken unsubscribeToken) = 0;
+		virtual void UnsubscribeFromStateEvents(StateUnsubscribeToken unsubscribeToken) = 0;
 
 		virtual VaultUnsubscribeToken SubscribeForVaultEvents(const VaultEventCallbackData& cbData) = 0;
-		virtual void UnubscribeFromVaultEvents(VaultUnsubscribeToken unsubscribeToken) = 0;
+		virtual void UnsubscribeFromVaultEvents(VaultUnsubscribeToken unsubscribeToken) = 0;
 
 	public:
 		virtual ~IScanner() = default;

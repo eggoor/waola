@@ -14,10 +14,10 @@ extern "C" {
  */
 typedef enum waolasc_opcode {
 	wco_undefined,
-	wco_idle = 0x01,		/**< Scanner is idle */
-	wco_discovering = 0x02,	/**< Scanner is discovering network */
-	wco_resolving = 0x04,	/**< Scanner is refreshng state of stored hosts */
-	wco_cancelling = 0x08	/**< Scanner is cancelling current operation */
+	wco_idle =			0x01,	/**< Scanner is idle */
+	wco_discovering =	0x02,	/**< Scanner is discovering network */
+	wco_resolving =		0x04,	/**< Scanner is refreshng state of stored hosts */
+	wco_cancelling =	0x08	/**< Scanner is cancelling current operation */
 } waolasc_opcode_t;
 
 #if __cplusplus

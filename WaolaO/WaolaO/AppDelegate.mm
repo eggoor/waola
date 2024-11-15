@@ -8,14 +8,12 @@
 #import "HostView.h"
 #import "WaolaHost+CoreDataClass.h"
 #import "AddEditHost.h"
+#import "StatusMonitor.h"
 
 #import "AppDelegate.h"
 
 @interface AppDelegate () {
-	Waola::IScanner* _scanner;
 	Waola::IWaola* _waola;
-	Waola::StateUnsubscribeToken _stateUnsubscribeToken;
-	Waola::VaultUnsubscribeToken _vaultUnsubscribeToken;
 }
 
 @property (weak) IBOutlet NSWindow* window;
@@ -25,6 +23,7 @@
 @property (weak) IBOutlet NSProgressIndicator* progressSpinner;
 @property (strong) NSMutableArray* hosts;
 @property (weak) IBOutlet NSTextView* licenseView;
+@property (strong) StatusMonitor* statusMonitor;
 
 - (void)save;
 
@@ -32,17 +31,19 @@
 
 @implementation AppDelegate
 
+@synthesize scanner;
+@synthesize statusMonitor;
+
 - (BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication*)application {
 	return YES;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification*)aNotification {
-	_scanner = Waola::IScanner::Create();
-	if (!_scanner) {
-		NSLog(@"Scanner creation failed -> terminating");
-		[NSApp terminate:self];
-		return;
-	}
+	
+	scanner = [[Scanner alloc] init];
+	
+	[scanner subscribeForStateEvents:self callback:&OnScannerStateChanged];
+	[scanner subscribeForVaultEvents:self callback:&OnVaultEvent];
 	
 	_waola = Waola::IWaola::Create();
 	if (!_waola) {
@@ -52,12 +53,7 @@
 	}
 	
 	self.hosts = [NSMutableArray array];
-	
-	Waola::StateEventCallbackData stateCbData((__bridge const void*)self, OnScannerStateChanged);
-	_stateUnsubscribeToken = _scanner->SubscribeForStateEvents(stateCbData);
-	
-	Waola::VaultEventCallbackData vaultCbData((__bridge const void*)self, OnVaultEvent);
-	_vaultUnsubscribeToken = _scanner->SubscribeForVaultEvents(vaultCbData);
+	statusMonitor = [[StatusMonitor alloc] initWithAppDelegate:self];
 	
 	NSManagedObjectContext* viewContext = self.persistentContainer.viewContext;
 	NSError* fetchError = nil;
@@ -67,34 +63,21 @@
 		NSLog(@"%@", fetchError.localizedDescription);
 	}
 	
-	const NSUInteger savedHostCount = [savedHosts count];
-	std::vector<const HostData*> hostData(savedHostCount);
+	[scanner batchAdd:savedHosts];
 	
-	for (NSUInteger i = savedHostCount; i --> 0;) {
-		WaolaHost* host = savedHosts[i];
-		hostData[i] = new HostData([host.displayName UTF8String],
-			[host.hostname UTF8String], [host.ipAddress UTF8String],
-			[host.macAddress UTF8String], [host.lastSeenOnline timeIntervalSince1970]);
-	}
+	self.status = @"Idle";
 	
-	_scanner->BatchAdd(hostData);
-	
-	for (NSUInteger i = savedHostCount; i --> 0;) {
-		delete hostData[i];
-	}
-	
-	if (_scanner->IsVaultEmpty()) {
+	if (scanner.isEmpty) {
 		[self.progressSpinner startAnimation:self];
-		_scanner->DiscoverAsync();
+		[scanner discoverNetwork];
 	}
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-	_scanner->UnubscribeFromVaultEvents(_vaultUnsubscribeToken);
-	_scanner->UnubscribeFromStateEvents(_stateUnsubscribeToken);
+	[scanner unsubscribeFromVaultEvents];
+	[scanner unsubscribeFromStateEvents];
 	[self persistData];
 	Waola::IWaola::Destroy(_waola);
-	Waola::IScanner::Destroy(_scanner);
 }
 
 - (void) persistData {
@@ -125,20 +108,24 @@
 	[self save];
 }
 
-- (BOOL)applicationSupportsSecureRestorableState:(NSApplication *)app {
+- (BOOL)applicationSupportsSecureRestorableState:(NSApplication*)app {
 	return YES;
 }
 
-- (void) onScannerStateChanged:(const Waola::StateEvent*) stateEvent {
+- (void) onScannerStateChanged:(const StateEvent*)stateEvent {
 	if (stateEvent->Tasks == Waola::wt_idle) {
+		[statusMonitor stop];
+		self.status = @"Idle";
 		dispatch_async(dispatch_get_main_queue(), ^{
-			//[self.hostsController rearrangeObjects];
 			[self.progressSpinner stopAnimation:self];
 		});
 	}
+	else {
+		[statusMonitor start];
+	}
 }
 
-- (void) onVaultEvent:(const Waola::VaultEvent*) vaultEvent {
+- (void) onVaultEvent:(const VaultEvent*)vaultEvent {
 	switch (vaultEvent->OpCode) {
 		case Waola::wva_undefined:
 			[NSException raise:@"Waola exception" format:@"VaultEvent == wva_undefined has passed to %s", __func__];
@@ -189,12 +176,12 @@
 
 - (IBAction)onRescan:(id)sender {
 	[self.progressSpinner startAnimation:self];
-	_scanner->DiscoverAsync();
+	[scanner discoverNetwork];
 }
 
 - (IBAction)onRefresh:(id)sender {
 	[self.progressSpinner startAnimation:self];
-	_scanner->Refresh();
+	[scanner refresh];
 }
 
 - (IBAction)onCopy:(id)sender {
@@ -222,8 +209,7 @@
 		if (returnCode == YES) {
 			[self.progressSpinner startAnimation:self];
 			
-			HostData hostData([self.addEditHost.displayName UTF8String], [self.addEditHost.hostname UTF8String], [self.addEditHost.ipAddress UTF8String], [self.addEditHost.macAddress UTF8String], 0);
-			self->_scanner->Add(hostData);
+			[self->scanner addHost:self.addEditHost.displayName hostname:self.addEditHost.hostname ipAddress:self.addEditHost.ipAddress macAddress:self.addEditHost.macAddress];
 			
 			[self.progressSpinner stopAnimation:nil];
 		}
@@ -286,9 +272,8 @@
 - (void) deleteSelection {
 	[self.progressSpinner startAnimation:nil];
 	
-	auto hostList = [self selection];
-	for (auto& hostView : hostList) {
-		_scanner->DeleteHost(hostView);
+	for (HostView* hostView in [self.hostsController selectedObjects]) {
+		[scanner deleteHost:hostView];
 	}
 	
 	[self.progressSpinner stopAnimation:nil];
@@ -354,12 +339,12 @@
 	return hostList;
 }
 
-void OnScannerStateChanged(const Waola::StateEvent& stateEvent) {
+void OnScannerStateChanged(const StateEvent& stateEvent) {
 	AppDelegate* self = (__bridge AppDelegate*)stateEvent.GetSubscriber();
 	[self onScannerStateChanged:&stateEvent];
 }
 
-void OnVaultEvent(const Waola::VaultEvent& vaultEvent) {
+void OnVaultEvent(const VaultEvent& vaultEvent) {
 	AppDelegate* self = (__bridge AppDelegate*)vaultEvent.GetSubscriber();
 	[self onVaultEvent:&vaultEvent];
 }

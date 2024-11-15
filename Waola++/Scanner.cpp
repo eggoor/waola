@@ -69,7 +69,7 @@ VaultUnsubscribeToken Scanner::SubscribeForVaultEvents(const VaultEventCallbackD
 	return vaultObserver.Subscribe(cbData);
 }
 
-void Scanner::UnubscribeFromVaultEvents(VaultUnsubscribeToken unsubscribeToken)
+void Scanner::UnsubscribeFromVaultEvents(VaultUnsubscribeToken unsubscribeToken)
 {
 	vaultObserver.Unubscribe(unsubscribeToken);
 }
@@ -79,7 +79,7 @@ StateUnsubscribeToken Scanner::SubscribeForStateEvents(const StateEventCallbackD
 	return stateObserver.Subscribe(cbData);
 }
 
-void Scanner::UnubscribeFromStateEvents(StateUnsubscribeToken unsubscribeToken)
+void Scanner::UnsubscribeFromStateEvents(StateUnsubscribeToken unsubscribeToken)
 {
 	stateObserver.Unubscribe(unsubscribeToken);
 }

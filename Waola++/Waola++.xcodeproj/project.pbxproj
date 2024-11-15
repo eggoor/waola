@@ -37,6 +37,9 @@
 		CA83F75B2C92C6C6001FC565 /* Scanner.h in Headers */ = {isa = PBXBuildFile; fileRef = CA83F74D2C92C6C6001FC565 /* Scanner.h */; };
 		CA83F75C2C92C6C6001FC565 /* HostView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F74E2C92C6C6001FC565 /* HostView.cpp */; };
 		CA83F75D2C92C6C6001FC565 /* Waola++.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA83F74F2C92C6C6001FC565 /* Waola++.cpp */; };
+		CAE273792CE7843D0072B9F3 /* OpCodeDiscoverer.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE273762CE7843D0072B9F3 /* OpCodeDiscoverer.h */; };
+		CAE2737A2CE7843D0072B9F3 /* OpCodeResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE273772CE7843D0072B9F3 /* OpCodeResolver.h */; };
+		CAE2737B2CE7843D0072B9F3 /* OpCodeScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE273782CE7843D0072B9F3 /* OpCodeScanner.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,9 @@
 		CA83F74F2C92C6C6001FC565 /* Waola++.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Waola++.cpp"; sourceTree = "<group>"; };
 		CAC277BF2CDA79B20028F284 /* liblibwaolasc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibwaolasc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC277C12CDA7A260028F284 /* libwaolasc.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libwaolasc.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE273762CE7843D0072B9F3 /* OpCodeDiscoverer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpCodeDiscoverer.h; sourceTree = "<group>"; };
+		CAE273772CE7843D0072B9F3 /* OpCodeResolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpCodeResolver.h; sourceTree = "<group>"; };
+		CAE273782CE7843D0072B9F3 /* OpCodeScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpCodeScanner.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,9 @@
 		CA83F7232C92C5F1001FC565 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				CAE273762CE7843D0072B9F3 /* OpCodeDiscoverer.h */,
+				CAE273772CE7843D0072B9F3 /* OpCodeResolver.h */,
+				CAE273782CE7843D0072B9F3 /* OpCodeScanner.h */,
 				CA194BC82CA419FB00B8AFD6 /* HostChangedField.h */,
 				CA83F7302C92C6A4001FC565 /* HostData.h */,
 				CA83F7312C92C6A4001FC565 /* HostField.h */,
@@ -161,6 +170,9 @@
 				CA366F842CDBA46B00FE9122 /* EventBase.h in Headers */,
 				CA83F7362C92C6A4001FC565 /* Module.h in Headers */,
 				CA83F73B2C92C6A4001FC565 /* IHostView.h in Headers */,
+				CAE273792CE7843D0072B9F3 /* OpCodeDiscoverer.h in Headers */,
+				CAE2737A2CE7843D0072B9F3 /* OpCodeResolver.h in Headers */,
+				CAE2737B2CE7843D0072B9F3 /* OpCodeScanner.h in Headers */,
 				CA83F7392C92C6A4001FC565 /* LogLevel.h in Headers */,
 				CA83F73E2C92C6A4001FC565 /* VaultOperation.h in Headers */,
 				CA83F7552C92C6C6001FC565 /* HostView.h in Headers */,
