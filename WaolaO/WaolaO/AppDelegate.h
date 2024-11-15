@@ -6,7 +6,5 @@
 //
 
 @interface AppDelegate : NSObject<NSApplicationDelegate>
-
 @property (readonly, strong) NSPersistentContainer* persistentContainer;
-
 @end

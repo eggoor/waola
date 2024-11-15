@@ -20,17 +20,17 @@
 
 @property (weak) IBOutlet NSWindow* window;
 @property (weak) IBOutlet AddEditHost* addEditHost;
+@property (weak) IBOutlet NSWindow* aboutView;
 @property (weak) IBOutlet NSArrayController* hostsController;
 @property (weak) IBOutlet NSProgressIndicator* progressSpinner;
 @property (strong) NSMutableArray* hosts;
+@property (weak) IBOutlet NSTextView* licenseView;
 
 - (void)save;
 
 @end
 
 @implementation AppDelegate
-
-@synthesize addEditHost = _addEditHost;
 
 - (BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication*)application {
 	return YES;
@@ -199,9 +199,8 @@
 
 - (IBAction)onCopy:(id)sender {
 	NSArray* selectedHosts = [self.hostsController selectedObjects];
-	NSUInteger n = [selectedHosts count];
 	
-	if (n > 0) {
+	if ([selectedHosts count] > 0) {
 		NSMutableString* selectedHostsStr = [[NSMutableString alloc] init];
 		for (HostView* hostView in selectedHosts) {
 			[selectedHostsStr appendString:[NSString stringWithFormat:@"%@\n", [hostView toString]]];
@@ -296,6 +295,18 @@
 }
 
 - (IBAction)onAbout:(id)sender {
+	if (!self.aboutView) {
+		NSArray* topLevelObjects;
+		[[NSBundle mainBundle] loadNibNamed:@"AboutView" owner:self topLevelObjects:&topLevelObjects];
+		
+		NSString* licensePath = [[NSBundle mainBundle] pathForResource:@"LICENSE" ofType:@"txt"];
+		NSString* licenseText = [NSString stringWithContentsOfFile:licensePath encoding:NSUTF8StringEncoding error:nil];
+		[self.licenseView setString:licenseText];
+	}
+	
+	[self.window beginSheet:self.aboutView completionHandler:^(NSModalResponse returnCode) {
+		self.aboutView = nil;
+	}];
 }
 
 - (IBAction)onAddSheetCancel:(id)sender {
@@ -304,6 +315,10 @@
 
 - (IBAction)onAddSheetSave:(id)sender {
 	[NSApp endSheet:self.addEditHost returnCode:YES];
+}
+
+- (IBAction)onAboutViewClose:(id)sender {
+	[NSApp endSheet:self.aboutView];
 }
 
 - (void) WakeUpSelection {
