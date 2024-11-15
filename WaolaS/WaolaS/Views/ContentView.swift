@@ -224,7 +224,7 @@ struct ContentView: View {
 	}
 	
 	private func copySelected () {
-		//
+		viewModel.copySelected(ids: selectedHosts);
 	}
 	
 	private func addNew() {

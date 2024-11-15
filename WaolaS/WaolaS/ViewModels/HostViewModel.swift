@@ -63,6 +63,10 @@ class HostViewModel: Identifiable, Equatable {
 		return HostModel(displayName: displayName, hostname: hostname, ipAddress: ipAddress, macAddress: macAddress, lastSeenOnline: lastSeenOnline)
 	}
 	
+	func toString() -> String {
+		return "\(macAddress.unwrapOrEmpty)\t\(ipAddress.unwrapOrEmpty)\t\(hostname.unwrapOrEmpty)";
+	}
+	
 	static func == (lhs: HostViewModel, rhs: HostViewModel) -> Bool {
 		return whost_view_compare(lhs.hostView, rhs.hostView) == 0
 	}

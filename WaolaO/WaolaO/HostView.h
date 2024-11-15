@@ -21,5 +21,6 @@ using namespace Waola;
 
 -(instancetype _Nonnull) initWithHostView: (IHostView* _Nonnull) hostView;
 -(void) processChanges;
+-(NSString*_Nonnull) toString;
 
 @end

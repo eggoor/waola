@@ -198,6 +198,19 @@
 }
 
 - (IBAction)onCopy:(id)sender {
+	NSArray* selectedHosts = [self.hostsController selectedObjects];
+	NSUInteger n = [selectedHosts count];
+	
+	if (n > 0) {
+		NSMutableString* selectedHostsStr = [[NSMutableString alloc] init];
+		for (HostView* hostView in selectedHosts) {
+			[selectedHostsStr appendString:[NSString stringWithFormat:@"%@\n", [hostView toString]]];
+		}
+		
+		NSPasteboard* pasteBoard = [NSPasteboard generalPasteboard];
+		[pasteBoard clearContents];
+		[pasteBoard setString:selectedHostsStr forType:NSPasteboardTypeString];
+	}
 }
 
 - (IBAction)onAdd:(id)sender {

@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftData
+import AppKit
 
 extension ContentView {
 	class ContentViewModel: ObservableObject {
@@ -88,6 +89,23 @@ extension ContentView {
 						break
 					}
 				}
+			}
+		}
+		
+		func copySelected(ids: Set<HostViewModel.ID>) {
+			if ids.count > 0 {
+				var hostsString = "";
+				for id in ids {
+					for i in 0..<hosts.count {
+						if (hosts[i].id == id) {
+							hostsString += "\(hosts[i].toString())\n"
+						}
+					}
+				}
+				
+				let pasteboard = NSPasteboard.general
+				pasteboard.clearContents()
+				pasteboard.setString(hostsString, forType: .string)
 			}
 		}
 		

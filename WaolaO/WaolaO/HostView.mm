@@ -148,4 +148,8 @@
 	return result;
 }
 
+-(NSString*) toString {
+	return @(_hostView->ToString().c_str());
+}
+
 @end
