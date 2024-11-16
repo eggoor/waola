@@ -7,7 +7,7 @@
 
 #import "HostView.h"
 #import "WaolaHost+CoreDataClass.h"
-#import "AddEditHost.h"
+#import "EditHostView.h"
 #import "StatusMonitor.h"
 
 #import "AppDelegate.h"
@@ -17,7 +17,7 @@
 }
 
 @property (weak) IBOutlet NSWindow* window;
-@property (weak) IBOutlet AddEditHost* addEditHost;
+@property (weak) IBOutlet EditHostView* editHostView;
 @property (weak) IBOutlet NSWindow* aboutView;
 @property (weak) IBOutlet NSArrayController* hostsController;
 @property (weak) IBOutlet NSProgressIndicator* progressSpinner;
@@ -200,20 +200,20 @@
 }
 
 - (IBAction)onAdd:(id)sender {
-	if (!self.addEditHost) {
+	if (!self.editHostView) {
 		NSArray* topLevelObjects;
-		[[NSBundle mainBundle] loadNibNamed:@"AddEditHost" owner:self topLevelObjects:&topLevelObjects];
+		[[NSBundle mainBundle] loadNibNamed:@"EditHostView" owner:self topLevelObjects:&topLevelObjects];
 	}
 	
-	[self.window beginSheet:self.addEditHost completionHandler:^(NSModalResponse returnCode) {
+	[self.window beginSheet:self.editHostView completionHandler:^(NSModalResponse returnCode) {
 		if (returnCode == YES) {
 			[self.progressSpinner startAnimation:self];
 			
-			[self->scanner addHost:self.addEditHost.displayName hostname:self.addEditHost.hostname ipAddress:self.addEditHost.ipAddress macAddress:self.addEditHost.macAddress];
+			[self->scanner addHost:self.editHostView.displayName hostname:self.editHostView.hostname ipAddress:self.editHostView.ipAddress macAddress:self.editHostView.macAddress];
 			
 			[self.progressSpinner stopAnimation:nil];
 		}
-		self.addEditHost = nil;
+		self.editHostView = nil;
 	}];
 }
 
@@ -222,26 +222,26 @@
 	NSArray* selectedHosts = [self.hostsController selectedObjects];
 	if ([selectedHosts count] > 0) {
 		
-		if (!self.addEditHost) {
+		if (!self.editHostView) {
 			NSArray* topLevelObjects;
-			[[NSBundle mainBundle] loadNibNamed:@"AddEditHost" owner:self topLevelObjects:&topLevelObjects];
+			[[NSBundle mainBundle] loadNibNamed:@"EditHostView" owner:self topLevelObjects:&topLevelObjects];
 		}
 		
 		HostView* selectedHost = selectedHosts[0];
 		
-		self.addEditHost.displayName = selectedHost.exactDisplayName;
-		self.addEditHost.hostname = selectedHost.hostname;
-		self.addEditHost.ipAddress = selectedHost.ipAddress;
-		self.addEditHost.macAddress = selectedHost.macAddress;
+		self.editHostView.displayName = selectedHost.exactDisplayName;
+		self.editHostView.hostname = selectedHost.hostname;
+		self.editHostView.ipAddress = selectedHost.ipAddress;
+		self.editHostView.macAddress = selectedHost.macAddress;
 
-		[self.window beginSheet:self.addEditHost completionHandler:^(NSModalResponse returnCode) {
+		[self.window beginSheet:self.editHostView completionHandler:^(NSModalResponse returnCode) {
 			if (returnCode == YES) {
-				selectedHost.displayName = self.addEditHost.displayName;
-				selectedHost.hostname = self.addEditHost.hostname;
-				selectedHost.ipAddress = self.addEditHost.ipAddress;
-				selectedHost.macAddress = self.addEditHost.macAddress;
+				selectedHost.displayName = self.editHostView.displayName;
+				selectedHost.hostname = self.editHostView.hostname;
+				selectedHost.ipAddress = self.editHostView.ipAddress;
+				selectedHost.macAddress = self.editHostView.macAddress;
 			}
-			self.addEditHost = nil;
+			self.editHostView = nil;
 		}];
 	}
 }
@@ -295,11 +295,11 @@
 }
 
 - (IBAction)onAddSheetCancel:(id)sender {
-	[NSApp endSheet:self.addEditHost returnCode:NO];
+	[NSApp endSheet:self.editHostView returnCode:NO];
 }
 
 - (IBAction)onAddSheetSave:(id)sender {
-	[NSApp endSheet:self.addEditHost returnCode:YES];
+	[NSApp endSheet:self.editHostView returnCode:YES];
 }
 
 - (IBAction)onAboutViewClose:(id)sender {

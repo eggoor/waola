@@ -79,7 +79,6 @@ using namespace Waola;
 		if (!_isUpdated) {
 			_isUpdated = YES;
 		}
-		
 		_lastOpCode = opCode;
 	}
 	

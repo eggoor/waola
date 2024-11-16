@@ -1,5 +1,5 @@
 //
-//  AddEditHost.h
+//  EditHostView.h
 //  WaolaO
 //
 //  Created by e on 14.11.2024.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AddEditHost : NSWindow
+@interface EditHostView : NSWindow
 
 @property (weak) NSString* displayName;
 @property (weak) NSString* hostname;

@@ -967,7 +967,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     </progressIndicator>
                     <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2xV-4T-t8o">
-                        <rect key="frame" x="18" y="3" width="402" height="16"/>
+                        <rect key="frame" x="6" y="3" width="414" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Idle" id="ch9-7d-ug5">
                             <font key="font" usesAppearanceFont="YES"/>
