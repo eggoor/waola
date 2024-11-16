@@ -3,48 +3,62 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA366F672CDA7B7300FE9122 /* libwaolasc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA366F662CDA7B7300FE9122 /* libwaolasc.dylib */; };
-		CA366F682CDA7B7300FE9122 /* libwaolasc.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CA366F662CDA7B7300FE9122 /* libwaolasc.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CA366F6B2CDA7B8F00FE9122 /* libwaolash.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA366F6A2CDA7B8F00FE9122 /* libwaolash.dylib */; };
-		CA366F6C2CDA7B8F00FE9122 /* libwaolash.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CA366F6A2CDA7B8F00FE9122 /* libwaolash.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CA9042C42CE3B4B900123FF8 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = CA9042C32CE3B4B900123FF8 /* Credits.html */; };
-		CA9042C62CE3B68E00123FF8 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA9042C52CE3B68E00123FF8 /* LICENSE.txt */; };
-		CAA5D53E2CDE60A800CFF81F /* libwaola.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA5D53D2CDE60A800CFF81F /* libwaola.dylib */; };
-		CAA5D53F2CDE60A800CFF81F /* libwaola.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CAA5D53D2CDE60A800CFF81F /* libwaola.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CAC277BD2CDA773D0028F284 /* libWaola++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC277BC2CDA773D0028F284 /* libWaola++.a */; };
+		CA176A612CE8B5E00039ACEB /* WaolaO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA176A5F2CE8B5E00039ACEB /* WaolaO.xcdatamodeld */; };
+		CA176A632CE8B5FD0039ACEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA176A622CE8B5FD0039ACEB /* Assets.xcassets */; };
+		CA176A662CE8B5FD0039ACEB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA176A642CE8B5FD0039ACEB /* MainMenu.xib */; };
+		CA176A682CE8B5FD0039ACEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA176A672CE8B5FD0039ACEB /* main.m */; };
+		CA176A732CE8B5FE0039ACEB /* WaolaOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA176A722CE8B5FE0039ACEB /* WaolaOTests.m */; };
+		CA176A7D2CE8B5FE0039ACEB /* WaolaOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA176A7C2CE8B5FE0039ACEB /* WaolaOUITests.m */; };
+		CA176A7F2CE8B5FE0039ACEB /* WaolaOUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA176A7E2CE8B5FE0039ACEB /* WaolaOUITestsLaunchTests.m */; };
+		CA1C19512CE8C0A700E28666 /* EditHostView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1C19422CE8C0A300E28666 /* EditHostView.m */; };
+		CA1C19522CE8C0A700E28666 /* HostView.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA1C19472CE8C0A400E28666 /* HostView.mm */; };
+		CA1C19532CE8C0A700E28666 /* Scanner.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA1C19482CE8C0A400E28666 /* Scanner.mm */; };
+		CA1C19542CE8C0A700E28666 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA1C19492CE8C0A500E28666 /* AppDelegate.mm */; };
+		CA1C19552CE8C0A700E28666 /* StatusMonitor.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA1C194A2CE8C0A500E28666 /* StatusMonitor.mm */; };
+		CA1C19562CE8C0A700E28666 /* WaolaHost+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1C194C2CE8C0A500E28666 /* WaolaHost+CoreDataClass.m */; };
+		CA1C19572CE8C0A700E28666 /* EditHostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA1C194D2CE8C0A600E28666 /* EditHostView.xib */; };
+		CA1C19582CE8C0A700E28666 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA1C194E2CE8C0A600E28666 /* AboutView.xib */; };
+		CA1C19592CE8C0A700E28666 /* WaolaHost+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1C19502CE8C0A600E28666 /* WaolaHost+CoreDataProperties.m */; };
+		CA1C195D2CE8CB1B00E28666 /* libWaola++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1C195C2CE8CB1B00E28666 /* libWaola++.a */; };
+		CA1C195F2CE8CB4F00E28666 /* libwaolasc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1C195E2CE8CB4F00E28666 /* libwaolasc.dylib */; };
+		CA1C19602CE8CB4F00E28666 /* libwaolasc.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CA1C195E2CE8CB4F00E28666 /* libwaolasc.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CA1C19632CE8CB7000E28666 /* libwaolash.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1C19622CE8CB7000E28666 /* libwaolash.dylib */; };
+		CA1C19642CE8CB7000E28666 /* libwaolash.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CA1C19622CE8CB7000E28666 /* libwaolash.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CA1C19662CE8CB8D00E28666 /* libwaola.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1C19652CE8CB8D00E28666 /* libwaola.dylib */; };
+		CA1C19672CE8CB8D00E28666 /* libwaola.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CA1C19652CE8CB8D00E28666 /* libwaola.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CA51433F2CD4B9CB006D11CA /* PBXContainerItemProxy */ = {
+		CA176A6F2CE8B5FE0039ACEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CA5143212CD4B9C8006D11CA /* Project object */;
+			containerPortal = CA176A512CE8B5DF0039ACEB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CA5143282CD4B9C8006D11CA;
+			remoteGlobalIDString = CA176A582CE8B5DF0039ACEB;
 			remoteInfo = WaolaO;
 		};
-		CA5143492CD4B9CC006D11CA /* PBXContainerItemProxy */ = {
+		CA176A792CE8B5FE0039ACEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CA5143212CD4B9C8006D11CA /* Project object */;
+			containerPortal = CA176A512CE8B5DF0039ACEB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CA5143282CD4B9C8006D11CA;
+			remoteGlobalIDString = CA176A582CE8B5DF0039ACEB;
 			remoteInfo = WaolaO;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CA366F692CDA7B7300FE9122 /* Embed Libraries */ = {
+		CA1C19612CE8CB5000E28666 /* Embed Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CA366F6C2CDA7B8F00FE9122 /* libwaolash.dylib in Embed Libraries */,
-				CA366F682CDA7B7300FE9122 /* libwaolasc.dylib in Embed Libraries */,
-				CAA5D53F2CDE60A800CFF81F /* libwaola.dylib in Embed Libraries */,
+				CA1C19642CE8CB7000E28666 /* libwaolash.dylib in Embed Libraries */,
+				CA1C19602CE8CB4F00E28666 /* libwaolasc.dylib in Embed Libraries */,
+				CA1C19672CE8CB8D00E28666 /* libwaola.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,43 +66,60 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CA366F662CDA7B7300FE9122 /* libwaolasc.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libwaolasc.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA366F6A2CDA7B8F00FE9122 /* libwaolash.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libwaolash.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA5143292CD4B9C8006D11CA /* WaolaO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaolaO.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA51433E2CD4B9CB006D11CA /* WaolaOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaolaOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA5143482CD4B9CC006D11CA /* WaolaOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaolaOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA9042C32CE3B4B900123FF8 /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
-		CA9042C52CE3B68E00123FF8 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE.txt; path = ../LICENSE.txt; sourceTree = SOURCE_ROOT; };
-		CAA5D53D2CDE60A800CFF81F /* libwaola.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libwaola.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAC277BC2CDA773D0028F284 /* libWaola++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libWaola++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA176A592CE8B5DF0039ACEB /* WaolaO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaolaO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA176A5C2CE8B5DF0039ACEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA176A602CE8B5E00039ACEB /* WaolaO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WaolaO.xcdatamodel; sourceTree = "<group>"; };
+		CA176A622CE8B5FD0039ACEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA176A652CE8B5FD0039ACEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CA176A672CE8B5FD0039ACEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA176A692CE8B5FE0039ACEB /* WaolaO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaolaO.entitlements; sourceTree = "<group>"; };
+		CA176A6E2CE8B5FE0039ACEB /* WaolaOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaolaOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA176A722CE8B5FE0039ACEB /* WaolaOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaolaOTests.m; sourceTree = "<group>"; };
+		CA176A782CE8B5FE0039ACEB /* WaolaOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaolaOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA176A7C2CE8B5FE0039ACEB /* WaolaOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaolaOUITests.m; sourceTree = "<group>"; };
+		CA176A7E2CE8B5FE0039ACEB /* WaolaOUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaolaOUITestsLaunchTests.m; sourceTree = "<group>"; };
+		CA1C19422CE8C0A300E28666 /* EditHostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditHostView.m; sourceTree = "<group>"; };
+		CA1C19432CE8C0A300E28666 /* HostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostView.h; sourceTree = "<group>"; };
+		CA1C19442CE8C0A300E28666 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		CA1C19452CE8C0A300E28666 /* EditHostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditHostView.h; sourceTree = "<group>"; };
+		CA1C19462CE8C0A400E28666 /* StatusMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMonitor.h; sourceTree = "<group>"; };
+		CA1C19472CE8C0A400E28666 /* HostView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HostView.mm; sourceTree = "<group>"; };
+		CA1C19482CE8C0A400E28666 /* Scanner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Scanner.mm; sourceTree = "<group>"; };
+		CA1C19492CE8C0A500E28666 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		CA1C194A2CE8C0A500E28666 /* StatusMonitor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StatusMonitor.mm; sourceTree = "<group>"; };
+		CA1C194B2CE8C0A500E28666 /* WaolaHost+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WaolaHost+CoreDataProperties.h"; sourceTree = "<group>"; };
+		CA1C194C2CE8C0A500E28666 /* WaolaHost+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WaolaHost+CoreDataClass.m"; sourceTree = "<group>"; };
+		CA1C194D2CE8C0A600E28666 /* EditHostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditHostView.xib; sourceTree = "<group>"; };
+		CA1C194E2CE8C0A600E28666 /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutView.xib; sourceTree = "<group>"; };
+		CA1C194F2CE8C0A600E28666 /* WaolaHost+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WaolaHost+CoreDataClass.h"; sourceTree = "<group>"; };
+		CA1C19502CE8C0A600E28666 /* WaolaHost+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WaolaHost+CoreDataProperties.m"; sourceTree = "<group>"; };
+		CA1C195A2CE8C4F600E28666 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CA1C195C2CE8CB1B00E28666 /* libWaola++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libWaola++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1C195E2CE8CB4F00E28666 /* libwaolasc.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libwaolasc.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1C19622CE8CB7000E28666 /* libwaolash.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libwaolash.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1C19652CE8CB8D00E28666 /* libwaola.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libwaola.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		CA51432B2CD4B9C8006D11CA /* WaolaO */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WaolaO; sourceTree = "<group>"; };
-		CA5143412CD4B9CB006D11CA /* WaolaOTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WaolaOTests; sourceTree = "<group>"; };
-		CA51434B2CD4B9CC006D11CA /* WaolaOUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WaolaOUITests; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
-		CA5143262CD4B9C8006D11CA /* Frameworks */ = {
+		CA176A562CE8B5DF0039ACEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA366F6B2CDA7B8F00FE9122 /* libwaolash.dylib in Frameworks */,
-				CAC277BD2CDA773D0028F284 /* libWaola++.a in Frameworks */,
-				CA366F672CDA7B7300FE9122 /* libwaolasc.dylib in Frameworks */,
-				CAA5D53E2CDE60A800CFF81F /* libwaola.dylib in Frameworks */,
+				CA1C19632CE8CB7000E28666 /* libwaolash.dylib in Frameworks */,
+				CA1C195D2CE8CB1B00E28666 /* libWaola++.a in Frameworks */,
+				CA1C195F2CE8CB4F00E28666 /* libwaolasc.dylib in Frameworks */,
+				CA1C19662CE8CB8D00E28666 /* libwaola.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA51433B2CD4B9CB006D11CA /* Frameworks */ = {
+		CA176A6B2CE8B5FE0039ACEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA5143452CD4B9CC006D11CA /* Frameworks */ = {
+		CA176A752CE8B5FE0039ACEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,36 +129,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA5143202CD4B9C8006D11CA = {
+		CA176A502CE8B5DE0039ACEB = {
 			isa = PBXGroup;
 			children = (
-				CA9042C52CE3B68E00123FF8 /* LICENSE.txt */,
-				CA9042C32CE3B4B900123FF8 /* Credits.html */,
-				CA51432B2CD4B9C8006D11CA /* WaolaO */,
-				CA5143412CD4B9CB006D11CA /* WaolaOTests */,
-				CA51434B2CD4B9CC006D11CA /* WaolaOUITests */,
-				CAC277BB2CDA773D0028F284 /* Frameworks */,
-				CA51432A2CD4B9C8006D11CA /* Products */,
+				CA176A5B2CE8B5DF0039ACEB /* WaolaO */,
+				CA176A712CE8B5FE0039ACEB /* WaolaOTests */,
+				CA176A7B2CE8B5FE0039ACEB /* WaolaOUITests */,
+				CA176A5A2CE8B5DF0039ACEB /* Products */,
+				CA1C195B2CE8CB1B00E28666 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		CA51432A2CD4B9C8006D11CA /* Products */ = {
+		CA176A5A2CE8B5DF0039ACEB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA5143292CD4B9C8006D11CA /* WaolaO.app */,
-				CA51433E2CD4B9CB006D11CA /* WaolaOTests.xctest */,
-				CA5143482CD4B9CC006D11CA /* WaolaOUITests.xctest */,
+				CA176A592CE8B5DF0039ACEB /* WaolaO.app */,
+				CA176A6E2CE8B5FE0039ACEB /* WaolaOTests.xctest */,
+				CA176A782CE8B5FE0039ACEB /* WaolaOUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CAC277BB2CDA773D0028F284 /* Frameworks */ = {
+		CA176A5B2CE8B5DF0039ACEB /* WaolaO */ = {
 			isa = PBXGroup;
 			children = (
-				CAA5D53D2CDE60A800CFF81F /* libwaola.dylib */,
-				CA366F6A2CDA7B8F00FE9122 /* libwaolash.dylib */,
-				CA366F662CDA7B7300FE9122 /* libwaolasc.dylib */,
-				CAC277BC2CDA773D0028F284 /* libWaola++.a */,
+				CA1C194E2CE8C0A600E28666 /* AboutView.xib */,
+				CA176A5C2CE8B5DF0039ACEB /* AppDelegate.h */,
+				CA1C19492CE8C0A500E28666 /* AppDelegate.mm */,
+				CA1C19452CE8C0A300E28666 /* EditHostView.h */,
+				CA1C19422CE8C0A300E28666 /* EditHostView.m */,
+				CA1C194D2CE8C0A600E28666 /* EditHostView.xib */,
+				CA1C19432CE8C0A300E28666 /* HostView.h */,
+				CA1C19472CE8C0A400E28666 /* HostView.mm */,
+				CA1C19442CE8C0A300E28666 /* Scanner.h */,
+				CA1C19482CE8C0A400E28666 /* Scanner.mm */,
+				CA1C19462CE8C0A400E28666 /* StatusMonitor.h */,
+				CA1C194A2CE8C0A500E28666 /* StatusMonitor.mm */,
+				CA1C194F2CE8C0A600E28666 /* WaolaHost+CoreDataClass.h */,
+				CA1C194C2CE8C0A500E28666 /* WaolaHost+CoreDataClass.m */,
+				CA1C194B2CE8C0A500E28666 /* WaolaHost+CoreDataProperties.h */,
+				CA1C19502CE8C0A600E28666 /* WaolaHost+CoreDataProperties.m */,
+				CA176A622CE8B5FD0039ACEB /* Assets.xcassets */,
+				CA176A642CE8B5FD0039ACEB /* MainMenu.xib */,
+				CA176A672CE8B5FD0039ACEB /* main.m */,
+				CA176A692CE8B5FE0039ACEB /* WaolaO.entitlements */,
+				CA176A5F2CE8B5E00039ACEB /* WaolaO.xcdatamodeld */,
+				CA1C195A2CE8C4F600E28666 /* PrefixHeader.pch */,
+			);
+			path = WaolaO;
+			sourceTree = "<group>";
+		};
+		CA176A712CE8B5FE0039ACEB /* WaolaOTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA176A722CE8B5FE0039ACEB /* WaolaOTests.m */,
+			);
+			path = WaolaOTests;
+			sourceTree = "<group>";
+		};
+		CA176A7B2CE8B5FE0039ACEB /* WaolaOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA176A7C2CE8B5FE0039ACEB /* WaolaOUITests.m */,
+				CA176A7E2CE8B5FE0039ACEB /* WaolaOUITestsLaunchTests.m */,
+			);
+			path = WaolaOUITests;
+			sourceTree = "<group>";
+		};
+		CA1C195B2CE8CB1B00E28666 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA1C19652CE8CB8D00E28666 /* libwaola.dylib */,
+				CA1C19622CE8CB7000E28666 /* libwaolash.dylib */,
+				CA1C195E2CE8CB4F00E28666 /* libwaolasc.dylib */,
+				CA1C195C2CE8CB1B00E28666 /* libWaola++.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,98 +210,83 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA5143282CD4B9C8006D11CA /* WaolaO */ = {
+		CA176A582CE8B5DF0039ACEB /* WaolaO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA5143522CD4B9CC006D11CA /* Build configuration list for PBXNativeTarget "WaolaO" */;
+			buildConfigurationList = CA176A822CE8B5FE0039ACEB /* Build configuration list for PBXNativeTarget "WaolaO" */;
 			buildPhases = (
-				CA5143252CD4B9C8006D11CA /* Sources */,
-				CA5143262CD4B9C8006D11CA /* Frameworks */,
-				CA5143272CD4B9C8006D11CA /* Resources */,
-				CA366F692CDA7B7300FE9122 /* Embed Libraries */,
+				CA176A552CE8B5DF0039ACEB /* Sources */,
+				CA176A562CE8B5DF0039ACEB /* Frameworks */,
+				CA176A572CE8B5DF0039ACEB /* Resources */,
+				CA1C19612CE8CB5000E28666 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				CA51432B2CD4B9C8006D11CA /* WaolaO */,
 			);
 			name = WaolaO;
-			packageProductDependencies = (
-			);
 			productName = WaolaO;
-			productReference = CA5143292CD4B9C8006D11CA /* WaolaO.app */;
+			productReference = CA176A592CE8B5DF0039ACEB /* WaolaO.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CA51433D2CD4B9CB006D11CA /* WaolaOTests */ = {
+		CA176A6D2CE8B5FE0039ACEB /* WaolaOTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA5143552CD4B9CC006D11CA /* Build configuration list for PBXNativeTarget "WaolaOTests" */;
+			buildConfigurationList = CA176A852CE8B5FE0039ACEB /* Build configuration list for PBXNativeTarget "WaolaOTests" */;
 			buildPhases = (
-				CA51433A2CD4B9CB006D11CA /* Sources */,
-				CA51433B2CD4B9CB006D11CA /* Frameworks */,
-				CA51433C2CD4B9CB006D11CA /* Resources */,
+				CA176A6A2CE8B5FE0039ACEB /* Sources */,
+				CA176A6B2CE8B5FE0039ACEB /* Frameworks */,
+				CA176A6C2CE8B5FE0039ACEB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CA5143402CD4B9CB006D11CA /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CA5143412CD4B9CB006D11CA /* WaolaOTests */,
+				CA176A702CE8B5FE0039ACEB /* PBXTargetDependency */,
 			);
 			name = WaolaOTests;
-			packageProductDependencies = (
-			);
 			productName = WaolaOTests;
-			productReference = CA51433E2CD4B9CB006D11CA /* WaolaOTests.xctest */;
+			productReference = CA176A6E2CE8B5FE0039ACEB /* WaolaOTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CA5143472CD4B9CC006D11CA /* WaolaOUITests */ = {
+		CA176A772CE8B5FE0039ACEB /* WaolaOUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA5143582CD4B9CC006D11CA /* Build configuration list for PBXNativeTarget "WaolaOUITests" */;
+			buildConfigurationList = CA176A882CE8B5FE0039ACEB /* Build configuration list for PBXNativeTarget "WaolaOUITests" */;
 			buildPhases = (
-				CA5143442CD4B9CC006D11CA /* Sources */,
-				CA5143452CD4B9CC006D11CA /* Frameworks */,
-				CA5143462CD4B9CC006D11CA /* Resources */,
+				CA176A742CE8B5FE0039ACEB /* Sources */,
+				CA176A752CE8B5FE0039ACEB /* Frameworks */,
+				CA176A762CE8B5FE0039ACEB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CA51434A2CD4B9CC006D11CA /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CA51434B2CD4B9CC006D11CA /* WaolaOUITests */,
+				CA176A7A2CE8B5FE0039ACEB /* PBXTargetDependency */,
 			);
 			name = WaolaOUITests;
-			packageProductDependencies = (
-			);
 			productName = WaolaOUITests;
-			productReference = CA5143482CD4B9CC006D11CA /* WaolaOUITests.xctest */;
+			productReference = CA176A782CE8B5FE0039ACEB /* WaolaOUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CA5143212CD4B9C8006D11CA /* Project object */ = {
+		CA176A512CE8B5DF0039ACEB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					CA5143282CD4B9C8006D11CA = {
-						CreatedOnToolsVersion = 16.1;
+					CA176A582CE8B5DF0039ACEB = {
+						CreatedOnToolsVersion = 14.2;
 					};
-					CA51433D2CD4B9CB006D11CA = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = CA5143282CD4B9C8006D11CA;
+					CA176A6D2CE8B5FE0039ACEB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CA176A582CE8B5DF0039ACEB;
 					};
-					CA5143472CD4B9CC006D11CA = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = CA5143282CD4B9C8006D11CA;
+					CA176A772CE8B5FE0039ACEB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CA176A582CE8B5DF0039ACEB;
 					};
 				};
 			};
-			buildConfigurationList = CA5143242CD4B9C8006D11CA /* Build configuration list for PBXProject "WaolaO" */;
+			buildConfigurationList = CA176A542CE8B5DF0039ACEB /* Build configuration list for PBXProject "WaolaO" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -234,37 +294,38 @@
 				en,
 				Base,
 			);
-			mainGroup = CA5143202CD4B9C8006D11CA;
-			minimizedProjectReferenceProxies = 1;
-			productRefGroup = CA51432A2CD4B9C8006D11CA /* Products */;
+			mainGroup = CA176A502CE8B5DE0039ACEB;
+			productRefGroup = CA176A5A2CE8B5DF0039ACEB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA5143282CD4B9C8006D11CA /* WaolaO */,
-				CA51433D2CD4B9CB006D11CA /* WaolaOTests */,
-				CA5143472CD4B9CC006D11CA /* WaolaOUITests */,
+				CA176A582CE8B5DF0039ACEB /* WaolaO */,
+				CA176A6D2CE8B5FE0039ACEB /* WaolaOTests */,
+				CA176A772CE8B5FE0039ACEB /* WaolaOUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CA5143272CD4B9C8006D11CA /* Resources */ = {
+		CA176A572CE8B5DF0039ACEB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9042C62CE3B68E00123FF8 /* LICENSE.txt in Resources */,
-				CA9042C42CE3B4B900123FF8 /* Credits.html in Resources */,
+				CA1C19582CE8C0A700E28666 /* AboutView.xib in Resources */,
+				CA176A632CE8B5FD0039ACEB /* Assets.xcassets in Resources */,
+				CA176A662CE8B5FD0039ACEB /* MainMenu.xib in Resources */,
+				CA1C19572CE8C0A700E28666 /* EditHostView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA51433C2CD4B9CB006D11CA /* Resources */ = {
+		CA176A6C2CE8B5FE0039ACEB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA5143462CD4B9CC006D11CA /* Resources */ = {
+		CA176A762CE8B5FE0039ACEB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -274,48 +335,70 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CA5143252CD4B9C8006D11CA /* Sources */ = {
+		CA176A552CE8B5DF0039ACEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1C19592CE8C0A700E28666 /* WaolaHost+CoreDataProperties.m in Sources */,
+				CA1C19522CE8C0A700E28666 /* HostView.mm in Sources */,
+				CA1C19552CE8C0A700E28666 /* StatusMonitor.mm in Sources */,
+				CA1C19562CE8C0A700E28666 /* WaolaHost+CoreDataClass.m in Sources */,
+				CA1C19532CE8C0A700E28666 /* Scanner.mm in Sources */,
+				CA176A612CE8B5E00039ACEB /* WaolaO.xcdatamodeld in Sources */,
+				CA176A682CE8B5FD0039ACEB /* main.m in Sources */,
+				CA1C19542CE8C0A700E28666 /* AppDelegate.mm in Sources */,
+				CA1C19512CE8C0A700E28666 /* EditHostView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA51433A2CD4B9CB006D11CA /* Sources */ = {
+		CA176A6A2CE8B5FE0039ACEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA176A732CE8B5FE0039ACEB /* WaolaOTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA5143442CD4B9CC006D11CA /* Sources */ = {
+		CA176A742CE8B5FE0039ACEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA176A7D2CE8B5FE0039ACEB /* WaolaOUITests.m in Sources */,
+				CA176A7F2CE8B5FE0039ACEB /* WaolaOUITestsLaunchTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CA5143402CD4B9CB006D11CA /* PBXTargetDependency */ = {
+		CA176A702CE8B5FE0039ACEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CA5143282CD4B9C8006D11CA /* WaolaO */;
-			targetProxy = CA51433F2CD4B9CB006D11CA /* PBXContainerItemProxy */;
+			target = CA176A582CE8B5DF0039ACEB /* WaolaO */;
+			targetProxy = CA176A6F2CE8B5FE0039ACEB /* PBXContainerItemProxy */;
 		};
-		CA51434A2CD4B9CC006D11CA /* PBXTargetDependency */ = {
+		CA176A7A2CE8B5FE0039ACEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CA5143282CD4B9C8006D11CA /* WaolaO */;
-			targetProxy = CA5143492CD4B9CC006D11CA /* PBXContainerItemProxy */;
+			target = CA176A582CE8B5DF0039ACEB /* WaolaO */;
+			targetProxy = CA176A792CE8B5FE0039ACEB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		CA176A642CE8B5FD0039ACEB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA176A652CE8B5FD0039ACEB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		CA5143502CD4B9CC006D11CA /* Debug */ = {
+		CA176A802CE8B5FE0039ACEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -348,8 +431,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -366,8 +448,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "../Waola++/include";
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -375,11 +456,10 @@
 			};
 			name = Debug;
 		};
-		CA5143512CD4B9CC006D11CA /* Release */ = {
+		CA176A812CE8B5FE0039ACEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -412,8 +492,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WaolaO/PrefixHeader.pch;
@@ -424,15 +503,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "../Waola++/include";
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		CA5143532CD4B9CC006D11CA /* Debug */ = {
+		CA176A832CE8B5FE0039ACEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -441,8 +519,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXSUYYT36N;
-				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -451,7 +527,6 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.smartnclever.WaolaO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -459,7 +534,7 @@
 			};
 			name = Debug;
 		};
-		CA5143542CD4B9CC006D11CA /* Release */ = {
+		CA176A842CE8B5FE0039ACEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -468,8 +543,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXSUYYT36N;
-				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -478,7 +551,6 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.smartnclever.WaolaO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -486,15 +558,14 @@
 			};
 			name = Release;
 		};
-		CA5143562CD4B9CC006D11CA /* Debug */ = {
+		CA176A862CE8B5FE0039ACEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXSUYYT36N;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.smartnclever.WaolaOTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,15 +574,14 @@
 			};
 			name = Debug;
 		};
-		CA5143572CD4B9CC006D11CA /* Release */ = {
+		CA176A872CE8B5FE0039ACEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXSUYYT36N;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.smartnclever.WaolaOTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,12 +590,11 @@
 			};
 			name = Release;
 		};
-		CA5143592CD4B9CC006D11CA /* Debug */ = {
+		CA176A892CE8B5FE0039ACEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXSUYYT36N;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.smartnclever.WaolaOUITests;
@@ -535,12 +604,11 @@
 			};
 			name = Debug;
 		};
-		CA51435A2CD4B9CC006D11CA /* Release */ = {
+		CA176A8A2CE8B5FE0039ACEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NXSUYYT36N;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.asuscomm.smartnclever.WaolaOUITests;
@@ -553,43 +621,56 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA5143242CD4B9C8006D11CA /* Build configuration list for PBXProject "WaolaO" */ = {
+		CA176A542CE8B5DF0039ACEB /* Build configuration list for PBXProject "WaolaO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA5143502CD4B9CC006D11CA /* Debug */,
-				CA5143512CD4B9CC006D11CA /* Release */,
+				CA176A802CE8B5FE0039ACEB /* Debug */,
+				CA176A812CE8B5FE0039ACEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA5143522CD4B9CC006D11CA /* Build configuration list for PBXNativeTarget "WaolaO" */ = {
+		CA176A822CE8B5FE0039ACEB /* Build configuration list for PBXNativeTarget "WaolaO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA5143532CD4B9CC006D11CA /* Debug */,
-				CA5143542CD4B9CC006D11CA /* Release */,
+				CA176A832CE8B5FE0039ACEB /* Debug */,
+				CA176A842CE8B5FE0039ACEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA5143552CD4B9CC006D11CA /* Build configuration list for PBXNativeTarget "WaolaOTests" */ = {
+		CA176A852CE8B5FE0039ACEB /* Build configuration list for PBXNativeTarget "WaolaOTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA5143562CD4B9CC006D11CA /* Debug */,
-				CA5143572CD4B9CC006D11CA /* Release */,
+				CA176A862CE8B5FE0039ACEB /* Debug */,
+				CA176A872CE8B5FE0039ACEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA5143582CD4B9CC006D11CA /* Build configuration list for PBXNativeTarget "WaolaOUITests" */ = {
+		CA176A882CE8B5FE0039ACEB /* Build configuration list for PBXNativeTarget "WaolaOUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA5143592CD4B9CC006D11CA /* Debug */,
-				CA51435A2CD4B9CC006D11CA /* Release */,
+				CA176A892CE8B5FE0039ACEB /* Debug */,
+				CA176A8A2CE8B5FE0039ACEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA176A5F2CE8B5E00039ACEB /* WaolaO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA176A602CE8B5E00039ACEB /* WaolaO.xcdatamodel */,
+			);
+			currentVersion = CA176A602CE8B5E00039ACEB /* WaolaO.xcdatamodel */;
+			path = WaolaO.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = CA5143212CD4B9C8006D11CA /* Project object */;
+	rootObject = CA176A512CE8B5DF0039ACEB /* Project object */;
 }

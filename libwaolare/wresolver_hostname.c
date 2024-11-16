@@ -19,7 +19,6 @@ BOOL wresolver_sockaddr_name_resolve(const struct sockaddr* sa,
 		wstatus_set(status, wm_resolver, wre_gotnameinfo, buff);
 	}
 	else {
-		const uint32_t ip_addr = wsockaddr_to_int(sa);
 		wstatus_set(status, wm_resolver, wre_getnameinfo_failed, &ip_addr);
 		
 		if (wlog_get_level() >= wll_warning) {

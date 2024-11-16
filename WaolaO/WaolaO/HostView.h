@@ -9,14 +9,14 @@ using namespace Waola;
 
 @interface HostView : NSObject
 
-@property (weak, readonly) NSString* humanReadableId;
-@property (weak) NSString* displayName;
-@property (weak, readonly) NSString* exactDisplayName;
-@property (weak) NSString* hostname;
-@property (weak) NSString* ipAddress;
-@property (weak) NSString* macAddress;
-@property (weak, readonly) NSDate* lastSeenOnline;
-@property (weak, readonly) NSString* wakeupResult;
+@property (weak, readonly) NSString* _Nullable humanReadableId;
+@property (weak) NSString* _Nullable displayName;
+@property (weak, readonly) NSString* _Nullable exactDisplayName;
+@property (weak) NSString* _Nullable hostname;
+@property (weak) NSString* _Nullable ipAddress;
+@property (weak) NSString* _Nullable macAddress;
+@property (weak, readonly) NSDate* _Nullable lastSeenOnline;
+@property (weak, readonly) NSString* _Nullable wakeupResult;
 @property (readonly, nonnull) Waola::IHostView* hostView;
 
 -(instancetype _Nonnull) initWithHostView: (IHostView* _Nonnull) hostView;
