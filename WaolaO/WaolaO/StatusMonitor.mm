@@ -42,16 +42,20 @@ using namespace Waola;
 }
 
 - (void)start {
-	if (!_timer) {
-		_timer = [NSTimer scheduledTimerWithTimeInterval:0.08 target:self selector:@selector(onTimerTick:) userInfo:nil repeats:YES];
-	}
+	dispatch_async(dispatch_get_main_queue(), ^{
+		if (!self->_timer) {
+			self->_timer = [NSTimer scheduledTimerWithTimeInterval:0.08 target:self selector:@selector(onTimerTick:) userInfo:nil repeats:YES];
+		}
+	});
 }
 
 - (void)stop {
-	if (_timer) {
-		[_timer invalidate];
-		_timer = nil;
-	}
+	dispatch_async(dispatch_get_main_queue(), ^{
+		if (self->_timer) {
+			[self->_timer invalidate];
+			self->_timer = nil;
+		}
+	});
 }
 
 - (void) onTimerTick:(NSTimer *)timer {
@@ -226,7 +230,7 @@ using namespace Waola;
 	NSString* status;
 	char ip_str[INET_ADDRSTRLEN];
 	inet_ntop(AF_INET, statusData, ip_str, INET_ADDRSTRLEN);
-
+	
 	switch (_lastOpCode) {
 		case wdi_scheduling_arp:
 			status = [NSString stringWithFormat:@"Scheduling connection to %s", ip_str];
@@ -303,9 +307,7 @@ using namespace Waola;
 }
 
 - (void) setStatus:(NSString*)status {
-	dispatch_async(dispatch_get_main_queue(), ^{
-		self->_appDelegate.status = status;
-	});
+	self->_appDelegate.status = status;
 }
 
 @end
