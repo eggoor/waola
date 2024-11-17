@@ -29,6 +29,9 @@ Scanner::Scanner()
 	}
 	, scanner(wmake_waolasc_def(&stateCbi, &vaultCbi))
 {
+	if (wlog_try_set_level_from_env()) {
+		waolasc_set_log_level(wlog_get_level());
+	}
 }
 
 Scanner::~Scanner()

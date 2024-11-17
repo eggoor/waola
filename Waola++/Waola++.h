@@ -10,7 +10,7 @@ namespace Waola {
 		void WakeUp(std::vector<IHostView*> hostList) override;
 		
 	public:
-		Waola() = default;
+		Waola();
 		~Waola() = default;
 
 	private:

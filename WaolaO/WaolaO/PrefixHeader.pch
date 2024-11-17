@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  WaolaO
+//
+//  Created by e on 05.11.2024.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#if defined __cplusplus
+#include <string>
+#include <functional>
+#include <forward_list>
+#include <future>
+
+#include <IHostView.h>
+#include <IScanner.h>
+#include <IWaola.h>
+#include <OpCodeDiscoverer.h>
+#include <OpCodeResolver.h>
+#include <OpCodeScanner.h>
+#endif /* __cplusplus */
+
+#import <Cocoa/Cocoa.h>
+#import <CoreData/CoreData.h>
+
+#endif /* PrefixHeader_pch */

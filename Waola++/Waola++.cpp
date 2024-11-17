@@ -12,6 +12,11 @@ void Waola::IWaola::Destroy(Waola::IWaola* const waola)
 	delete waola;
 }
 
+Waola::Waola::Waola()
+{
+	wlog_try_set_level_from_env();
+}
+
 void Waola::Waola::WakeUp(std::vector<IHostView*> hostList)
 {
 	std::vector<whost_view_t*> hosts(hostList.size());

@@ -28,6 +28,7 @@
 #include <whost_data.h>
 #include <whost_view.h>
 #include <wcont4r.h>
+#include <waolash.h>
 #include <waolasc.h>
 #include <waola.h>
 
