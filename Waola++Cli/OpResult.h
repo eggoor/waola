@@ -1,3 +1,7 @@
+/** @file OpResult.h
+* Waola wakeup result.
+*/
+
 #pragma once
 
 namespace WaolaCli {

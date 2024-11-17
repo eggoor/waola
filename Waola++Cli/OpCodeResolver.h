@@ -1,4 +1,4 @@
-/** @file waoladi_opcode.h
+/** @file OpCodeResolver.h
 * Waola resolver operation code.
 */
 
@@ -11,11 +11,11 @@ namespace WaolaCli {
 	*/
 	public enum class OpCodeResolver {
 		Undefined,
-		GetAddrInfo = 0x0001,			/**< Provides hostname */
+		GetAddrInfo = 0x0001,			/**< Provides hostname in UTF-8 encoding */
 		GotAddrInfo = 0x0002,			/**< Provides pointer to struct sockaddr */
-		GetAddrInfoFailed = 0x0004,		/**< Provides hostname */
+		GetAddrInfoFailed = 0x0004,		/**< Provides hostname in UTF-8 encoding */
 		GetNameInfo = 0x0008,			/**< Provides pointer to struct sockaddr */
-		GotNameInfo = 0x0010,			/**< Provides hostname */
+		GotNameInfo = 0x0010,			/**< Provides hostname in UTF-8 encoding */
 		GetNameInfoFailed = 0x0020,		/**< Provides pointer to struct sockaddr */
 		SendingArp = 0x0040,			/**< Provides pointer to struct sockaddr */
 		GotArp = 0x0080,				/**< Provides pointer to struct sockaddr */

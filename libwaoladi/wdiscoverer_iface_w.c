@@ -4,6 +4,8 @@
 
 #include "wdiscoverer_iface_platform.h"
 
+#define ARP_REQ_TIMEOUT_MS 16
+
 int wdiscoverer_iface_do_discover(const wthread_cbi_t* const restrict thread_cbi)
 {
 	wdiscoverer_iface_t* dri = thread_cbi->threadOwner;
@@ -65,6 +67,7 @@ static int do_discover(wdiscoverer_iface_t* self)
 
 			if (drh) {
 				wcont4r_add_s(dh_list, drh);
+				wthread_sleep(ARP_REQ_TIMEOUT_MS);
 			}
 			else {
 				wdiscoverer_net_decrement_thread_count(drn);

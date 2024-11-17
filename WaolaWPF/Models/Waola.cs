@@ -58,7 +58,7 @@ namespace WaolaWPF.Models
 		public async Task WakeUpAsync(IList<object> list)
 		{
 			var hostList = list.ToHostViewModelList().Select(vm => vm.HostView).ToList();
-			await Task.Factory.StartNew(() => waola.WaolaH(hostList));
+			await Task.Factory.StartNew(() => waola.WakeUp(hostList));
 		}
 
 		public void CancelTask()

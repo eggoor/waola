@@ -57,9 +57,6 @@
     <ClInclude Include="include\StateEvent.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="Waola.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\IWaola.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
@@ -78,11 +75,38 @@
     <ClInclude Include="include\HostField.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
+    <ClInclude Include="pch_u.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Waola++.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EventBase.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EventCallbackData.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IScanner.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OpCodeDiscoverer.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OpCodeResolver.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OpCodeScanner.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WaolaPlusPlus.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Waola.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -102,6 +126,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Scanner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Waola++.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,7 +1,5 @@
 #include "pch.h"
 
-#include <IHostView.h>
-
 #include "Waola.h"
 
 using namespace System;
@@ -25,7 +23,7 @@ WaolaCli::Waola::!Waola()
 	::Waola::IWaola::Destroy(waola);
 }
 
-void WaolaCli::Waola::WaolaH(IReadOnlyList<WaolaCli::IHostView^>^ hostList)
+void WaolaCli::Waola::WakeUp(IReadOnlyList<WaolaCli::IHostView^>^ hostList)
 {
 	std::vector<::Waola::IHostView*> nativeHostList(hostList->Count);
 
@@ -35,7 +33,7 @@ void WaolaCli::Waola::WaolaH(IReadOnlyList<WaolaCli::IHostView^>^ hostList)
 	}
 
 	try {
-		waola->WaolaH(nativeHostList);
+		waola->WakeUp(nativeHostList);
 	}
 	catch (const std::runtime_error& ex) {
 		throw gcnew System::Exception(gcnew String(ex.what()));

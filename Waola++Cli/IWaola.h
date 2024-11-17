@@ -9,6 +9,6 @@ namespace WaolaCli {
 
 	public interface class IWaola : public IDisposable
 	{
-		void WaolaH(IReadOnlyList<IHostView^>^ hostList);
+		void WakeUp(IReadOnlyList<IHostView^>^ hostList);
 	};
 }

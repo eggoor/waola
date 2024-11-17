@@ -310,7 +310,7 @@ static void wdiscoverer_iface_child_thread_finished_callback(const wthread_cbi_t
 	}
 }
 
-uint32_t wdiscoverer_iface_get_thread_count(const wdiscoverer_iface_t* const restrict dri)
+uint32_t wdiscoverer_iface_get_thread_count(const wdiscoverer_iface_t* const dri)
 {
 	return wdiscoverer_net_get_thread_count(wdiscoverer_iface_get_parent(dri));
 }

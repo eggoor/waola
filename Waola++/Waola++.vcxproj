@@ -88,6 +88,12 @@
       </SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -110,6 +116,12 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -128,6 +140,12 @@
       </SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -150,30 +168,46 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
     <ClInclude Include="HostView.h" />
+    <ClInclude Include="include\EventBase.h" />
+    <ClInclude Include="include\EventCallbackData.h" />
     <ClInclude Include="include\HostChangedField.h" />
     <ClInclude Include="include\HostData.h" />
     <ClInclude Include="include\HostField.h" />
     <ClInclude Include="include\IScaner.h" />
     <ClInclude Include="include\IHostView.h" />
+    <ClInclude Include="include\IScanner.h" />
     <ClInclude Include="include\IWaola.h" />
     <ClInclude Include="include\LogLevel.h" />
     <ClInclude Include="include\Module.h" />
+    <ClInclude Include="include\OpCodeDiscoverer.h" />
+    <ClInclude Include="include\OpCodeResolver.h" />
+    <ClInclude Include="include\OpCodeScanner.h" />
     <ClInclude Include="include\OpResult.h" />
     <ClInclude Include="include\StateEvent.h" />
     <ClInclude Include="include\Task.h" />
     <ClInclude Include="include\VaultEvent.h" />
     <ClInclude Include="include\VaultOperation.h" />
+    <ClInclude Include="include\WaolaPlusPlus.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="pch_u.h" />
     <ClInclude Include="pch_w.h" />
     <ClInclude Include="Scaner.h" />
-    <ClInclude Include="Waola.h" />
+    <ClInclude Include="Scanner.h" />
+    <ClInclude Include="Waola++.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="EventBase.cpp" />
     <ClCompile Include="HostData.cpp" />
     <ClCompile Include="HostView.cpp" />
     <ClCompile Include="pch.cpp">
@@ -185,7 +219,7 @@
     <ClCompile Include="Scanner.cpp" />
     <ClCompile Include="StateEvent.cpp" />
     <ClCompile Include="VaultEvent.cpp" />
-    <ClCompile Include="Waola.cpp" />
+    <ClCompile Include="Waola++.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\waolasc\waolasc.vcxproj">

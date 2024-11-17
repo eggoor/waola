@@ -172,7 +172,7 @@ end:
 	return rc;
 }
 
-int wnet_iface_start_listening(wnet_iface_t* self, warper_cb_data_t* const restrict arp_cbd)
+int wnet_iface_start_listening(wnet_iface_t* self, warper_cb_data_t* const arp_cbd)
 {
 	return warper_start_listening(self->warper, arp_cbd);
 }

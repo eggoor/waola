@@ -19,10 +19,12 @@ Scanner::Scanner()
 {
 	try {
 		auto stateEventCallback = MakeStateEventCallback();
-		*stateUnsubscribeToken = scanner->SubscribeForStateEvents(stateEventCallback);
+		Waola::EventCallbackData<Waola::StateEventCallback, Waola::StateEvent> stateCb(nullptr, stateEventCallback);
+		*stateUnsubscribeToken = scanner->SubscribeForStateEvents(stateCb);
 
 		auto vaultEventCallback = MakeVaultEventCallback();
-		*vaultUnsubscribeToken = scanner->SubscribeForVaultEvents(vaultEventCallback);
+		Waola::EventCallbackData<Waola::VaultEventCallback, Waola::VaultEvent> vaultCb(nullptr, vaultEventCallback);
+		*vaultUnsubscribeToken = scanner->SubscribeForVaultEvents(vaultCb);
 	}
 	catch (const std::runtime_error& ex) {
 		throw gcnew System::Exception(gcnew String(ex.what()));
@@ -39,14 +41,14 @@ Scanner::~Scanner()
 
 Scanner::!Scanner()
 {
-	scanner->UnubscribeFromVaultEvents(*vaultUnsubscribeToken);
+	scanner->UnsubscribeFromVaultEvents(*vaultUnsubscribeToken);
 	delete vaultUnsubscribeToken;
 
 	if (vaultEventCallbackGcHandle.IsAllocated) {
 		vaultEventCallbackGcHandle.Free();
 	}
 
-	scanner->UnubscribeFromStateEvents(*stateUnsubscribeToken);
+	scanner->UnsubscribeFromStateEvents(*stateUnsubscribeToken);
 	delete stateUnsubscribeToken;
 
 	if (stateEventCallbackGcHandle.IsAllocated) {

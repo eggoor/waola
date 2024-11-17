@@ -1,6 +1,5 @@
 #pragma once
 
-#include <msclr/gcroot.h>
 using namespace msclr;
 
 using namespace System::Threading::Tasks;

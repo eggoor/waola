@@ -1,7 +1,5 @@
 #pragma once
 
-#include <StateEvent.h>
-
 #include "WaolaTask.h"
 
 using System::EventArgs;

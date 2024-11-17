@@ -1,4 +1,4 @@
-/** @file waolasc_opcode.h
+/** @file OpCodeScanner.h
 * Waola discoverer operation code.
 */
 

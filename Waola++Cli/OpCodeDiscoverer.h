@@ -1,4 +1,4 @@
-/** @file waoladi_opcode.h
+/** @file OpCodeDiscoverer.h
 * Waola discoverer operation code.
 */
 
@@ -8,7 +8,7 @@ namespace WaolaCli {
 	/**
 	* \enum waola discoverer operation code.
 	* All operations provide pointer to uint32_t
-	* representing IPv4 address.
+	* representing IPv4 address in network byte order.
 	* Keep in sync with waoladi_opcode_t
 	*/
 	public enum class OpCodeDiscoverer {

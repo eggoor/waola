@@ -1,7 +1,5 @@
 #pragma once
 
-#include <IScanner.h>
-
 #include "IScanner.h"
 #include "OpCodeScanner.h"
 #include "OpCodeResolver.h"

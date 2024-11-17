@@ -9,7 +9,7 @@ namespace Waola {
 	class EventCallbackData
 	{
 	public:
-		EventCallbackData<TCallback>(const void* subscriber, TCallback callback);
+		EventCallbackData<TCallback, TEvent>(const void* subscriber, TCallback callback);
 		void Raise(TEvent& event);
 		
 	private:

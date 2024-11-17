@@ -1,7 +1,5 @@
 #pragma once
 
-#include <VaultEvent.h>
-
 #include "VaultOperation.h"
 
 #include "IHostView.h"

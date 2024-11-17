@@ -1,7 +1,5 @@
 #pragma once
 
-#include <IWaola.h>
-
 #include "IWaola.h"
 
 namespace WaolaCli {
@@ -15,7 +13,7 @@ namespace WaolaCli {
 
 	public:
 		// IWaola implementation
-		virtual void WaolaH(IReadOnlyList<WaolaCli::IHostView^>^ hostList);
+		virtual void WakeUp(IReadOnlyList<WaolaCli::IHostView^>^ hostList);
 
 	private:
 		::Waola::IWaola* waola;
