@@ -32,9 +32,9 @@ Currently supported are Linux, macOS and Windows.
 
     You need [Xcode](https://developer.apple.com/xcode/) and its [Command Line Tools](https://developer.apple.com/download/all/).
 
-    The libraries and CLI tool are proven to be build and run on macOS 12.7.6 Monterey with Xcode 14.2. The WaolaS, written in [Swift](https://developer.apple.com/swift/) GUI frontend, requires macOS version >= 14.6 Sonoma; proven to be build with Xcode 15.4 and 16.0.
+    The libraries, CLI tool and Objective-C GUI frontend `WaolaO` are proven to be build and run on macOS 12.7.6 Monterey with Xcode 14.2. The `WaolaS`, written in [Swift](https://developer.apple.com/swift/) GUI frontend, requires macOS version >= 14.6 Sonoma; proven to be build with Xcode 15.4 and 16.0.
 
-    Run `./build_mac.sh` from Waola repository root; after script successfully finished you'll find CLI tool `waolac` and (if Swift requirements are met) `WaolaS.app` GUI frontend in the `Release` subdirectory.
+    Run `./build_mac.sh` from Waola repository root; after script successfully finished you'll find CLI tool `waolac`, GUI frontend `WaolaO.app` and (if Swift requirements are met) `WaolaS.app` GUI frontend in the `Release` subdirectory.
 
     + [Berkeley Packet Filter](https://en.wikipedia.org/wiki/Berkeley_Packet_Filter).
 
