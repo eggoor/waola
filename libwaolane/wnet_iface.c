@@ -227,3 +227,7 @@ int wnet_iface_query_arp(const wnet_iface_t* self, uint32_t ip_addr)
 {
 	return warper_query_arp(self->warper, ip_addr);
 }
+
+void wnet_iface_set_requesting_finished(const wnet_iface_t* self) {
+	warper_set_requesting_finished(self->warper);
+}

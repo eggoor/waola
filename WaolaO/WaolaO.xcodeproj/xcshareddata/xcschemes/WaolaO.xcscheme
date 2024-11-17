@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CAAECA942C419331001FCF1E"
-               BuildableName = "waolac"
-               BlueprintName = "waolac"
-               ReferencedContainer = "container:waolac.xcodeproj">
+               BlueprintIdentifier = "CA176A582CE8B5DF0039ACEB"
+               BuildableName = "WaolaO.app"
+               BlueprintName = "WaolaO"
+               ReferencedContainer = "container:WaolaO.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -39,29 +39,22 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES"
-      viewDebuggingEnabled = "No">
+      allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CAAECA942C419331001FCF1E"
-            BuildableName = "waolac"
-            BlueprintName = "waolac"
-            ReferencedContainer = "container:waolac.xcodeproj">
+            BlueprintIdentifier = "CA176A582CE8B5DF0039ACEB"
+            BuildableName = "WaolaO.app"
+            BlueprintName = "WaolaO"
+            ReferencedContainer = "container:WaolaO.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "D8:50:E6:A9:FC:B8 98:01:A7:EC:00:E6 1C:90:FF:81:BB:DB AA:5B:6C:55:1A:35 A2:8A:3B:9F:44:E3 E0:69:95:C3:5F:AD"
-            isEnabled = "NO">
-         </CommandLineArgument>
-      </CommandLineArguments>
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "WAOLA_LOG_LEVEL"
-            value = "verbose"
-            isEnabled = "YES">
+            value = "VERBOSE"
+            isEnabled = "NO">
          </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
@@ -75,10 +68,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CAAECA942C419331001FCF1E"
-            BuildableName = "waolac"
-            BlueprintName = "waolac"
-            ReferencedContainer = "container:waolac.xcodeproj">
+            BlueprintIdentifier = "CA176A582CE8B5DF0039ACEB"
+            BuildableName = "WaolaO.app"
+            BlueprintName = "WaolaO"
+            ReferencedContainer = "container:WaolaO.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -80,6 +80,7 @@ void wresolver_hosts_query_arp(wresolver_hosts_t* self, const whost_view_t* cons
 					wlog_if_level(wll_warning, "\t%s: Unable to send ARP request to %s\n",
 						whost_view_get_host_id_s(hw), whost_view_get_ip_addr_s(hw));
 				}
+				wnet_iface_set_requesting_finished(nif);
 			}
 			else {
 				wlog_if_level(wll_warning, "\t%s: ARP client cannot start listening\n",

@@ -135,6 +135,11 @@ end:
 
 int warper_receive(const warper_t* self)
 {
+	static const struct timeval timeout = {
+		.tv_sec = ARP_TIMEOUT_S,
+		.tv_usec = ARP_TIMEOUT_MS * 1000
+	};
+
 	int rc = 0;
 	
 	int fd = warper_get_file_descriptor(self);
@@ -149,11 +154,6 @@ int warper_receive(const warper_t* self)
 		goto end;
 	}
 
-	struct timeval timeout = {
-		.tv_sec = ARP_TIMEOUT_S,
-		.tv_usec = ARP_TIMEOUT_MS * 1000
-	};
-
 	if (ioctl(fd, BIOCSRTIMEOUT, &timeout) == -1) {
 		wlog_if_level(wll_warning, "%s:BIOCSRTIMEOUT failed: %s (%d)\n",
 			__func__, strerror(errno), errno);
@@ -162,6 +162,8 @@ int warper_receive(const warper_t* self)
 	}
 
 	ssize_t resp_len = 0;
+	
+	wlog_if_level(wll_debug, "Start reading communication device\n");
 
 	while ((resp_len = read(fd, buffer, buf_size)) > 0) {
 		wlog(wll_trace, "Received ARP response length == %ld\n", resp_len);
@@ -181,6 +183,8 @@ int warper_receive(const warper_t* self)
 			}
 		}
 	}
+
+	wlog_if_level(wll_debug, "Finihed reading communication device\n");
 
 	rc = 0;
 

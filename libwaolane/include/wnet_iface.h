@@ -36,6 +36,7 @@ uint32_t wnet_iface_get_subnet_mask(const wnet_iface_t* self);
 const byte* wnet_iface_get_mac_addr(const wnet_iface_t* self);
 BOOL wnet_iface_is_ip_in_subnet(const wnet_iface_t* self, uint32_t ip_addr);
 BOOL wnet_iface_query_arp(const wnet_iface_t* self, uint32_t ip_addr);
+void wnet_iface_set_requesting_finished(const wnet_iface_t* self);
 int wnet_iface_prepare_for_arp(wnet_iface_t* self);
 int wnet_iface_start_listening(wnet_iface_t* self,
 	warper_cb_data_t* arp_cbd);

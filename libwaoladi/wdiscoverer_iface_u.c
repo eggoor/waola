@@ -99,6 +99,11 @@ static int do_discover(wdiscoverer_iface_t* self)
 
 		const uint32_t addr_nbo = htonl(addr);
 		if (wnet_iface_query_arp(nif, addr_nbo) == 0) {
+			if(wlog_get_level() >= wll_debug) {
+				char ip_addr_str[INET_ADDRSTRLEN];
+				wsockaddr_int_to_string_s(addr_nbo, ip_addr_str, INET_ADDRSTRLEN);
+				wlog(wll_debug, "ARP request to %s has sent\n", ip_addr_str);
+			}
 			wstatus_set(status, wm_discoverer, wdi_sending_arp, &addr_nbo);
 		}
 		else if(wlog_get_level() >= wll_warning) {
@@ -107,8 +112,13 @@ static int do_discover(wdiscoverer_iface_t* self)
 			wlog(wll_warning, "Sending ARP request to %s failed\n", ip_addr_str);
 		}
 	}
+	
+	wnet_iface_set_requesting_finished(nif);
 
 end:
+	wlog_if_level(wll_info, "All ARP requests against adapter '%s' have been sent\n",
+		wnet_iface_get_name(nif));
+
 	wdiscoverer_iface_on_all_arp_requests_sent(self);
 
 	return rc;

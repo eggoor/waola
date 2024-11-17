@@ -213,9 +213,9 @@ static int resolve_hostname(wdiscoverer_host_t* self)
 	};
 	const struct sockaddr* sa = (struct sockaddr*)&sin;
 
-	if (wlog_get_level() >= wll_debug) {
+	if (wlog_get_level() >= wll_verbose) {
 		char ip_addr_str[INET6_ADDRSTRLEN];
-		wlog(wll_debug, "%s: gonna resolve hostname\n",
+		wlog(wll_verbose, "%s: gonna resolve hostname\n",
 			wsockaddr_to_string_s(sa, ip_addr_str, INET6_ADDRSTRLEN));
 	}
 

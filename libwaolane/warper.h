@@ -16,3 +16,4 @@ void warper_wait_for_listening_finished(warper_t* self,
 int warper_get_errno(const warper_t* self);
 BOOL warper_is_ready_for_arp(const warper_t* self);
 BOOL warper_query_arp(const warper_t* self, uint32_t target_ip);
+void warper_set_requesting_finished(warper_t* self);

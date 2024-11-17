@@ -8,8 +8,6 @@
 
 #include "warper_priv.h"
 
-#define ARP_REQ_TIMEOUT_MS 128
-
 struct warper {
 #if defined(DEBUG) || defined(_DEBUG)
 	const char* id;
@@ -23,6 +21,7 @@ struct warper {
 	int fileDescriptor;
 	int errNo;
 	size_t bufSize;
+	BOOL requestingFinished;
 	byte arpReqBuffer[ARPPCKTSIZ];
 };
 
@@ -63,6 +62,7 @@ warper_t* warper_make_impl(const waolane_fact4s_t* fact4s,
 	warper->errNo = 0;
 	warper->bufSize = 0;
 	warper->thread = NULL;
+	warper->requestingFinished = FALSE;
 	memset(warper->arpReqBuffer, 0, ARPPCKTSIZ);
 
 #if defined(DEBUG) || defined(_DEBUG)
@@ -248,8 +248,14 @@ void process_arp_response(const warper_t* self, const struct ether_arp* const et
 
 static int thread_callbak(const wthread_cbi_t* const restrict cbi)
 {
+	int rc = 0;
 	const warper_t* self = cbi->threadOwner;
-	return warper_receive(self);
+	
+	while (0 == rc && !self->requestingFinished) {
+		rc = warper_receive(self);
+	}
+	
+	return rc;
 }
 
 static void thread_finished_callback(const wthread_cbi_t* const restrict cbi)
@@ -278,7 +284,7 @@ static void thread_finished_callback(const wthread_cbi_t* const restrict cbi)
 	}
 }
 
-BOOL warper_query_arp(const warper_t* self,	uint32_t target_ip)
+BOOL warper_query_arp(const warper_t* self, uint32_t target_ip)
 {
 	return warper_do_send(self, target_ip);
 }
@@ -342,7 +348,7 @@ int warper_do_send(const warper_t* self, uint32_t target_ip)
 	
 	ssize_t sent_bytes = 0;
 
-	for (int i = 0; i < ARP_REQ_COUNT; ++i) {
+	for (int i = 0; i < ARP_REQ_TRY_COUNT; ++i) {
 		while (sent_bytes < ARPPCKTSIZ) {
 			ssize_t addlen = write(fd, req_buffer + sent_bytes, ARPPCKTSIZ - sent_bytes);
 			if (addlen < 0) {
@@ -353,6 +359,7 @@ int warper_do_send(const warper_t* self, uint32_t target_ip)
 		
 		if (ARPPCKTSIZ == sent_bytes) {
 			rc = 0;
+			wthread_sleep(ARP_REQ_TIMEOUT_MS);
 			break;
 		}
 		else {
@@ -367,11 +374,17 @@ int warper_do_send(const warper_t* self, uint32_t target_ip)
 			
 			if (ENOBUFS == rc) {
 				wlog_if_level(wll_verbose, "\t, gonna sleep for %d ms\n",
-					ARP_REQ_TIMEOUT_MS << i);
-				wthread_sleep(ARP_REQ_TIMEOUT_MS << i);
+					ARP_ENOBUFS_TIMEOUT_MS << i);
+				wthread_sleep(ARP_ENOBUFS_TIMEOUT_MS << i);
 			}
 		}
 	}
 	
 	return rc;
+}
+
+void warper_set_requesting_finished(warper_t* self) {
+	wmutex_lock(self->mutex, INFINITE);
+	self->requestingFinished = TRUE;
+	wmutex_release(self->mutex);
 }

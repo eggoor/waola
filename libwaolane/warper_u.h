@@ -10,9 +10,11 @@
 
 #define ARPPCKTSIZ (sizeof(struct ether_header) + sizeof(struct ether_arp))
 
-#define ARP_REQ_COUNT 3
-#define ARP_TIMEOUT_S 1
-#define ARP_TIMEOUT_MS 0
+#define ARP_REQ_TRY_COUNT 3
+#define ARP_REQ_TIMEOUT_MS 16
+#define ARP_ENOBUFS_TIMEOUT_MS 128
+#define ARP_TIMEOUT_S 0
+#define ARP_TIMEOUT_MS 512
 
 int warper_get_file_descriptor(const warper_t* self);
 void warper_set_file_descriptor(warper_t* self, int fd);
