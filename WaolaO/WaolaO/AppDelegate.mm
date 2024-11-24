@@ -209,6 +209,8 @@
 		if (returnCode == YES) {
 			[self.progressSpinner startAnimation:self];
 			
+			[self.editHostView makeFirstResponder:self.editHostView];
+
 			[self->scanner addHost:self.editHostView.displayName hostname:self.editHostView.hostname ipAddress:self.editHostView.ipAddress macAddress:self.editHostView.macAddress];
 			
 			[self.progressSpinner stopAnimation:nil];
@@ -221,7 +223,6 @@
 	
 	NSArray* selectedHosts = [self.hostsController selectedObjects];
 	if ([selectedHosts count] > 0) {
-		
 		if (!self.editHostView) {
 			NSArray* topLevelObjects;
 			[[NSBundle mainBundle] loadNibNamed:@"EditHostView" owner:self topLevelObjects:&topLevelObjects];
@@ -236,6 +237,7 @@
 
 		[self.window beginSheet:self.editHostView completionHandler:^(NSModalResponse returnCode) {
 			if (returnCode == YES) {
+				[self.editHostView makeFirstResponder:self.editHostView];
 				selectedHost.displayName = self.editHostView.displayName;
 				selectedHost.hostname = self.editHostView.hostname;
 				selectedHost.ipAddress = self.editHostView.ipAddress;

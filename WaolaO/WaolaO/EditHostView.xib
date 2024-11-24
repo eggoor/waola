@@ -62,11 +62,7 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="eiL-5m-qa1" name="value" keyPath="editHostView.displayName" id="C07-hE-MWC">
-                                <dictionary key="options">
-                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
-                                </dictionary>
-                            </binding>
+                            <binding destination="eiL-5m-qa1" name="value" keyPath="editHostView.displayName" id="knO-d7-Nc5"/>
                         </connections>
                     </textField>
                     <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9Sh-g9-s8m">
@@ -77,11 +73,7 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="eiL-5m-qa1" name="value" keyPath="editHostView.hostname" id="SPq-o1-mms">
-                                <dictionary key="options">
-                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
-                                </dictionary>
-                            </binding>
+                            <binding destination="eiL-5m-qa1" name="value" keyPath="editHostView.hostname" id="e1l-6e-qEB"/>
                         </connections>
                     </textField>
                     <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NTA-LI-Usw">
@@ -92,11 +84,7 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="eiL-5m-qa1" name="value" keyPath="editHostView.ipAddress" id="BLq-NA-x1W">
-                                <dictionary key="options">
-                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
-                                </dictionary>
-                            </binding>
+                            <binding destination="eiL-5m-qa1" name="value" keyPath="editHostView.ipAddress" id="hcc-UX-Oa5"/>
                         </connections>
                     </textField>
                     <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5uU-DV-vJJ">
@@ -107,11 +95,7 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="eiL-5m-qa1" name="value" keyPath="editHostView.macAddress" id="6Py-AT-uxR">
-                                <dictionary key="options">
-                                    <bool key="NSContinuouslyUpdatesValue" value="YES"/>
-                                </dictionary>
-                            </binding>
+                            <binding destination="eiL-5m-qa1" name="value" keyPath="editHostView.macAddress" id="IMI-6z-UGg"/>
                         </connections>
                     </textField>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z0l-RP-3BZ">
