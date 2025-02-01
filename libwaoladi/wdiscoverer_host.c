@@ -54,6 +54,7 @@ wdiscoverer_host_t* wdiscoverer_host_make_impl(const waoladi_fact4s_t* fact4s,
 	drh->targetIpAddr = target_ip_addr;
 	drh->status = status;
 	drh->host = NULL;
+	drh->hostname[0] = '\0';
 
 	if (mac_addr) {
 		memcpy(drh->macAddr, mac_addr, ETHER_ADDR_LEN);

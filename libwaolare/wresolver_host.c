@@ -186,7 +186,7 @@ static uint32_t wresolver_host_lookup_in_arp_cache(const wresolver_host_t* self)
 
 static void resolve_hostname(const wresolver_host_t* self)
 {
-	char hostname[NI_MAXHOST];
+	char hostname[NI_MAXHOST] = {'\0'};
 	const whost_t* host = whost_view_get_host_s(self->hostView);
 	const struct sockaddr* sa = whost_get_sockaddr_s(host);
 	BOOL resolved = wresolver_sockaddr_name_resolve(sa, hostname,

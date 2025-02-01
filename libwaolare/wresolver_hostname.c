@@ -13,7 +13,7 @@ BOOL wresolver_sockaddr_name_resolve(const struct sockaddr* sa,
 	wstatus_set(status, wm_resolver, wre_getnameinfo, &ip_addr);
 	
 	int rc = getnameinfo(sa, sizeof(struct sockaddr),
-		buff, ccb, NULL, 0, 0);
+		buff, ccb, NULL, 0, NI_NAMEREQD);
 
 	if (NO_ERROR == rc && !wstr_is_empty_s(buff)) {
 		wstatus_set(status, wm_resolver, wre_gotnameinfo, buff);
